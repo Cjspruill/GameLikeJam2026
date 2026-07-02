@@ -1,6 +1,11 @@
 {
   "language": "en",
   "version": "0.2",
-  "ignorePaths": [
+  "ignoreWords": [
+    "behaviour",
+    "hatswitch",
+    "inputactions",
+    "inputsystem",
+    "wasd"
   ]
 }

@@ -1,2 +1,3 @@
 # GameLikeJam2026
-Itch.io game like jam 2026 project
+
+Itch.io Game-Like Jam 2026 project

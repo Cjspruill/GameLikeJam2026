@@ -18,7 +18,7 @@
     <LangVersion>9.0</LangVersion>
     <RootNamespace></RootNamespace>
     <OutputType>Library</OutputType>
-    <AssemblyName>UMotionSourceApplication</AssemblyName>
+    <AssemblyName>Unity.VisualScripting.SettingsProvider.Editor</AssemblyName>
     <TargetFramework>netstandard2.1</TargetFramework>
     <BaseDirectory>.</BaseDirectory>
   </PropertyGroup>
@@ -38,7 +38,7 @@
     <UnityProjectGenerator>Package</UnityProjectGenerator>
     <UnityProjectGeneratorVersion>2.0.27</UnityProjectGeneratorVersion>
     <UnityProjectGeneratorStyle>SDK</UnityProjectGeneratorStyle>
-    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>StandaloneLinux64:24</UnityBuildTarget>
     <UnityVersion>6000.3.19f1</UnityVersion>
   </PropertyGroup>
@@ -48,11 +48,20 @@
     <Analyzer Include="/home/me/Unity/Hub/Editor/6000.3.19f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/UMotionEditor/Scripts/Application/AssetResourcesFile.cs" />
-    <Compile Include="Assets/UMotionEditor/Scripts/Application/VersionCompatibilityUtility.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@8bed5ad90189/Editor/SettingsProvider/ProjectSettingsProviderView.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@8bed5ad90189/Editor/SettingsProvider/EditorPreferencesProviderView.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@8bed5ad90189/Editor/SettingsProvider/ProjectSettings/BackupSettings.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@8bed5ad90189/Editor/SettingsProvider/ProjectSettings/LinkerPropertyProviderSettings.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@8bed5ad90189/Editor/SettingsProvider/ProjectSettings/CustomPropertyProviderSettings.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@8bed5ad90189/Editor/SettingsProvider/ProjectSettings/AssemblyOptionsSettings.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@8bed5ad90189/Editor/SettingsProvider/ProjectSettings/TypeOptionsSettings.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@8bed5ad90189/Editor/SettingsProvider/ProjectSettingsProvider.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@8bed5ad90189/Editor/SettingsProvider/ProjectSettings/CoreProviderSettings.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@8bed5ad90189/Editor/SettingsProvider/EditorPreferencesProvider.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@8bed5ad90189/Editor/SettingsProvider/ProjectSettings/ScriptReferenceResolverSettings.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets/UMotionEditor/Scripts/Application/UMotionSourceApplication.asmdef" />
+    <None Include="Library/PackageCache/com.unity.visualscripting@8bed5ad90189/Editor/SettingsProvider/Unity.VisualScripting.SettingsProvider.Editor.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -1181,6 +1190,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.VisualScripting.Core.csproj" />
+    <ProjectReference Include="Unity.VisualScripting.Core.Editor.csproj" />
+    <ProjectReference Include="Unity.VisualScripting.Flow.csproj" />
+    <ProjectReference Include="Unity.VisualScripting.Flow.Editor.csproj" />
+    <ProjectReference Include="Unity.VisualScripting.State.csproj" />
     <ProjectReference Include="UnityEditor.UI.csproj" />
     <ProjectReference Include="UnityEngine.UI.csproj" />
     <ProjectReference Include="UnityEditor.TestRunner.csproj" />

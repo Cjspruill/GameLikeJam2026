@@ -78,6 +78,10 @@
       }
     ]
   },
+  "files.exclude": {
+    "**/*.csproj": true,
+    "**/*.slnx": true
+  },
   "files.watcherExclude": {
     "**/.git/objects/**": true,
     "**/.git/subtree-cache/**": true,

@@ -16,9 +16,9 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <EnableDefaultItems>false</EnableDefaultItems>
     <LangVersion>9.0</LangVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>Unity.Multiplayer.Center</RootNamespace>
     <OutputType>Library</OutputType>
-    <AssemblyName>UMotionSourceApplication</AssemblyName>
+    <AssemblyName>Unity.Multiplayer.Center.Editor</AssemblyName>
     <TargetFramework>netstandard2.1</TargetFramework>
     <BaseDirectory>.</BaseDirectory>
   </PropertyGroup>
@@ -38,7 +38,7 @@
     <UnityProjectGenerator>Package</UnityProjectGenerator>
     <UnityProjectGeneratorVersion>2.0.27</UnityProjectGeneratorVersion>
     <UnityProjectGeneratorStyle>SDK</UnityProjectGeneratorStyle>
-    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>StandaloneLinux64:24</UnityBuildTarget>
     <UnityVersion>6000.3.19f1</UnityVersion>
   </PropertyGroup>
@@ -48,11 +48,52 @@
     <Analyzer Include="/home/me/Unity/Hub/Editor/6000.3.19f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/UMotionEditor/Scripts/Application/AssetResourcesFile.cs" />
-    <Compile Include="Assets/UMotionEditor/Scripts/Application/VersionCompatibilityUtility.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/Recommendations/RecommenderSystemDataObject.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/Features/PackageManagement.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/Recommendations/Scoring.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/Recommendations/RecommenderSystem.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/MultiplayerCenterWindow/UI/QuestionnaireView.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/MultiplayerCenterWindow/UI/RecommendationView/RecommendationView.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/Recommendations/RecommendationViewData.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/Analytics/OnboardingSectionAnalyticsProvider.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/Analytics/AnalyticsUtils.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/MultiplayerCenterWindow/RecommendationTabView.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/OnBoarding/QuickstartPackageHandling.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/Questionnaire/UserChoicesObject.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/Recommendations/RecommenderSystemData.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/MultiplayerCenterWindow/UI/QuestionViewFactory.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/MultiplayerCenterWindow/UI/RecommendationView/PackageSelectionView.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/Recommendations/RecommendationUtils.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/OnBoarding/SectionsFinder.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/Questionnaire/QuestionnaireData.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/Questionnaire/Logic.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/Recommendations/PreReleaseHandling.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/AssemblyInfo.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/Questionnaire/PresetData.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/Analytics/MultiplayerCenterAnalyticsFactory.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/Recommendations/RecommendationType.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/Analytics/DebugAnalytics.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/MultiplayerCenterWindow/MultiplayerCenterWindow.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/Recommendations/RecommendationAuthoringData.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/MultiplayerCenterWindow/RecommendationViewBottomBar.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/MultiplayerCenterWindow/UI/ViewUtils.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/OnBoarding/GettingStartedTabView.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/Analytics/MultiplayerCenterAnalytics.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/MultiplayerCenterWindow/UI/StyleClasses.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/Questionnaire/QuestionnaireObject.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/MultiplayerCenterWindow/UI/RecommendationView/SectionHeader.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/Analytics/AnalyticsData.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/MultiplayerCenterWindow/UI/QuestionSection.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/MultiplayerCenterWindow/UI/RecommendationView/RecommendationItemView.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/MultiplayerCenterWindow/UI/RecommendationView/SolutionSelectionView.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/MultiplayerCenterWindow/TabGroup.cs" />
+    <Compile Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/Questionnaire/QuestionnaireEditor.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets/UMotionEditor/Scripts/Application/UMotionSourceApplication.asmdef" />
+    <None Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/MultiplayerCenterWindow/UI/light.uss" />
+    <None Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/MultiplayerCenterWindow/UI/dark.uss" />
+    <None Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/MultiplayerCenterWindow/UI/MultiplayerCenterWindow.uss" />
+    <None Include="Library/PackageCache/com.unity.multiplayer.center@53ad5a5c2bfb/Editor/Unity.Multiplayer.Center.Editor.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -1181,6 +1222,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.Multiplayer.Center.Common.csproj" />
     <ProjectReference Include="UnityEditor.UI.csproj" />
     <ProjectReference Include="UnityEngine.UI.csproj" />
     <ProjectReference Include="UnityEditor.TestRunner.csproj" />
