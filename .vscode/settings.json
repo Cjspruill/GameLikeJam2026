@@ -8,6 +8,7 @@
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "git.autofetch": true,
+  "terminal.integrated.cwd": "${workspaceFolder}/GLJ2026",
   "terminal.integrated.scrollback": 10000,
   "todo-tree.highlights.enabled": false,
   "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^[ \\t]*(-|\\d+.)).*($TAGS)",
