@@ -18,7 +18,7 @@
     <LangVersion>9.0</LangVersion>
     <RootNamespace></RootNamespace>
     <OutputType>Library</OutputType>
-    <AssemblyName>UMotionSourceApplication</AssemblyName>
+    <AssemblyName>Unity.AI.Navigation.Updater</AssemblyName>
     <TargetFramework>netstandard2.1</TargetFramework>
     <BaseDirectory>.</BaseDirectory>
   </PropertyGroup>
@@ -48,11 +48,16 @@
     <Analyzer Include="/home/me/Unity/Hub/Editor/6000.3.19f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/UMotionEditor/Scripts/Application/AssetResourcesFile.cs" />
-    <Compile Include="Assets/UMotionEditor/Scripts/Application/VersionCompatibilityUtility.cs" />
+    <Compile Include="Library/PackageCache/com.unity.ai.navigation@42d896194035/Editor/Updater/NavMeshSceneConverter.cs" />
+    <Compile Include="Library/PackageCache/com.unity.ai.navigation@42d896194035/Editor/Updater/OffMeshLinkUpdaterUtility.cs" />
+    <Compile Include="Library/PackageCache/com.unity.ai.navigation@42d896194035/Editor/Updater/NavigationConverterContainer.cs" />
+    <Compile Include="Library/PackageCache/com.unity.ai.navigation@42d896194035/Editor/Updater/NavMeshUpdaterUtility.cs" />
+    <Compile Include="Library/PackageCache/com.unity.ai.navigation@42d896194035/Editor/Updater/OffMeshLinkConverter.cs" />
+    <Compile Include="Library/PackageCache/com.unity.ai.navigation@42d896194035/Editor/Updater/AssemblyInfo.cs" />
+    <Compile Include="Library/PackageCache/com.unity.ai.navigation@42d896194035/Editor/Updater/NavigationUpdaterEditor.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets/UMotionEditor/Scripts/Application/UMotionSourceApplication.asmdef" />
+    <None Include="Library/PackageCache/com.unity.ai.navigation@42d896194035/Editor/Updater/Unity.AI.Navigation.Updater.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -1181,6 +1186,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.AI.Navigation.csproj" />
+    <ProjectReference Include="Unity.AI.Navigation.Editor.csproj" />
+    <ProjectReference Include="Unity.AI.Navigation.Editor.ConversionSystem.csproj" />
     <ProjectReference Include="UnityEditor.UI.csproj" />
     <ProjectReference Include="UnityEngine.UI.csproj" />
     <ProjectReference Include="UnityEditor.TestRunner.csproj" />

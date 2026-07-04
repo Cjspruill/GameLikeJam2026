@@ -18,7 +18,7 @@
     <LangVersion>9.0</LangVersion>
     <RootNamespace></RootNamespace>
     <OutputType>Library</OutputType>
-    <AssemblyName>UMotionSourceApplication</AssemblyName>
+    <AssemblyName>Unity.AI.Navigation.Editor.ConversionSystem</AssemblyName>
     <TargetFramework>netstandard2.1</TargetFramework>
     <BaseDirectory>.</BaseDirectory>
   </PropertyGroup>
@@ -38,7 +38,7 @@
     <UnityProjectGenerator>Package</UnityProjectGenerator>
     <UnityProjectGeneratorVersion>2.0.27</UnityProjectGeneratorVersion>
     <UnityProjectGeneratorStyle>SDK</UnityProjectGeneratorStyle>
-    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>StandaloneLinux64:24</UnityBuildTarget>
     <UnityVersion>6000.3.19f1</UnityVersion>
   </PropertyGroup>
@@ -48,11 +48,23 @@
     <Analyzer Include="/home/me/Unity/Hub/Editor/6000.3.19f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/UMotionEditor/Scripts/Application/AssetResourcesFile.cs" />
-    <Compile Include="Assets/UMotionEditor/Scripts/Application/VersionCompatibilityUtility.cs" />
+    <Compile Include="Library/PackageCache/com.unity.ai.navigation@42d896194035/Editor/ConversionSystem/ConverterItemInfo.cs" />
+    <Compile Include="Library/PackageCache/com.unity.ai.navigation@42d896194035/Editor/ConversionSystem/ConverterItemDescriptor.cs" />
+    <Compile Include="Library/PackageCache/com.unity.ai.navigation@42d896194035/Editor/ConversionSystem/SystemConvertersEditor.cs" />
+    <Compile Include="Library/PackageCache/com.unity.ai.navigation@42d896194035/Editor/ConversionSystem/SystemConverter.cs" />
+    <Compile Include="Library/PackageCache/com.unity.ai.navigation@42d896194035/Editor/ConversionSystem/InitializeConverterContext.cs" />
+    <Compile Include="Library/PackageCache/com.unity.ai.navigation@42d896194035/Editor/ConversionSystem/EditorStyles.cs" />
+    <Compile Include="Library/PackageCache/com.unity.ai.navigation@42d896194035/Editor/ConversionSystem/AssemblyInfo.cs" />
+    <Compile Include="Library/PackageCache/com.unity.ai.navigation@42d896194035/Editor/ConversionSystem/RunItemContext.cs" />
+    <Compile Include="Library/PackageCache/com.unity.ai.navigation@42d896194035/Editor/ConversionSystem/SystemConverterContainer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets/UMotionEditor/Scripts/Application/UMotionSourceApplication.asmdef" />
+    <None Include="Library/PackageCache/com.unity.ai.navigation@42d896194035/Editor/ConversionSystem/converter_widget.uss" />
+    <None Include="Library/PackageCache/com.unity.ai.navigation@42d896194035/Editor/ConversionSystem/Unity.AI.Navigation.Editor.ConversionSystem.asmdef" />
+    <None Include="Library/PackageCache/com.unity.ai.navigation@42d896194035/Editor/ConversionSystem/converter_widget_item.uxml" />
+    <None Include="Library/PackageCache/com.unity.ai.navigation@42d896194035/Editor/ConversionSystem/converter_widget.uxml" />
+    <None Include="Library/PackageCache/com.unity.ai.navigation@42d896194035/Editor/ConversionSystem/converter_editor.uxml" />
+    <None Include="Library/PackageCache/com.unity.ai.navigation@42d896194035/Editor/ConversionSystem/converter_editor.uss" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

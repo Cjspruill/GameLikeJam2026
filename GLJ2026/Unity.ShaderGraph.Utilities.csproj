@@ -18,7 +18,7 @@
     <LangVersion>9.0</LangVersion>
     <RootNamespace></RootNamespace>
     <OutputType>Library</OutputType>
-    <AssemblyName>UMotionSourceApplication</AssemblyName>
+    <AssemblyName>Unity.ShaderGraph.Utilities</AssemblyName>
     <TargetFramework>netstandard2.1</TargetFramework>
     <BaseDirectory>.</BaseDirectory>
   </PropertyGroup>
@@ -48,11 +48,13 @@
     <Analyzer Include="/home/me/Unity/Hub/Editor/6000.3.19f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/UMotionEditor/Scripts/Application/AssetResourcesFile.cs" />
-    <Compile Include="Assets/UMotionEditor/Scripts/Application/VersionCompatibilityUtility.cs" />
+    <Compile Include="Library/PackageCache/com.unity.shadergraph@f971f442e900/Editor/Utilities/GenerationAPIAttribute.cs" />
+    <Compile Include="Library/PackageCache/com.unity.shadergraph@f971f442e900/Editor/Utilities/EnumInfo.cs" />
+    <Compile Include="Library/PackageCache/com.unity.shadergraph@f971f442e900/Editor/Utilities/StringBuilderExtensions.cs" />
+    <Compile Include="Library/PackageCache/com.unity.shadergraph@f971f442e900/Editor/Utilities/AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets/UMotionEditor/Scripts/Application/UMotionSourceApplication.asmdef" />
+    <None Include="Library/PackageCache/com.unity.shadergraph@f971f442e900/Editor/Utilities/Unity.ShaderGraph.Utilities.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
