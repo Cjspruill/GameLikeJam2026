@@ -1,6 +1,7 @@
 {
   "biome.enabled": false,
   "dotnet.defaultSolution": "GLJ2026.slnx",
+  "editor.defaultFormatter": "ms-dotnettools.csdevkit",
   "editor.detectIndentation": true,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
@@ -8,6 +9,13 @@
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "git.autofetch": true,
+  "search.exclude": {
+    "**/*.csproj": true,
+    "**/*.slnx": true,
+    "**/.gitignore": true,
+    ".vscode/": true,
+    "**/Packages/": true
+  },
   "terminal.integrated.cwd": "${workspaceFolder}/GLJ2026",
   "terminal.integrated.scrollback": 10000,
   "todo-tree.highlights.enabled": false,
@@ -79,14 +87,18 @@
       }
     ]
   },
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "GLJ2026.slnx": "*.csproj"
+  },
   "files.exclude": {
-    "**/*.csproj": true,
-    "**/*.slnx": true
+    "GLJ2026/Library": true,
+    "GLJ2026/Logs": true,
+    "GLJ2026/obj": true,
+    "GLJ2026/Temp": true
   },
   "files.watcherExclude": {
-    "**/.git/objects/**": true,
-    "**/.git/subtree-cache/**": true,
-    "**/node_modules/*/**": true
+    "**/.git/objects/**": true
   },
   "todo-tree.filtering.excludeGlobs": [
     "**/.vscode/settings.json",
