@@ -64,6 +64,7 @@
     <Compile Include="Assets\Downloaded\StylizedCore\StylizedWoodMonsters\URP\AnimationGallery\Scripts\Core\UniversalAnimationViewer.cs" />
     <Compile Include="Assets\Downloaded\StylizedCore\StylizedWoodMonsters\URP\AnimationGallery\Scripts\Controllers\TextureSetController.cs" />
     <Compile Include="Assets\Scripts\CameraHeadFollow.cs" />
+    <Compile Include="Assets\Scripts\MeleeAttackController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\UMotionEditor\Shaders\WiresOnly.shader" />
