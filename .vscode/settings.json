@@ -5,7 +5,7 @@
   "editor.detectIndentation": true,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
-  "editor.tabSize": 2,
+  "editor.tabSize": 4,
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "git.autofetch": true,
