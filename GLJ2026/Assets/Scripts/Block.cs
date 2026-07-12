@@ -1,10 +1,9 @@
 using UnityEngine;
 
-// ? TODO: abstract/inheritance for different Block types?
-
 public class Block : MonoBehaviour
 {
     // ! NOTE: Assumes surface has Collider attached (MeshCollider/BoxCollider) for Physics.Raycast
+	// ! NOTE: Need Rigidbody?
 
     // for UI
     #pragma warning disable IDE0044
