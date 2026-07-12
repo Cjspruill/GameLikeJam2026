@@ -10,8 +10,6 @@
   "files.trimTrailingWhitespace": true,
   "git.autofetch": true,
   "search.exclude": {
-    "**/*.csproj": true,
-    "**/*.slnx": true,
     "**/.gitignore": true,
     ".vscode/": true,
     "**/Packages/": true
@@ -89,7 +87,7 @@
   },
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.patterns": {
-    "GLJ2026.slnx": "*.csproj"
+    "GLJ2026.slnx": "GLJ2026.csproj"
   },
   "files.exclude": {
     "GLJ2026/Library": true,

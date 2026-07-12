@@ -1,6 +1,3 @@
 ﻿<Solution>
-  <Project Path="Assembly-CSharp.csproj" />
-  <Project Path="UMotionSourceEditor.csproj" />
-  <Project Path="Assembly-CSharp-Editor.csproj" />
-  <Project Path="UMotionSourceApplication.csproj" />
+  <Project Path="GLJ2026.csproj" />
 </Solution>
