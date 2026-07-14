@@ -121,6 +121,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3302261419564565007}
+  - component: {fileID: -5988388491920076450}
   m_Layer: 0
   m_Name: Box3
   m_TagString: Untagged
@@ -144,3 +145,15 @@ Transform:
   - {fileID: 2468091598788300166}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-5988388491920076450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6320429173089601705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 365e0544b2252c049b6ea0b0908765a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Block
