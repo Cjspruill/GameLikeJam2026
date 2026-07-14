@@ -5,27 +5,56 @@ public class Block : MonoBehaviour
     // ! NOTE: Assumes surface has Collider attached (MeshCollider/BoxCollider) for Physics.Raycast
 	// ! NOTE: Need Rigidbody?
 
+	const bool DEBUG = true;
+
     // for UI
-    #pragma warning disable IDE0044
+    /*#pragma warning disable IDE0044
 	[Header("Placement Settings")]
 	[SerializeField] private GameObject prefab;
 	[SerializeField] private LayerMask surface;
 	[SerializeField] private float maxDistance = 50f;
-    #pragma warning restore IDE0044
+    #pragma warning restore IDE0044*/
 
-	private GameObject obj;
+	/*private GameObject obj;
 	private new Camera camera;
 
 	private Vector3 position;
-	private Quaternion rotation;
+	private Quaternion rotation;*/
 
-	/*void Start()
+	#pragma warning disable IDE0051
+	void Start()
 	{
-		camera = Camera.main; // MainCamera
-		StartPlacementMode();
+		AddCollider();
+
+		//camera = Camera.main; // MainCamera
+		//StartPlacementMode();
 	}
 
-	void Update()
+	private void AddCollider()
+	{
+		Renderer[] renderers = GetComponentsInChildren<Renderer>();
+		Bounds bounds = renderers[0].bounds;
+		foreach (Renderer renderer in renderers)
+		{
+			bounds.Encapsulate(renderer.bounds);
+		}
+
+		BoxCollider collider = gameObject.AddComponent<BoxCollider>();
+		Vector3 center = transform.InverseTransformPoint(bounds.center);
+		Vector3 size = bounds.size;
+		size.x /= transform.lossyScale.x;
+		size.y /= transform.lossyScale.y;
+		size.z /= transform.lossyScale.z;
+		collider.center = center;
+		collider.size = size;
+
+		if (DEBUG)
+		{
+			Debug.Log($"Added collider to {gameObject.name}");
+		}
+	}
+
+	/*void Update()
 	{
 		if (obj)
 		{
@@ -40,7 +69,7 @@ public class Block : MonoBehaviour
 	}*/
 
 	// preview prefab in world as ghost
-	private void StartPlacementMode()
+	/*private void StartPlacementMode()
 	{
 		if (prefab)
 		{
@@ -92,16 +121,26 @@ public class Block : MonoBehaviour
 
 		// place object on surface
 		Instantiate(prefab, position, rotation);
-	}
+	}*/
 
-    private void OnCollision(Collision collision)
+    void OnTriggerEnter(Collider collision)
     {
-		// ! NOTE: Assumes object has Player tag
+		Debug.Log("Collided with object");
 
-        // check if has tag Player
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("BoxKnife"))
         {
             Destroy(gameObject);
+
+			if (DEBUG)
+			{
+				Debug.Log($"Destroyed {gameObject.name}");
+			}
+
+			// choose a random loot object from assets/resources/[prefab]
+			// then instantiate loot and add force to "throw" it (random angle/distance)
+
+			// https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rigidbody.AddForce.html
+			// public void AddForce(Vector3 force, ForceMode mode = ForceMode.Force);
         }
     }
 }
