@@ -123,8 +123,10 @@ public class Block : MonoBehaviour
 		Instantiate(prefab, position, rotation);
 	}*/
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider collision)
     {
+		Debug.Log("Collided with object");
+
         if (collision.gameObject.CompareTag("BoxKnife"))
         {
             Destroy(gameObject);
