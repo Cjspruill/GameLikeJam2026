@@ -14,7 +14,7 @@ AvatarMask:
   - m_Path: Player
     m_Weight: 1
   - m_Path: Root_Player
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Root_Player/Hips
     m_Weight: 0
   - m_Path: Root_Player/Hips/LeftUpLeg

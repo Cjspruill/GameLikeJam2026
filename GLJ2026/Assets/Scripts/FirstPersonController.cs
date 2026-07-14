@@ -16,7 +16,7 @@ public class FirstPersonController : MonoBehaviour
     [SerializeField] private float mouseSensitivity = 0.1f;
     [SerializeField] private float upDownLookRange = 80f;
 
-    [Header ("References")]
+    [Header("References")]
     [SerializeField] private CharacterController characterController;
     [SerializeField] private Camera mainCamera;
     [SerializeField] private PlayerInputHandler playerInputHandler;
@@ -24,6 +24,13 @@ public class FirstPersonController : MonoBehaviour
     private Vector3 currentMovement;
     private float verticalRotation;
     private float CurrentSpeed => walkSpeed * (playerInputHandler.SprintTriggered ? sprintMultiplier : 1);
+
+    // Exposes the same continuous pitch float used to rotate the camera,
+    // so other scripts (e.g. BodyLookRig) can read it directly instead of
+    // reverse-engineering it from Transform.localEulerAngles -- reading
+    // localEulerAngles can flip to an equivalent-but-different Euler
+    // representation near zero and cause a visible snap/reverse artifact.
+    public float CurrentPitch => verticalRotation;
 
     [Header("References")]
     [SerializeField] private Animator animator; // drag your Animator here
