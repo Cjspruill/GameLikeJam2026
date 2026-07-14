@@ -13,6 +13,12 @@ using UnityEngine.InputSystem;
 ///   - Idle should have "Has Exit Time" OFF transitions in on the Attack trigger,
 ///     and Swing1/Swing2 should transition back to Idle automatically at end of clip
 ///     (Has Exit Time ON, no exit condition needed) unless a combo trigger arrives.
+///
+/// NOTE: no longer drives any Rig weight blending. Spine look-up/down is now
+/// handled by an Additive Animator layer (LookPitch blend tree), which stacks
+/// on top of whatever the base layer is doing -- including Swing1/Swing2 --
+/// instead of overriding it like the old Multi-Aim Constraint rig did. See
+/// BodyLookRig.cs for the LookPitch parameter feed.
 /// </summary>
 [RequireComponent(typeof(Animator))]
 public class MeleeAttackController : MonoBehaviour
