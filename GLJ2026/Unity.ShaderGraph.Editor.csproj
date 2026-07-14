@@ -571,8 +571,8 @@
     <Compile Include="Library/PackageCache/com.unity.shadergraph@f971f442e900/Editor/Data/Nodes/Input/Texture/Texture3DAssetNode.cs" />
     <Compile Include="Library/PackageCache/com.unity.shadergraph@f971f442e900/Editor/Generation/Contexts/TargetPropertyGUIContext.cs" />
     <Compile Include="Library/PackageCache/com.unity.shadergraph@f971f442e900/Editor/Data/Nodes/Math/Trigonometry/ArccosineNode.cs" />
-    <Compile Include="Library/PackageCache/com.unity.shadergraph@f971f442e900/Editor/Drawing/Colors/CustomColorData.cs" />
     <Compile Include="Library/PackageCache/com.unity.shadergraph@f971f442e900/Editor/Data/Attributes/BuiltinKeywordAttribute.cs" />
+    <Compile Include="Library/PackageCache/com.unity.shadergraph@f971f442e900/Editor/Drawing/Colors/CustomColorData.cs" />
     <Compile Include="Library/PackageCache/com.unity.shadergraph@f971f442e900/Editor/Drawing/EdgeConnectorListener.cs" />
     <Compile Include="Library/PackageCache/com.unity.shadergraph@f971f442e900/Editor/Data/ContextData.cs" />
     <Compile Include="Library/PackageCache/com.unity.shadergraph@f971f442e900/Editor/Data/Graphs/GraphDataReadOnly.cs" />
@@ -704,8 +704,8 @@
     <Compile Include="Library/PackageCache/com.unity.shadergraph@f971f442e900/Editor/Data/Graphs/BooleanShaderProperty.cs" />
     <Compile Include="Library/PackageCache/com.unity.shadergraph@f971f442e900/Editor/Data/Nodes/Input/Gradient/SampleGradientNode.cs" />
     <Compile Include="Library/PackageCache/com.unity.shadergraph@f971f442e900/Editor/Generation/Targets/Fullscreen/FullscreenMetaData.cs" />
-    <Compile Include="Library/PackageCache/com.unity.shadergraph@f971f442e900/Editor/Data/Util/FunctionRegistry.cs" />
     <Compile Include="Library/PackageCache/com.unity.shadergraph@f971f442e900/Editor/Data/Nodes/Input/Geometry/TangentVectorNode.cs" />
+    <Compile Include="Library/PackageCache/com.unity.shadergraph@f971f442e900/Editor/Data/Util/FunctionRegistry.cs" />
     <Compile Include="Library/PackageCache/com.unity.shadergraph@f971f442e900/Editor/Data/Graphs/TangentMaterialSlot.cs" />
     <Compile Include="Library/PackageCache/com.unity.shadergraph@f971f442e900/Editor/Data/Nodes/Math/Interpolation/InverseLerpNode.cs" />
     <Compile Include="Library/PackageCache/com.unity.shadergraph@f971f442e900/Editor/Data/Attributes/SGPropertyDrawerAttribute.cs" />

@@ -49,13 +49,13 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.3.19f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Block.cs" />
     <Compile Include="Assets\Downloaded\StylizedCore\StylizedWoodMonsters\URP\AnimationGallery\Scripts\Entities\SummonedMinion.cs" />
     <Compile Include="Assets\Downloaded\StylizedCore\StylizedWoodMonsters\URP\AnimationGallery\Scripts\Controllers\GroupDisplayManager.cs" />
     <Compile Include="Assets\Scripts\PlayerInputHandler.cs" />
     <Compile Include="Assets\Scripts\SimpleFPSAnimator.cs" />
     <Compile Include="Assets\Downloaded\StylizedCore\StylizedWoodMonsters\URP\AnimationGallery\Scripts\Core\AnimationSet.cs" />
     <Compile Include="Assets\InputSystem_Actions.cs" />
-    <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Downloaded\StylizedCore\StylizedWoodMonsters\URP\AnimationGallery\Scripts\Effects\Shockwave.cs" />
     <Compile Include="Assets\Downloaded\StylizedCore\StylizedWoodMonsters\URP\AnimationGallery\Scripts\Controllers\EnemySelector.cs" />
     <Compile Include="Assets\Downloaded\StylizedCore\StylizedWoodMonsters\URP\AnimationGallery\Scripts\Camera\ViewerCameraController.cs" />

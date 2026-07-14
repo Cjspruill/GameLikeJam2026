@@ -18,14 +18,14 @@
     <LangVersion>9.0</LangVersion>
     <RootNamespace></RootNamespace>
     <OutputType>Library</OutputType>
-    <AssemblyName>Unity.Collections</AssemblyName>
+    <AssemblyName>GLJ2026</AssemblyName>
     <TargetFramework>netstandard2.1</TargetFramework>
     <BaseDirectory>.</BaseDirectory>
   </PropertyGroup>
   <PropertyGroup>
     <NoWarn>0169;USG0001</NoWarn>
-    <DefineConstants>UNITY_6000_3_19;UNITY_6000_3;UNITY_6000;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_2023_1_OR_NEWER;UNITY_2023_2_OR_NEWER;UNITY_2023_3_OR_NEWER;UNITY_6000_0_OR_NEWER;UNITY_6000_1_OR_NEWER;UNITY_6000_2_OR_NEWER;UNITY_6000_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AUDIO;ENABLE_AUDIO_SCRIPTABLE_PIPELINE;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_UNITY_CONSENT;ENABLE_UNITY_CLOUD_IDENTIFIERS;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_MARSHALLING_TESTS;ENABLE_VIDEO;ENABLE_NAVIGATION_OFFMESHLINK_TO_NAVMESHLINK;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;TEXTCORE_1_0_OR_NEWER;EDITOR_ONLY_NAVMESH_BUILDER_DEPRECATED;PLATFORM_STANDALONE_LINUX;PLATFORM_STANDALONE;UNITY_STANDALONE_LINUX;UNITY_STANDALONE;UNITY_STANDALONE_LINUX_API;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_SPATIALTRACKING;ENABLE_MODULAR_UNITYENGINE_ASSEMBLIES;PLATFORM_SUPPORTS_SPLIT_GRAPHICS_JOBS;PLATFORM_USES_EXPLICIT_MEMORY_MANAGER_INITIALIZER;PLATFORM_SUPPORTS_DISPLAYINFO_API;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;ENABLE_PROFILER_ASSISTANT_INTEGRATION;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_LINUX;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;TEXTCORE_TEXT_ENGINE_1_5_OR_NEWER;TEXTCORE_FONT_ENGINE_1_6_OR_NEWER;UNITY_2022_2_14F1_OR_NEWER;UNITY_2022_2_16F1_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
-    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <DefineConstants>UNITY_6000_3_19;UNITY_6000_3;UNITY_6000;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_2023_1_OR_NEWER;UNITY_2023_2_OR_NEWER;UNITY_2023_3_OR_NEWER;UNITY_6000_0_OR_NEWER;UNITY_6000_1_OR_NEWER;UNITY_6000_2_OR_NEWER;UNITY_6000_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AUDIO;ENABLE_AUDIO_SCRIPTABLE_PIPELINE;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_UNITY_CONSENT;ENABLE_UNITY_CLOUD_IDENTIFIERS;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_MARSHALLING_TESTS;ENABLE_VIDEO;ENABLE_NAVIGATION_OFFMESHLINK_TO_NAVMESHLINK;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;TEXTCORE_1_0_OR_NEWER;EDITOR_ONLY_NAVMESH_BUILDER_DEPRECATED;PLATFORM_STANDALONE_LINUX;PLATFORM_STANDALONE;UNITY_STANDALONE_LINUX;UNITY_STANDALONE;UNITY_STANDALONE_LINUX_API;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_SPATIALTRACKING;ENABLE_MODULAR_UNITYENGINE_ASSEMBLIES;PLATFORM_SUPPORTS_SPLIT_GRAPHICS_JOBS;PLATFORM_USES_EXPLICIT_MEMORY_MANAGER_INITIALIZER;PLATFORM_SUPPORTS_DISPLAYINFO_API;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;ENABLE_PROFILER_ASSISTANT_INTEGRATION;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_LINUX;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;TEXTCORE_TEXT_ENGINE_1_5_OR_NEWER;TEXTCORE_FONT_ENGINE_1_6_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
     <NoStandardLibraries>true</NoStandardLibraries>
@@ -43,84 +43,26 @@
     <UnityVersion>6000.3.19f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets/Scripts/Block.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <Analyzer Include="/home/me/Unity/Hub/Editor/6000.3.19f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.SourceGenerators.dll" />
     <Analyzer Include="/home/me/Unity/Hub/Editor/6000.3.19f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="/home/me/Unity/Hub/Editor/6000.3.19f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/StreamCompressionModel.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/FixedList.gen.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/BitField.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/FixedStringParseMethods.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/NativeText.gen.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/DoubleRewindableAllocators.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/UnsafeQueue.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/FixedStringUtils.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/NativeArrayExtensions.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/UnsafeParallelHashSetExtensions.gen.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/UnsafeNotBurstCompatible.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/NativeList.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/UnsafeParallelHashMap.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/UnsafeHashMap.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/xxHash3.StreamingState.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/FixedStringMethods.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/AssemblyInfo.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/FixedString.gen.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/NativeSort.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/DataStreamWriter.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/Unicode.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/UnsafeBitArray.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/AllocatorManager.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/NativeRingQueue.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/FixedStringFormat.gen.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/ConcurrentMask.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/UnsafeScratchAllocator.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/CollectionHelper.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/UnsafeRingQueue.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/xxHash3.AVX2.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/Memory.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/NativeParallelHashSet.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/Jobs/IJobParallelForBatch.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/NativeBitArray.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/Jobs/EarlyInitHelpers.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/GenerateTestsForBurstCompatibilityAttribute.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/Jobs/IJobParallelForDefer.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/UIntFloat.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/UnsafeStream.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/FixedStringFormatMethods.gen.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/NativeNotBurstCompatible.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/NativeParallelHashMapExtensions.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/NativeStream.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/xxHash3.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/UTF8ArrayUnsafeUtility.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/DebugView.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/ListExtensions.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/UnsafeHashSet.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/UnsafeList.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/NativeParallelHashSetExtensions.gen.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/NativeHashSet.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/UnsafeAtomicCounter.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/UnsafeParallelHashSet.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/NativeQueue.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/DataStreamReader.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/Jobs/IJobFilter.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/NativeParallelMultiHashMap.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/NativeReference.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/FixedStringAppendMethods.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/UnsafeUtilityEx.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/UnsafeAppendBuffer.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/RewindableAllocator.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/Jobs/RegisterGenericJobTypeAttribute.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/AutoFreeAllocator.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/DataStreamExtensions.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/NativeParallelHashMap.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/FixedStringInternalMethods.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/UnsafeParallelMultiHashMap.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/NativeHashMap.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/UnsafeText.cs" />
+    <Compile Include="Assets/InputSystem_Actions.cs" />
+    <Compile Include="Assets/TutorialInfo/Scripts/Readme.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections/Unity.Collections.asmdef" />
+    <None Include="Assets/UMotionEditor/Shaders/WiresOnly.shader" />
+    <None Include="Assets/UMotionEditor/Shaders/UnlitLine.shader" />
+    <None Include="Assets/UMotionEditor/Shaders/UnlitDashedLine.shader" />
+    <None Include="Assets/UMotionEditor/Shaders/CameraLit.shader" />
+    <None Include="Assets/UMotionEditor/Shaders/VertexColorUnlit.shader" />
+    <None Include="Assets/UMotionEditor/Shaders/ColorUnlit.shader" />
+    <None Include="Assets/UMotionEditor/Plugins/Application/UMotionApplication.dll" />
+    <None Include="Assets/UMotionEditor/Shaders/ColorUnlitTransparent.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -647,26 +589,6 @@
       <HintPath>/home/me/Unity/Hub/Editor/6000.3.19f1/Editor/Data/Managed/UnityEngine/UnityEditor.XRModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEditor.Graphs">
-      <HintPath>/home/me/Unity/Hub/Editor/6000.3.19f1/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEditor.LinuxStandalone.Extensions">
-      <HintPath>/home/me/Unity/Hub/Editor/6000.3.19f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="TextMateSharpPlastic">
-      <HintPath>Library/PackageCache/com.unity.collab-proxy@0b1559bcd34e/Lib/Editor/TextMateSharp/TextMateSharpPlastic.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="TextMateSharpPlastic.Grammars">
-      <HintPath>Library/PackageCache/com.unity.collab-proxy@0b1559bcd34e/Lib/Editor/TextMateSharp/TextMateSharpPlastic.Grammars.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.YamlDotNet">
-      <HintPath>Library/PackageCache/com.unity.visualscripting@8bed5ad90189/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.Collections.LowLevel.ILSupport">
       <HintPath>Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll</HintPath>
       <Private>False</Private>
@@ -675,44 +597,12 @@
       <HintPath>Library/PackageCache/com.unity.ext.nunit@ec2d0043d6fc/net40/unity-custom/nunit.framework.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.Plastic.Antlr3.Runtime">
-      <HintPath>Library/PackageCache/com.unity.collab-proxy@0b1559bcd34e/Lib/Editor/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UMotionEditor">
-      <HintPath>Assets/UMotionEditor/Plugins/Editor/UMotionEditor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="OnigwrapPlastic">
-      <HintPath>Library/PackageCache/com.unity.collab-proxy@0b1559bcd34e/Lib/Editor/TextMateSharp/Onigwrap/OnigwrapPlastic.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.Plastic.Newtonsoft.Json">
-      <HintPath>Library/PackageCache/com.unity.collab-proxy@0b1559bcd34e/Lib/Editor/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library/PackageCache/com.unity.collab-proxy@0b1559bcd34e/Lib/Editor/log4netPlastic.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.IonicZip">
-      <HintPath>Library/PackageCache/com.unity.visualscripting@8bed5ad90189/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="System.IO.Hashing">
       <HintPath>Library/PackageCache/com.unity.collections@9796e5ee0d9e/Unity.Collections.Tests/System.IO.Hashing/System.IO.Hashing.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="unityplastic">
-      <HintPath>Library/PackageCache/com.unity.collab-proxy@0b1559bcd34e/Lib/Editor/unityplastic.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library/PackageCache/com.unity.visualscripting@8bed5ad90189/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.TextureAssets">
-      <HintPath>Library/PackageCache/com.unity.visualscripting@8bed5ad90189/Editor/VisualScripting.Core/EditorAssetResources/Unity.VisualScripting.TextureAssets.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Mono.Cecil">
@@ -1215,12 +1105,6 @@
       <HintPath>/home/me/Unity/Hub/Editor/6000.3.19f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/mscorlib.dll</HintPath>
       <Private>False</Private>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Unity.Burst.csproj" />
-    <ProjectReference Include="Unity.Mathematics.csproj" />
-    <ProjectReference Include="UnityEditor.UI.csproj" />
-    <ProjectReference Include="UnityEngine.UI.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>
