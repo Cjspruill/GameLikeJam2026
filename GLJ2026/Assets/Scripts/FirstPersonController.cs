@@ -25,6 +25,8 @@ public class FirstPersonController : MonoBehaviour
     private float verticalRotation;
     private float CurrentSpeed => walkSpeed * (playerInputHandler.SprintTriggered ? sprintMultiplier : 1);
 
+    public GameObject boxKnife;
+
     // Exposes the same continuous pitch float used to rotate the camera,
     // so other scripts (e.g. BodyLookRig) can read it directly instead of
     // reverse-engineering it from Transform.localEulerAngles -- reading
@@ -46,6 +48,8 @@ public class FirstPersonController : MonoBehaviour
         float startX = mainCamera.transform.localEulerAngles.x;
         if (startX > 180f) startX -= 360f; // normalize to -180..180
         verticalRotation = startX;
+
+        boxKnife.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -108,5 +112,10 @@ public class FirstPersonController : MonoBehaviour
 
         ApplyHorizontalRotation(mouseXRotation);
         ApplyVerticalRotation(mouseYRotation);
+    }
+
+    public void ActivateBoxKnife(bool value)
+    {
+        boxKnife.gameObject.SetActive(value);
     }
 }
