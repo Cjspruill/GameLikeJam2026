@@ -9,10 +9,7 @@ public class Block : MonoBehaviour
 	#pragma warning restore IDE0044
 
 	#pragma warning disable IDE0051
-	void Start()
-	{
-		AddCollider(gameObject);
-	}
+	void Start() => AddCollider(gameObject);
 
 	#pragma warning disable IDE0051
 	void OnTriggerEnter(Collider obj)

@@ -28,8 +28,5 @@ public static class Loot
     /// Get random GameObject
     /// </summary>
     /// <returns>Random GameObject</returns>
-    public static GameObject GetLoot()
-    {
-        return loot[Random.Range(0, loot.Count)];
-    }
+    public static GameObject GetLoot() => loot[Random.Range(0, loot.Count)];
 }
