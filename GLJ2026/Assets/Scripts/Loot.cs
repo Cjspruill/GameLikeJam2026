@@ -9,21 +9,18 @@ public static class Loot
 {
     private static List<GameObject> loot;
 
-    static Loot()
-    {
-        LoadLoot();
-    }
-
     /// <summary>
     /// Load all GameObjects from Resources directory
     /// </summary>
-    private static void LoadLoot()
+    public static void Load()
     {
         loot = Resources.LoadAll<GameObject>(string.Empty).ToList();
 
+        loot.RemoveAll(l => l.name.StartsWith("Debug")); // ! TODO: where do these come from?
+
         if (Globals.DEBUG)
         {
-            Debug.Log($"Loaded {"loot item".ToQuantity(loot.Count)}");
+            Debug.Log($"<color=cyan>Loaded {"loot item".ToQuantity(loot.Count)}</color>");
         }
     }
 

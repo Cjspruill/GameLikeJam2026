@@ -21,7 +21,7 @@ public static class Globals
         DEBUG = bool.TryParse(Environment.GetEnvironmentVariable("DEBUG"), out bool debug) && debug;
         if (DEBUG)
         {
-            Debug.LogWarning("DEBUG is ON");
+            Debug.Log("<b><color=orange>DEBUG is ON</color></b>");
         }
     }
 }
