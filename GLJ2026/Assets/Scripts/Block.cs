@@ -15,9 +15,15 @@ public class Block : MonoBehaviour
 	}
 
 	#pragma warning disable IDE0051
-	void OnTriggerEnter(Collider collision)
+	void OnTriggerEnter(Collider obj)
 	{
-		if (collision.gameObject.CompareTag(destroyer))
+		// ! TODO: doing this for now
+		if (gameObject.name.StartsWith("Loot_"))
+		{
+			return;
+		}
+
+		if (obj.gameObject.CompareTag(destroyer))
 		{
 			Destroy(gameObject);
 
