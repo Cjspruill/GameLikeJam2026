@@ -1,107 +1,96 @@
+using Humanizer;
 using UnityEngine;
 
 public class Block : MonoBehaviour
 {
-    // ! NOTE: Assumes surface has Collider attached (MeshCollider/BoxCollider) for Physics.Raycast
-	// ! NOTE: Need Rigidbody?
+	#pragma warning disable IDE0044
+	[Header("Block Settings")]
+	[SerializeField] private string destroyer = "BoxKnife"; // * LOL: DD 6675 (BK in decimal concatenation)
+	#pragma warning restore IDE0044
 
-    // for UI
-    #pragma warning disable IDE0044
-	[Header("Placement Settings")]
-	[SerializeField] private GameObject prefab;
-	[SerializeField] private LayerMask surface;
-	[SerializeField] private float maxDistance = 50f;
-    #pragma warning restore IDE0044
+	#pragma warning disable IDE0051
+	void Start() => AddCollider(gameObject);
 
-	private GameObject obj;
-	private new Camera camera;
-
-	private Vector3 position;
-	private Quaternion rotation;
-
-	/*void Start()
+	#pragma warning disable IDE0051
+	void OnTriggerEnter(Collider obj)
 	{
-		camera = Camera.main; // MainCamera
-		StartPlacementMode();
-	}
-
-	void Update()
-	{
-		if (obj)
+		// ! TODO: doing this for now
+		if (gameObject.name.StartsWith("Loot_"))
 		{
-			MovePreviewWithMouse();
-
-			// left mouse
-			if (Input.GetMouseButtonDown(0))
-			{
-				FinalizePlacement();
-			}
+			return;
 		}
-	}*/
 
-	// preview prefab in world as ghost
-	private void StartPlacementMode()
-	{
-		if (prefab)
+		if (obj.gameObject.CompareTag(destroyer))
 		{
-			obj = Instantiate(prefab);
+			Destroy(gameObject);
 
-			//disable colliders on preview to prevent raycast from hitting itself
-			if (obj.TryGetComponent<Collider>(out Collider col))
+			if (Globals.DEBUG)
 			{
-				col.enabled = false;
+				Debug.Log($"<color=yellow>Destroyed: {gameObject.name}</color>");
+			}
+
+			// ! TODO: doing this for now instead of cardboard scraps
+			int num = (int)Random.Range(1f, 3f);
+			if (Globals.DEBUG)
+			{
+				Debug.Log($"<color=yellow>Throwing {"block".ToQuantity(num)}</color>");
+			}
+			for (int i = 0; i < num; i++) {
+				ThrowLoot();
 			}
 		}
 	}
 
-	private void MovePreviewWithMouse()
+	/// <summary>
+	/// Add BoxCollider to Component
+	/// </summary>
+	/// <param name="obj">The GameObject</param>
+	private void AddCollider(GameObject obj)
 	{
-		// ray from camera to point
-		Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+		BoxCollider collider = obj.AddComponent<BoxCollider>();
 
-		if (Physics.Raycast(ray, out RaycastHit hit, maxDistance, surface))
+		MeshFilter mesh = obj.GetComponentInChildren<MeshFilter>(); // not from parent
+
+		(collider.center, collider.size) = (mesh.sharedMesh.bounds.center, mesh.sharedMesh.bounds.size);
+
+		if (Globals.DEBUG)
 		{
-			// enable preview mesh
-			obj.SetActive(true);
-
-			// calculate offset so prefab doesn't clip into floor
-			float offset = prefab.GetComponent<Renderer>().bounds.size.y / 2;
-			position = hit.point + (hit.normal * offset);
-
-			// rotate to Up vector matches surface normal
-			rotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
-
-			obj.transform.position = position;
-			obj.transform.rotation = rotation;
-		} else
-		{
-			obj.SetActive(false);
+			Debug.Log($"<color=yellow>Added BoxCollider to: {obj.name}</color>");
 		}
 	}
 
-	private void FinalizePlacement()
+	/// <summary>
+	/// Throw loot
+	/// </summary>
+	private void ThrowLoot()
 	{
-		// enable collider
-		if (obj.TryGetComponent<Collider>(out Collider col))
+		// spawn slightly above
+		GameObject loot = Instantiate(Loot.GetLoot(), transform.position + new Vector3(0, 1f, 0), transform.rotation);
+		loot.name = $"Loot_{loot.name}";
+
+		AddCollider(loot);
+
+		// TODO: this will go away once we have actual loot prefabs
+		loot.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+
+		Rigidbody rigidBody = loot.AddComponent<Rigidbody>();
+
+		if (Globals.DEBUG)
 		{
-			col.enabled = true;
+			Debug.Log($"<color=yellow>Added Rigidbody to: {loot.name}</color>");
 		}
 
-		// release pointer tracking
-		obj = null;
+		Vector3 direction = Random.onUnitSphere;
+		direction.y = 1f; // up
+		direction.Normalize(); // normalize distance towards 1 from sqrt(x^2+y^2+z^2)
 
-		// place object on surface
-		Instantiate(prefab, position, rotation);
+		rigidBody.AddForce(direction * Random.Range(0.1f, 1.5f) + Vector3.up, ForceMode.Impulse);
+
+		// ? TODO: spawn cardboard scraps
+
+		if (Globals.DEBUG)
+		{
+			Debug.Log($"<color=green>Spawned loot: {loot.name}</color>");
+		}
 	}
-
-    private void OnCollision(Collision collision)
-    {
-		// ! NOTE: Assumes object has Player tag
-
-        // check if has tag Player
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            Destroy(gameObject);
-        }
-    }
 }
