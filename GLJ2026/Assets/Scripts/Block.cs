@@ -1,146 +1,96 @@
+using Humanizer;
 using UnityEngine;
 
 public class Block : MonoBehaviour
 {
-    // ! NOTE: Assumes surface has Collider attached (MeshCollider/BoxCollider) for Physics.Raycast
-	// ! NOTE: Need Rigidbody?
-
-	const bool DEBUG = true;
-
-    // for UI
-    /*#pragma warning disable IDE0044
-	[Header("Placement Settings")]
-	[SerializeField] private GameObject prefab;
-	[SerializeField] private LayerMask surface;
-	[SerializeField] private float maxDistance = 50f;
-    #pragma warning restore IDE0044*/
-
-	/*private GameObject obj;
-	private new Camera camera;
-
-	private Vector3 position;
-	private Quaternion rotation;*/
+	#pragma warning disable IDE0044
+	[Header("Block Settings")]
+	[SerializeField] private string destroyer = "BoxKnife"; // * LOL: DD 6675 (BK in decimal concatenation)
+	#pragma warning restore IDE0044
 
 	#pragma warning disable IDE0051
-	void Start()
-	{
-		AddCollider();
+	void Start() => AddCollider(gameObject);
 
-		//camera = Camera.main; // MainCamera
-		//StartPlacementMode();
-	}
-
-	private void AddCollider()
+	#pragma warning disable IDE0051
+	void OnTriggerEnter(Collider obj)
 	{
-		Renderer[] renderers = GetComponentsInChildren<Renderer>();
-		Bounds bounds = renderers[0].bounds;
-		foreach (Renderer renderer in renderers)
+		// ! TODO: doing this for now
+		if (gameObject.name.StartsWith("Loot_"))
 		{
-			bounds.Encapsulate(renderer.bounds);
+			return;
 		}
 
-		BoxCollider collider = gameObject.AddComponent<BoxCollider>();
-		Vector3 center = transform.InverseTransformPoint(bounds.center);
-		Vector3 size = bounds.size;
-		size.x /= transform.lossyScale.x;
-		size.y /= transform.lossyScale.y;
-		size.z /= transform.lossyScale.z;
-		collider.center = center;
-		collider.size = size;
-
-		if (DEBUG)
+		if (obj.gameObject.CompareTag(destroyer))
 		{
-			Debug.Log($"Added collider to {gameObject.name}");
-		}
-	}
+			Destroy(gameObject);
 
-	/*void Update()
-	{
-		if (obj)
-		{
-			MovePreviewWithMouse();
-
-			// left mouse
-			if (Input.GetMouseButtonDown(0))
+			if (Globals.DEBUG)
 			{
-				FinalizePlacement();
+				Debug.Log($"<color=yellow>Destroyed: {gameObject.name}</color>");
 			}
-		}
-	}*/
 
-	// preview prefab in world as ghost
-	/*private void StartPlacementMode()
-	{
-		if (prefab)
-		{
-			obj = Instantiate(prefab);
-
-			//disable colliders on preview to prevent raycast from hitting itself
-			if (obj.TryGetComponent<Collider>(out Collider col))
+			// ! TODO: doing this for now instead of cardboard scraps
+			int num = (int)Random.Range(1f, 3f);
+			if (Globals.DEBUG)
 			{
-				col.enabled = false;
+				Debug.Log($"<color=yellow>Throwing {"block".ToQuantity(num)}</color>");
+			}
+			for (int i = 0; i < num; i++) {
+				ThrowLoot();
 			}
 		}
 	}
 
-	private void MovePreviewWithMouse()
+	/// <summary>
+	/// Add BoxCollider to Component
+	/// </summary>
+	/// <param name="obj">The GameObject</param>
+	private void AddCollider(GameObject obj)
 	{
-		// ray from camera to point
-		Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+		BoxCollider collider = obj.AddComponent<BoxCollider>();
 
-		if (Physics.Raycast(ray, out RaycastHit hit, maxDistance, surface))
+		MeshFilter mesh = obj.GetComponentInChildren<MeshFilter>(); // not from parent
+
+		(collider.center, collider.size) = (mesh.sharedMesh.bounds.center, mesh.sharedMesh.bounds.size);
+
+		if (Globals.DEBUG)
 		{
-			// enable preview mesh
-			obj.SetActive(true);
-
-			// calculate offset so prefab doesn't clip into floor
-			float offset = prefab.GetComponent<Renderer>().bounds.size.y / 2;
-			position = hit.point + (hit.normal * offset);
-
-			// rotate to Up vector matches surface normal
-			rotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
-
-			obj.transform.position = position;
-			obj.transform.rotation = rotation;
-		} else
-		{
-			obj.SetActive(false);
+			Debug.Log($"<color=yellow>Added BoxCollider to: {obj.name}</color>");
 		}
 	}
 
-	private void FinalizePlacement()
+	/// <summary>
+	/// Throw loot
+	/// </summary>
+	private void ThrowLoot()
 	{
-		// enable collider
-		if (obj.TryGetComponent<Collider>(out Collider col))
+		// spawn slightly above
+		GameObject loot = Instantiate(Loot.GetLoot(), transform.position + new Vector3(0, 1f, 0), transform.rotation);
+		loot.name = $"Loot_{loot.name}";
+
+		AddCollider(loot);
+
+		// TODO: this will go away once we have actual loot prefabs
+		loot.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+
+		Rigidbody rigidBody = loot.AddComponent<Rigidbody>();
+
+		if (Globals.DEBUG)
 		{
-			col.enabled = true;
+			Debug.Log($"<color=yellow>Added Rigidbody to: {loot.name}</color>");
 		}
 
-		// release pointer tracking
-		obj = null;
+		Vector3 direction = Random.onUnitSphere;
+		direction.y = 1f; // up
+		direction.Normalize(); // normalize distance towards 1 from sqrt(x^2+y^2+z^2)
 
-		// place object on surface
-		Instantiate(prefab, position, rotation);
-	}*/
+		rigidBody.AddForce(direction * Random.Range(0.1f, 1.5f) + Vector3.up, ForceMode.Impulse);
 
-    void OnTriggerEnter(Collider collision)
-    {
-		Debug.Log("Collided with object");
+		// ? TODO: spawn cardboard scraps
 
-        if (collision.gameObject.CompareTag("BoxKnife"))
-        {
-            Destroy(gameObject);
-
-			if (DEBUG)
-			{
-				Debug.Log($"Destroyed {gameObject.name}");
-			}
-
-			// choose a random loot object from assets/resources/[prefab]
-			// then instantiate loot and add force to "throw" it (random angle/distance)
-
-			// https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Rigidbody.AddForce.html
-			// public void AddForce(Vector3 force, ForceMode mode = ForceMode.Force);
-        }
-    }
+		if (Globals.DEBUG)
+		{
+			Debug.Log($"<color=green>Spawned loot: {loot.name}</color>");
+		}
+	}
 }
