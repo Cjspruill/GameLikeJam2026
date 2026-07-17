@@ -6,12 +6,5 @@ public class Init : MonoBehaviour
     /// Run before scene loads
     /// </summary>
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
-    public static void Load()
-    {
-        // only show stacktrace if error
-        Application.SetStackTraceLogType(LogType.Log, StackTraceLogType.None);
-        Application.SetStackTraceLogType(LogType.Warning, StackTraceLogType.None);
-
-        Loot.Load();
-    }
+    public static void Load() => Loot.Load();
 }
