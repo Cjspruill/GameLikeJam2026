@@ -1,48 +1,68 @@
-using Humanizer;
+using System.Collections;
+
 using UnityEngine;
+
+using Humanizer;
+
+using static Logger;
+
+// * NOTE: Assumes that [destroyer] and LootBlock tags exist
 
 public class Block : MonoBehaviour
 {
-	#pragma warning disable IDE0044
+#pragma warning disable IDE0044
 	[Header("Block Settings")]
 	[SerializeField] private string destroyer = "BoxKnife"; // * LOL: DD 6675 (BK in decimal concatenation)
-	#pragma warning restore IDE0044
+	[SerializeField] private float numberOfScrapsToThrow = 2f;
+	[SerializeField] private float destroyLootAfterSeconds = 60f;
+#pragma warning restore IDE0044
 
-	#pragma warning disable IDE0051
+#pragma warning disable IDE0051
 	void Start() => AddCollider(gameObject);
 
-	#pragma warning disable IDE0051
+#pragma warning disable IDE0051
 	void OnTriggerEnter(Collider obj)
 	{
-		// ! TODO: doing this for now
-		if (gameObject.name.StartsWith("Loot_"))
+		if (gameObject.CompareTag("LootBlock"))
 		{
 			return;
 		}
 
 		if (obj.gameObject.CompareTag(destroyer))
 		{
-			Destroy(gameObject);
+			DestroyBlock(gameObject);
 
+			int scrapNum = Random.Range(1, (int)numberOfScrapsToThrow + 1); // 1-numberOfScrapsToThrow
 			if (Globals.DEBUG)
 			{
-				Debug.Log($"<color=yellow>Destroyed: {gameObject.name}</color>");
+				LogInfo($"Throwing Loot and {"scrap block".ToQuantity(scrapNum)}");
 			}
 
-			// ! TODO: doing this for now instead of cardboard scraps
-			int num = (int)Random.Range(1f, 3f);
-			if (Globals.DEBUG)
+			int lootNum = Random.Range(0, (int)numberOfScrapsToThrow + 1); // 0-numberOfScrapsToThrow
+			for (int i = 0; i < scrapNum + 1; i++)
 			{
-				Debug.Log($"<color=yellow>Throwing {"block".ToQuantity(num)}</color>");
-			}
-			for (int i = 0; i < num; i++) {
-				ThrowLoot();
+				ThrowLoot(i == lootNum);
 			}
 		}
 	}
 
 	/// <summary>
-	/// Add BoxCollider to Component
+	/// Destroy block
+	/// </summary>
+	/// <param name="gameObject">The GameObject to destroy</param>
+	/// <param name="isCleanup">Is this a timed cleanup? Default is false.</param>
+	private void DestroyBlock(GameObject gameObject, bool isCleanup = false)
+	{
+		Destroy(gameObject);
+
+		if (Globals.DEBUG)
+		{
+			LogInfo($"{(isCleanup ? "Cleaned up" : "Destroyed")} {gameObject.name}");
+		}
+	}
+
+	/// <summary>
+	/// Add BoxCollider to GameObject
 	/// </summary>
 	/// <param name="obj">The GameObject</param>
 	private void AddCollider(GameObject obj)
@@ -55,42 +75,63 @@ public class Block : MonoBehaviour
 
 		if (Globals.DEBUG)
 		{
-			Debug.Log($"<color=yellow>Added BoxCollider to: {obj.name}</color>");
+			LogVerbose($"Added BoxCollider to: {obj.name}");
 		}
 	}
 
 	/// <summary>
-	/// Throw loot
+	/// Throw Loot
 	/// </summary>
-	private void ThrowLoot()
+	/// <remarks>
+	/// Loot is destroyed after <b>destroyLootAfterSeconds</b>
+	/// </remarks>
+	/// <param name="isLoot">Should throw Loot or scrap?</param>
+	private void ThrowLoot(bool isLoot)
 	{
-		// spawn slightly above
-		GameObject loot = Instantiate(Loot.GetLoot(), transform.position + new Vector3(0, 1f, 0), transform.rotation);
-		loot.name = $"Loot_{loot.name}";
+		// clone and spawn slightly above
+		GameObject loot = Instantiate(Loot.GetLoot(isLoot), transform.position + new Vector3(0, 1f, 0), transform.rotation);
 
-		AddCollider(loot);
+		loot.tag = "LootBlock";
+
+		loot.name = $"{(isLoot ? "Loot" : "Scrap")}_{loot.name}";
 
 		// TODO: this will go away once we have actual loot prefabs
-		loot.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+		if (!isLoot)
+		{
+			loot.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+		}
+
+		AddCollider(loot);
 
 		Rigidbody rigidBody = loot.AddComponent<Rigidbody>();
 
 		if (Globals.DEBUG)
 		{
-			Debug.Log($"<color=yellow>Added Rigidbody to: {loot.name}</color>");
+			LogVerbose($"Added Rigidbody to: {loot.name}");
 		}
 
 		Vector3 direction = Random.onUnitSphere;
 		direction.y = 1f; // up
 		direction.Normalize(); // normalize distance towards 1 from sqrt(x^2+y^2+z^2)
 
-		rigidBody.AddForce(direction * Random.Range(0.1f, 1.5f) + Vector3.up, ForceMode.Impulse);
+		rigidBody.AddForce(direction * Mathf.Round(Random.Range(0.1f, 1.51f) * 100f / 100f), ForceMode.Impulse); // 0.10-0.50
 
-		// ? TODO: spawn cardboard scraps
+		StartCoroutine(LootTimer(gameObject));
 
 		if (Globals.DEBUG)
 		{
-			Debug.Log($"<color=green>Spawned loot: {loot.name}</color>");
+			LogInfo($"Spawned loot: {loot.name}");
 		}
+	}
+
+	/// <summary>
+	/// Destroy Loot after time period
+	/// </summary>
+	/// <returns>IEnumerator for Coroutine</returns>
+	private IEnumerator LootTimer(GameObject gameObject)
+	{
+		yield return new WaitForSeconds(destroyLootAfterSeconds);
+
+		DestroyBlock(gameObject, true);
 	}
 }
