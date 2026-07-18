@@ -1,20 +1,20 @@
-using System.Collections;
-
 using UnityEngine;
 
 using Humanizer;
 
+using static InventoryItems;
 using static Logger;
 
 // * NOTE: Assumes that [destroyer] and LootBlock tags exist
 
 public class Block : MonoBehaviour
 {
+	private readonly float maxNumberOfScrapsToThrow = 3f;
+	private readonly float destroyScrapsAfterSeconds = 5f;
+
 #pragma warning disable IDE0044
 	[Header("Block Settings")]
 	[SerializeField] private string destroyer = "BoxKnife"; // * LOL: DD 6675 (BK in decimal concatenation)
-	[SerializeField] private float numberOfScrapsToThrow = 2f;
-	[SerializeField] private float destroyLootAfterSeconds = 60f;
 #pragma warning restore IDE0044
 
 #pragma warning disable IDE0051
@@ -30,15 +30,15 @@ public class Block : MonoBehaviour
 
 		if (obj.gameObject.CompareTag(destroyer))
 		{
-			DestroyBlock(gameObject);
+			Destroy(gameObject);
 
-			int scrapNum = Random.Range(1, (int)numberOfScrapsToThrow + 1); // 1-numberOfScrapsToThrow
+			int scrapNum = Random.Range(1, (int)maxNumberOfScrapsToThrow + 1); // 1-maxNumberOfScrapsToThrow
 			if (Globals.DEBUG)
 			{
 				LogInfo($"Throwing Loot and {"scrap block".ToQuantity(scrapNum)}");
 			}
 
-			int lootNum = Random.Range(0, (int)numberOfScrapsToThrow + 1); // 0-numberOfScrapsToThrow
+			int lootNum = Random.Range(0, (int)maxNumberOfScrapsToThrow + 1); // 0-maxNumberOfScrapsToThrow
 			for (int i = 0; i < scrapNum + 1; i++)
 			{
 				ThrowLoot(i == lootNum);
@@ -46,18 +46,12 @@ public class Block : MonoBehaviour
 		}
 	}
 
-	/// <summary>
-	/// Destroy block
-	/// </summary>
-	/// <param name="gameObject">The GameObject to destroy</param>
-	/// <param name="isCleanup">Is this a timed cleanup? Default is false.</param>
-	private void DestroyBlock(GameObject gameObject, bool isCleanup = false)
+#pragma warning disable IDE0051
+	void OnDestroy()
 	{
-		Destroy(gameObject);
-
 		if (Globals.DEBUG)
 		{
-			LogInfo($"{(isCleanup ? "Cleaned up" : "Destroyed")} {gameObject.name}");
+			LogVerbose($"{gameObject.name} {(gameObject.CompareTag("LootBlock") && gameObject.name.StartsWith("Scrap_") ? "cleaned up" : "destroyed")}");
 		}
 	}
 
@@ -75,19 +69,21 @@ public class Block : MonoBehaviour
 
 		if (Globals.DEBUG)
 		{
-			LogVerbose($"Added BoxCollider to: {obj.name}");
+			LogVerbose($"Added BoxCollider to {obj.name}");
 		}
 	}
 
 	/// <summary>
-	/// Throw Loot
+	/// Throw Loot and Scraps
 	/// </summary>
 	/// <remarks>
-	/// Loot is destroyed after <b>destroyLootAfterSeconds</b>
+	/// Scraps are destroyed after <b>destroyScrapsAfterSeconds</b>
 	/// </remarks>
 	/// <param name="isLoot">Should throw Loot or scrap?</param>
 	private void ThrowLoot(bool isLoot)
 	{
+		// ? TODO: use object pool
+
 		// clone and spawn slightly above
 		GameObject loot = Instantiate(Loot.GetLoot(isLoot), transform.position + new Vector3(0, 1f, 0), transform.rotation);
 
@@ -107,7 +103,7 @@ public class Block : MonoBehaviour
 
 		if (Globals.DEBUG)
 		{
-			LogVerbose($"Added Rigidbody to: {loot.name}");
+			LogVerbose($"Added Rigidbody to {loot.name}");
 		}
 
 		Vector3 direction = Random.onUnitSphere;
@@ -116,22 +112,14 @@ public class Block : MonoBehaviour
 
 		rigidBody.AddForce(direction * Mathf.Round(Random.Range(0.1f, 1.51f) * 100f / 100f), ForceMode.Impulse); // 0.10-0.50
 
-		StartCoroutine(LootTimer(gameObject));
+		if (!isLoot)
+		{
+			Destroy(loot, destroyScrapsAfterSeconds);
+		}
 
 		if (Globals.DEBUG)
 		{
-			LogInfo($"Spawned loot: {loot.name}");
+			LogInfo($"Spawned {loot.name}");
 		}
-	}
-
-	/// <summary>
-	/// Destroy Loot after time period
-	/// </summary>
-	/// <returns>IEnumerator for Coroutine</returns>
-	private IEnumerator LootTimer(GameObject gameObject)
-	{
-		yield return new WaitForSeconds(destroyLootAfterSeconds);
-
-		DestroyBlock(gameObject, true);
 	}
 }

@@ -1,17 +1,17 @@
 using UnityEngine;
 
+/// <summary>
+/// Log levels
+/// </summary>
+public enum LogLevel
+{
+    Verbose,
+    Info,
+    None
+}
+
 public static class Logger
 {
-    /// <summary>
-    /// Log levels
-    /// </summary>
-    public enum LogLevel
-    {
-        Verbose,
-        Info,
-        None
-    }
-
     /// <summary>
     /// Log verbose message to Unity console
     /// </summary>
@@ -34,5 +34,17 @@ public static class Logger
         {
             Debug.Log($"<color=green>{message}</color>");
         }
+    }
+
+    /// <summary>
+    /// Log message
+    /// </summary>
+    /// <remarks>
+    /// Ignores LOG_LEVEL setting
+    /// </remarks>
+    /// <param name="message">The message to log</param>
+    public static void Log(string message)
+    {
+        Debug.Log($"<color=yellow>{message}</color>");
     }
 }

@@ -15,7 +15,7 @@ public static class Globals
     /// <summary>
     /// Selected LogLevel
     /// </summary>
-    public static Logger.LogLevel LOG_LEVEL = Logger.LogLevel.None;
+    public static LogLevel LOG_LEVEL = LogLevel.None;
 
     // * NOTE: not using constructor so that Environment is loaded first
 
@@ -33,7 +33,7 @@ public static class Globals
             Debug.Log($"<b><color=orange>DEBUG is {(DEBUG ? "True" : "False")}</color></b>");
         }
 
-        if (Enum.TryParse(Environment.GetEnvironmentVariable("LOG_LEVEL"), true, out Logger.LogLevel log_level))
+        if (Enum.TryParse(Environment.GetEnvironmentVariable("LOG_LEVEL"), true, out LogLevel log_level))
         {
             LOG_LEVEL = log_level;
         }
