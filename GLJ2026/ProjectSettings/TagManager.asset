@@ -6,6 +6,8 @@ TagManager:
   tags:
   - BoxKnife
   - LootBlock
+  - LeftHand
+  - BlockObject
   layers:
   - Default
   - TransparentFX
