@@ -28,6 +28,7 @@ public static class Globals
         {
             DEBUG = debug;
         }
+
         if (DEBUG)
         {
             Debug.Log($"<b><color=orange>DEBUG is {(DEBUG ? "True" : "False")}</color></b>");
@@ -37,6 +38,7 @@ public static class Globals
         {
             LOG_LEVEL = log_level;
         }
+        
         if (DEBUG)
         {
             Debug.Log($"<b><color=orange>LOG_LEVEL is {LOG_LEVEL}</color></b>");

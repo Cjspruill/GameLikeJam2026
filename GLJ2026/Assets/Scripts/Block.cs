@@ -1,20 +1,21 @@
 using UnityEngine;
 
+using ConsoleTables; // ! FOR INITIAL DEBUGGING ONLY
+
 using Humanizer;
 
 using static InventoryItems;
 using static Logger;
 
-// * NOTE: Assumes that [destroyer] and LootBlock tags exist
-
 public class Block : MonoBehaviour
 {
-	private readonly float maxNumberOfScrapsToThrow = 3f;
-	private readonly float destroyScrapsAfterSeconds = 5f;
-
 #pragma warning disable IDE0044
 	[Header("Block Settings")]
 	[SerializeField] private string destroyer = "BoxKnife"; // * LOL: DD 6675 (BK in decimal concatenation)
+	[SerializeField] private float maxNumberOfScrapsToThrow = 3f;
+	[SerializeField] private float destroyScrapsAfterSeconds = 60f;
+	//[SerializeField] private string boxOrigin = "LeftHand";
+	//[SerializeField] private string boxObject = "BoxObject";
 #pragma warning restore IDE0044
 
 #pragma warning disable IDE0051
@@ -23,26 +24,15 @@ public class Block : MonoBehaviour
 #pragma warning disable IDE0051
 	void OnTriggerEnter(Collider obj)
 	{
-		if (gameObject.CompareTag("LootBlock"))
-		{
-			return;
-		}
+		Log("OnTriggerEnter"); // ! FOR INITIAL DEBUGGING ONLY
 
 		if (obj.gameObject.CompareTag(destroyer))
 		{
-			Destroy(gameObject);
-
-			int scrapNum = Random.Range(1, (int)maxNumberOfScrapsToThrow + 1); // 1-maxNumberOfScrapsToThrow
-			if (Globals.DEBUG)
-			{
-				LogInfo($"Throwing Loot and {"scrap block".ToQuantity(scrapNum)}");
-			}
-
-			int lootNum = Random.Range(0, (int)maxNumberOfScrapsToThrow + 1); // 0-maxNumberOfScrapsToThrow
-			for (int i = 0; i < scrapNum + 1; i++)
-			{
-				ThrowLoot(i == lootNum);
-			}
+			HandleDestroyer();
+		}
+		else if (gameObject.CompareTag("LootBlock") && obj.gameObject.CompareTag("Player"))
+		{
+			HandleInventory();
 		}
 	}
 
@@ -53,6 +43,48 @@ public class Block : MonoBehaviour
 		{
 			LogVerbose($"{gameObject.name} {(gameObject.CompareTag("LootBlock") && gameObject.name.StartsWith("Scrap_") ? "cleaned up" : "destroyed")}");
 		}
+	}
+
+	/// <summary>
+	/// Handle destroying object
+	/// </summary>
+	private void HandleDestroyer()
+	{
+		Destroy(gameObject);
+
+		int scrapNum = Random.Range(1, (int)maxNumberOfScrapsToThrow + 1); // 1-maxNumberOfScrapsToThrow
+
+		if (Globals.DEBUG)
+		{
+			LogInfo($"Throwing Loot and {"scrap block".ToQuantity(scrapNum)}");
+		}
+
+		int lootNum = Random.Range(0, (int)maxNumberOfScrapsToThrow + 1); // 0-maxNumberOfScrapsToThrow
+
+		for (int i = 0; i < scrapNum + 1; i++)
+		{
+			ThrowLoot(i == lootNum);
+		}
+	}
+
+	/// <summary>
+	/// Handle adding object to inventory
+	/// </summary>
+	private void HandleInventory()
+	{
+		Destroy(gameObject);
+
+		Inventory.Add(new InventoryItem(gameObject.name)); // ? TODO: Stack?
+
+		if (Globals.DEBUG)
+		{
+			LogInfo($"Picked up {gameObject.name}");
+		}
+
+		// ! FOR INITIAL DEBUGGING ONLY
+		var table = new ConsoleTable("Name");
+		Inventory.ForEach(item => table.AddRow(item.Name));
+		table.Write(Format.Alternative);
 	}
 
 	/// <summary>
@@ -87,7 +119,7 @@ public class Block : MonoBehaviour
 		// clone and spawn slightly above
 		GameObject loot = Instantiate(Loot.GetLoot(isLoot), transform.position + new Vector3(0, 1f, 0), transform.rotation);
 
-		loot.tag = "LootBlock";
+		loot.tag = isLoot ? "LootBlock" : "ScrapBlock";
 
 		loot.name = $"{(isLoot ? "Loot" : "Scrap")}_{loot.name}";
 

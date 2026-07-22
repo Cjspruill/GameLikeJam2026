@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>ConsoleTables</id>
+    <version>2.7.0</version>
+    <authors>khalidabuhakmeh</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>icon.png</icon>
+    <readme>Readme.md</readme>
+    <projectUrl>https://github.com/khalidabuhakmeh/ConsoleTables</projectUrl>
+    <description>Allows you to print out objects in a table view in a console application. Should be helpful for the diehard console fans.</description>
+    <releaseNotes>Add AppVeyor build and MinVer versioning</releaseNotes>
+    <copyright>Copyright © Khalid Abuhakmeh 2019</copyright>
+    <tags>consoletables,consoletable,console,table,output</tags>
+    <repository type="git" url="https://github.com/khalidabuhakmeh/ConsoleTables" commit="83283157c2ab45463acd9873ed81270d11134075" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="Wcwidth" version="1.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

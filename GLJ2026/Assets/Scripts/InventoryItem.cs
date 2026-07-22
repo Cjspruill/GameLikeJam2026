@@ -5,8 +5,15 @@ using System.Collections.Generic;
 /// </summary>
 public class InventoryItem
 {
-    public string Name { get; set; }
-    public int Quantity { get; set; }
+    /// <summary>
+    /// Name of inventory item
+    /// </summary>
+    public string Name { get; }
+
+    public InventoryItem(string name)
+    {
+        Name = name;
+    }
 }
 
 public static class InventoryItems
