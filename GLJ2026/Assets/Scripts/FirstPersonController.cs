@@ -118,4 +118,25 @@ public class FirstPersonController : MonoBehaviour
     {
         boxKnife.gameObject.SetActive(value);
     }
+
+   
+        public float pushPower = .2f;
+
+        void OnControllerColliderHit(ControllerColliderHit hit)
+        {
+            Rigidbody body = hit.collider.attachedRigidbody;
+
+            // Don't push if the object has no rigidbody, is kinematic, or is below the player
+            if (body == null || body.isKinematic || hit.moveDirection.y < -0.3f)
+            {
+                return;
+            }
+
+            // Calculate push direction, preventing pushing the object up or down
+            Vector3 pushDir = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
+
+            // Apply the push force to the rigidbody
+            body.linearVelocity = pushDir * pushPower;
+        }
+    
 }
