@@ -5,8 +5,6 @@ using Humanizer;
 using static InventoryItems;
 using static Logger;
 
-using Unity.VisualScripting;
-
 public class Block : MonoBehaviour
 {
 #pragma warning disable IDE0044
@@ -22,6 +20,8 @@ public class Block : MonoBehaviour
 #pragma warning disable IDE0051
 	private void OnTriggerEnter(Collider obj)
 	{
+		Log($"gameObject={gameObject.name}, Collider={obj.name}");
+
 		if (obj.IsScrap() || obj.IsUntagged())
 		{
 			return;

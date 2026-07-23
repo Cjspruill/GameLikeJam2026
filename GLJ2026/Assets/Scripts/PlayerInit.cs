@@ -26,7 +26,7 @@ public class PlayerInit : MonoBehaviour
 
         if (Globals.DEBUG)
         {
-            LogVerbose($"{BLOCK_OBJECT} is ${(obj.activeSelf ? "Active" : "Inactive")}");
+            LogVerbose($"{BLOCK_OBJECT} is {(obj.activeSelf ? "Active" : "Inactive")}");
         }
     }
 }
