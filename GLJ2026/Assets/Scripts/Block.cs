@@ -20,14 +20,15 @@ public class Block : MonoBehaviour
 #pragma warning disable IDE0051
 	private void OnTriggerEnter(Collider obj)
 	{
-		Log($"gameObject={gameObject.name}, Collider={obj.name}");
-
 		if (obj.IsScrap() || obj.IsUntagged())
 		{
 			return;
 		}
-
-		if (!gameObject.IsLoot() && (obj.IsBoxKnife() || obj.IsPunch()))
+		else if (obj.IsPunch())
+		{
+			Destroy(gameObject);
+		}
+		else if (!gameObject.IsLoot() && obj.IsBoxKnife())
 		{
 			HandleDestroy();
 		}
@@ -42,7 +43,7 @@ public class Block : MonoBehaviour
 	{
 		if (Globals.DEBUG)
 		{
-			LogVerbose($"{gameObject.name} {(gameObject.IsLoot() && gameObject.name.StartsWith("Scrap_") ? "cleaned up" : "destroyed")}");
+			LogVerbose($"{gameObject.name} {(gameObject.IsScrap() ? "cleaned up" : "destroyed")}");
 		}
 	}
 

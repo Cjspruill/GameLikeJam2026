@@ -38,6 +38,13 @@ public static class Extensions
     public static bool IsScrap(this Collider obj) => obj.CompareTag(Globals.SCRAP_BLOCK_TAG);
 
     /// <summary>
+    /// IS this a Scrap object?
+    /// </summary>
+    /// <param name="obj">The GameObject</param>
+    /// <returns>True or false</returns>
+    public static bool IsScrap(this GameObject obj) => obj.CompareTag(Globals.SCRAP_BLOCK_TAG);
+
+    /// <summary>
     /// Is this an Untagged object?
     /// </summary>
     /// <param name="obj">The Collider</param>
