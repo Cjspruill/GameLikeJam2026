@@ -2,13 +2,14 @@ using UnityEngine;
 
 using DotNetEnv;
 
-public class DotEnv : MonoBehaviour
+internal class DotEnv : MonoBehaviour
 {
     /// <summary>
     /// Load Environment variables
     /// </summary>
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
-    public static void LoadEnv()
+#pragma warning disable IDE0051
+    private static void LoadEnv()
     {
         Application.SetStackTraceLogType(LogType.Log, StackTraceLogType.None);
 

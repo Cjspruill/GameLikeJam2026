@@ -30,7 +30,7 @@ public static class Loot
 
         if (Globals.DEBUG)
         {
-            LogInfo($"Loaded {"loot item".ToQuantity(loot.Count)} and {"scrap".ToQuantity(scraps.Count)}");
+            LogInfo($"Loaded {"Loot block".ToQuantity(loot.Count)} and {"Scrap block".ToQuantity(scraps.Count)}");
         }
     }
 

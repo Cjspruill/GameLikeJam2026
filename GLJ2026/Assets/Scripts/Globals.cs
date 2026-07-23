@@ -17,6 +17,21 @@ public static class Globals
     /// </summary>
     public static LogLevel LOG_LEVEL = LogLevel.None;
 
+    /// <summary>
+    /// Player tag name
+    /// </summary>
+    public static string PLAYER_TAG = "Player";
+
+    /// <summary>
+    /// Loot block tag
+    /// </summary>
+    public static string LOOT_BLOCK_TAG = "LootBlock";
+
+    /// <summary>
+    /// Scrap block tag
+    /// </summary>
+    public static string SCRAP_BLOCK_TAG = "ScrapBlock";
+
     // * NOTE: not using constructor so that Environment is loaded first
 
     /// <summary>
@@ -38,7 +53,7 @@ public static class Globals
         {
             LOG_LEVEL = log_level;
         }
-        
+
         if (DEBUG)
         {
             Debug.Log($"<b><color=orange>LOG_LEVEL is {LOG_LEVEL}</color></b>");
