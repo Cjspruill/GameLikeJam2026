@@ -11,7 +11,7 @@ public class Block : MonoBehaviour
 	[Header("Block Settings")]
 	[SerializeField] private float maxNumberOfScrapsToThrow = 3f;
 	[SerializeField] private float destroyScrapsAfterSeconds = 60f;
-	//private const string BOX_ORIGIN = "LeftHand";
+	[SerializeField] internal Globals.BlockDestructionType blockDestructionType = Globals.BlockDestructionType.PunchAndBoxKnife;
 #pragma warning restore IDE0044
 
 #pragma warning disable IDE0051
@@ -22,13 +22,13 @@ public class Block : MonoBehaviour
 	{
 		if (obj.IsScrap() || obj.IsUntagged())
 		{
-			return;
+			return; // nop
 		}
-		else if (obj.IsPunch())
+		else if (obj.IsPunch() && (this.CanPunchDestroy() || this.CanPunchAndBoxKnifeDestroy()))
 		{
 			Destroy(gameObject);
 		}
-		else if (!gameObject.IsLoot() && obj.IsBoxKnife())
+		else if (!gameObject.IsLoot() && obj.IsBoxKnife() && (this.CanBoxKnifeDestroy() || this.CanPunchAndBoxKnifeDestroy()))
 		{
 			HandleDestroy();
 		}

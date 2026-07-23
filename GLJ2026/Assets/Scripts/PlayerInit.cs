@@ -18,7 +18,7 @@ public class PlayerInit : MonoBehaviour
     /// </summary>
     public void ToggleBlockObject()
     {
-        GameObject obj = GameObject.FindWithTag(Globals.BOX_KNIFE_TAG);
+        GameObject obj = GameObject.FindWithTag(Globals.BLOCK_OBJECT_TAG);
 
         if (!obj)
         {
