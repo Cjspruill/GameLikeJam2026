@@ -26,7 +26,7 @@ public class Block : MonoBehaviour
 			return;
 		}
 
-		if (obj.gameObject.CompareTag(destroyer))
+		if (!gameObject.CompareTag(Globals.LOOT_BLOCK_TAG) && obj.gameObject.CompareTag(destroyer))
 		{
 			HandleDestroyer();
 		}
@@ -102,7 +102,7 @@ public class Block : MonoBehaviour
 
 		if (isLoot)
 		{
-			collider.size *= 1.1f; // increase by 10%
+			collider.size *= 1.25f; // increase by 25%
 
 			collider.isTrigger = true;
 		}
