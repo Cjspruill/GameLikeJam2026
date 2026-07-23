@@ -20,13 +20,9 @@ public static class Loot
     /// </summary>
     public static void Load()
     {
-        // ! TODO: use correct prefabs
-
         loot = Resources.LoadAll<GameObject>("Loot").ToList();
-        loot.RemoveAll(l => l.name.StartsWith("Debug")); // ! TODO: where do these come from?
 
         scraps = Resources.LoadAll<GameObject>("Scraps").ToList();
-        scraps.RemoveAll(l => l.name.StartsWith("Debug")); // ! TODO: where do these come from?
 
         if (Globals.DEBUG)
         {

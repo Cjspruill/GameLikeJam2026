@@ -7,12 +7,12 @@ public class PlayerInit : MonoBehaviour
     private const string BLOCK_OBJECT = "BlockObject";
 
 #pragma warning disable IDE0051
-    private void Awake() => DisableBlockObject();
+    private void Awake() => ToggleBlockObject();
 
     /// <summary>
     /// Hide box in hand
     /// </summary>
-    private void DisableBlockObject()
+    public void ToggleBlockObject()
     {
         GameObject obj = GameObject.FindWithTag(BLOCK_OBJECT);
 
@@ -22,6 +22,11 @@ public class PlayerInit : MonoBehaviour
             return;
         }
 
-        obj.SetActive(false);
+        obj.SetActive(!obj.activeSelf);
+
+        if (Globals.DEBUG)
+        {
+            LogVerbose($"{BLOCK_OBJECT} is ${(obj.activeSelf ? "Active" : "Inactive")}");
+        }
     }
 }

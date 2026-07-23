@@ -1,7 +1,5 @@
 using UnityEngine;
 
-using ConsoleTables; // ! FOR INITIAL DEBUGGING ONLY
-
 using Humanizer;
 
 using static InventoryItems;
@@ -76,24 +74,19 @@ public class Block : MonoBehaviour
 	{
 		Destroy(gameObject);
 
-		Inventory.Add(new InventoryItem(gameObject.name)); // ? TODO: Stack?
+		Inventory.Add(new InventoryItem(gameObject.name)); // ? TODO: Stacks?
 
 		if (Globals.DEBUG)
 		{
 			LogInfo($"Picked up {gameObject.name}");
 		}
-
-		// ! FOR INITIAL DEBUGGING ONLY
-		var table = new ConsoleTable("Name");
-		Inventory.ForEach(item => table.AddRow(item.Name));
-		table.Write(Format.Alternative);
 	}
 
 	/// <summary>
 	/// Add BoxCollider to GameObject
 	/// </summary>
 	/// <param name="obj">The GameObject</param>
-	private void AddCollider(GameObject obj)
+	private void AddCollider(GameObject obj, bool isLoot = false)
 	{
 		BoxCollider collider = obj.AddComponent<BoxCollider>();
 
@@ -107,8 +100,10 @@ public class Block : MonoBehaviour
 
 		(collider.center, collider.size) = (mesh.sharedMesh.bounds.center, mesh.sharedMesh.bounds.size);
 
-		if (obj.CompareTag(Globals.LOOT_BLOCK_TAG))
+		if (isLoot)
 		{
+			collider.size *= 1.1f; // increase by 10%
+
 			collider.isTrigger = true;
 		}
 
@@ -127,8 +122,6 @@ public class Block : MonoBehaviour
 	/// <param name="isLoot">Should throw Loot or scrap?</param>
 	private void ThrowLoot(bool isLoot)
 	{
-		// ? TODO: use object pool
-
 		// clone and spawn slightly above
 		GameObject loot = Instantiate(Loot.GetLoot(isLoot), transform.position + new Vector3(0, 1f, 0), transform.rotation);
 
@@ -136,13 +129,12 @@ public class Block : MonoBehaviour
 
 		loot.name = $"{(isLoot ? "Loot" : "Scrap")}_{loot.name}";
 
-		// TODO: this will go away once we have actual loot prefabs
 		if (!isLoot)
 		{
 			loot.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
 		}
 
-		AddCollider(loot);
+		AddCollider(loot, isLoot);
 
 		Rigidbody rigidBody = loot.AddComponent<Rigidbody>();
 
