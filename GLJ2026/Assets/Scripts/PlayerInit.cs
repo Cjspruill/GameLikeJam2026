@@ -7,8 +7,6 @@ using static Tutorial;
 
 public class PlayerInit : MonoBehaviour
 {
-    private const string BLOCK_OBJECT = "BlockObject";
-
 #pragma warning disable IDE0051
     private void Awake() => ToggleBlockObject();
 
@@ -20,11 +18,11 @@ public class PlayerInit : MonoBehaviour
     /// </summary>
     public void ToggleBlockObject()
     {
-        GameObject obj = GameObject.FindWithTag(BLOCK_OBJECT);
+        GameObject obj = GameObject.FindWithTag(Globals.BOX_KNIFE_TAG);
 
         if (!obj)
         {
-            LogError($"Could not find {BLOCK_OBJECT} tag");
+            LogError($"Could not find {Globals.BLOCK_OBJECT_TAG} tag");
             return;
         }
 
@@ -32,7 +30,7 @@ public class PlayerInit : MonoBehaviour
 
         if (Globals.DEBUG)
         {
-            LogVerbose($"{BLOCK_OBJECT} is {(obj.activeSelf ? "Active" : "Inactive")}");
+            LogVerbose($"{Globals.BLOCK_OBJECT_TAG} is {(obj.activeSelf ? "Active" : "Inactive")}");
         }
     }
 
@@ -59,4 +57,13 @@ public class PlayerInit : MonoBehaviour
 
         StartTutorial(gui);
     }
+
+    // ? TODO: this will be used at the end of the tutorial
+    // StartCoroutine(DisableTutorial(10f, obj));
+    /*private IEnumerator DisableTutorial(float delay, GameObject obj)
+    {
+        yield return new WaitForSeconds(delay);
+
+        obj.SetActive(false);
+    }*/
 }

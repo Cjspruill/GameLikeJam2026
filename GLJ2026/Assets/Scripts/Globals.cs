@@ -52,6 +52,11 @@ public static class Globals
     /// </summary>
     public static string TUTORIAL_PANEL_TAG = "TutorialPanel";
 
+    /// <summary>
+    /// Box in hand tag
+    /// </summary>
+    public static string BLOCK_OBJECT_TAG = "BlockObject";
+
     // * NOTE: not using constructor so that Environment is loaded first
 
     /// <summary>
