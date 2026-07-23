@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 using TMPro;
 
 using static Logger;
@@ -5,6 +7,19 @@ using static Logger;
 public static class Tutorial
 {
     private static TextMeshProUGUI GUI { get; set; }
+
+    private static readonly int StepNumber = 0;
+
+    private static Dictionary<int, string> Steps { get; } = new()
+    {
+        {++StepNumber, "Walk forward and punch your way through the boxes."},
+        {++StepNumber, "Pick up the Box Knife."},
+        {++StepNumber, "Destroy the box."},
+        {++StepNumber, "Pick up the Loot item."},
+        {++StepNumber, "Place Loot item."}
+    };
+
+    private static int CurrentStep = 1;
 
     /// <summary>
     /// Start tutorial
@@ -14,17 +29,23 @@ public static class Tutorial
     {
         GUI = gui;
 
-        SetText("Punch your way through the boxes.");
-
-        if (Globals.DEBUG)
-        {
-            LogInfo("Tutorial started");
-        }
+        IncrementStep();
     }
 
     /// <summary>
-    /// Set text message for tutorial panel GUI
+    /// Increment tutorial step
     /// </summary>
-    /// <param name="message">The tutorial message</param>
-    private static void SetText(string message) => GUI.text = message;
+    private static void IncrementStep()
+    {
+        string message = Steps[CurrentStep];
+
+        GUI.text = message.ToString();
+
+        if (Globals.DEBUG)
+        {
+            LogInfo($"Tutorial: {message} ({CurrentStep}/{Steps.Count})");
+        }
+
+        CurrentStep++; // Steps.Count+1 when finished
+    }
 }
