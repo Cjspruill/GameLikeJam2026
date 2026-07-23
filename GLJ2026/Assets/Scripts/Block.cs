@@ -14,34 +14,36 @@ public class Block : MonoBehaviour
 	[SerializeField] private string destroyer = "BoxKnife"; // * LOL: DD 6675 (BK in decimal concatenation)
 	[SerializeField] private float maxNumberOfScrapsToThrow = 3f;
 	[SerializeField] private float destroyScrapsAfterSeconds = 60f;
-	//[SerializeField] private string boxOrigin = "LeftHand";
-	//[SerializeField] private string boxObject = "BoxObject";
+	//private const string BOX_ORIGIN = "LeftHand";
 #pragma warning restore IDE0044
 
 #pragma warning disable IDE0051
-	void Start() => AddCollider(gameObject);
+	private void Start() => AddCollider(gameObject);
 
 #pragma warning disable IDE0051
-	void OnTriggerEnter(Collider obj)
+	private void OnTriggerEnter(Collider obj)
 	{
-		Log("OnTriggerEnter"); // ! FOR INITIAL DEBUGGING ONLY
+		if (obj.CompareTag(Globals.SCRAP_BLOCK_TAG) || obj.CompareTag("Untagged"))
+		{
+			return;
+		}
 
 		if (obj.gameObject.CompareTag(destroyer))
 		{
 			HandleDestroyer();
 		}
-		else if (gameObject.CompareTag("LootBlock") && obj.gameObject.CompareTag("Player"))
+		else if (gameObject.CompareTag(Globals.LOOT_BLOCK_TAG) && obj.gameObject.CompareTag(Globals.PLAYER_TAG))
 		{
 			HandleInventory();
 		}
 	}
 
 #pragma warning disable IDE0051
-	void OnDestroy()
+	private void OnDestroy()
 	{
 		if (Globals.DEBUG)
 		{
-			LogVerbose($"{gameObject.name} {(gameObject.CompareTag("LootBlock") && gameObject.name.StartsWith("Scrap_") ? "cleaned up" : "destroyed")}");
+			LogVerbose($"{gameObject.name} {(gameObject.CompareTag(Globals.LOOT_BLOCK_TAG) && gameObject.name.StartsWith("Scrap_") ? "cleaned up" : "destroyed")}");
 		}
 	}
 
@@ -56,7 +58,7 @@ public class Block : MonoBehaviour
 
 		if (Globals.DEBUG)
 		{
-			LogInfo($"Throwing Loot and {"scrap block".ToQuantity(scrapNum)}");
+			LogInfo($"Throwing Loot and {"Scrap block".ToQuantity(scrapNum)}");
 		}
 
 		int lootNum = Random.Range(0, (int)maxNumberOfScrapsToThrow + 1); // 0-maxNumberOfScrapsToThrow
@@ -95,9 +97,20 @@ public class Block : MonoBehaviour
 	{
 		BoxCollider collider = obj.AddComponent<BoxCollider>();
 
-		MeshFilter mesh = obj.GetComponentInChildren<MeshFilter>(); // not from parent
+		MeshFilter mesh = obj.GetComponentInChildren<MeshFilter>();
+
+		if (!mesh)
+		{
+			LogError($"Could not find MeshFilter for {obj.name}");
+			return;
+		}
 
 		(collider.center, collider.size) = (mesh.sharedMesh.bounds.center, mesh.sharedMesh.bounds.size);
+
+		if (obj.CompareTag(Globals.LOOT_BLOCK_TAG))
+		{
+			collider.isTrigger = true;
+		}
 
 		if (Globals.DEBUG)
 		{
@@ -119,7 +132,7 @@ public class Block : MonoBehaviour
 		// clone and spawn slightly above
 		GameObject loot = Instantiate(Loot.GetLoot(isLoot), transform.position + new Vector3(0, 1f, 0), transform.rotation);
 
-		loot.tag = isLoot ? "LootBlock" : "ScrapBlock";
+		loot.tag = isLoot ? Globals.LOOT_BLOCK_TAG : Globals.SCRAP_BLOCK_TAG;
 
 		loot.name = $"{(isLoot ? "Loot" : "Scrap")}_{loot.name}";
 

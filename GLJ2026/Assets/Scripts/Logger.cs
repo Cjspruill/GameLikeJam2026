@@ -47,4 +47,16 @@ public static class Logger
     {
         Debug.Log($"<color=yellow>{message}</color>");
     }
+
+    /// <summary>
+    /// Log error message
+    /// </summary>
+    /// <param name="message">The error message to log</param>
+    /// <remarks>
+    /// Includes stack trace
+    /// </remarks>
+    public static void LogError(string message)
+    {
+        Debug.LogError(message);
+    }
 }
