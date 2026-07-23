@@ -47,6 +47,11 @@ public static class Globals
     /// </summary>
     public static string PUNCH_TAG = "Punch";
 
+    /// <summary>
+    /// Tutorial panel tag
+    /// </summary>
+    public static string TUTORIAL_PANEL_TAG = "TutorialPanel";
+
     // * NOTE: not using constructor so that Environment is loaded first
 
     /// <summary>

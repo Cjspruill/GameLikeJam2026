@@ -1,6 +1,9 @@
+using TMPro;
+
 using UnityEngine;
 
 using static Logger;
+using static Tutorial;
 
 public class PlayerInit : MonoBehaviour
 {
@@ -8,6 +11,9 @@ public class PlayerInit : MonoBehaviour
 
 #pragma warning disable IDE0051
     private void Awake() => ToggleBlockObject();
+
+#pragma warning disable IDE0051
+    private void Start() => LoadTutorial();
 
     /// <summary>
     /// Hide box in hand
@@ -28,5 +34,29 @@ public class PlayerInit : MonoBehaviour
         {
             LogVerbose($"{BLOCK_OBJECT} is {(obj.activeSelf ? "Active" : "Inactive")}");
         }
+    }
+
+    /// <summary>
+    /// Load tutorial
+    /// </summary>
+    public void LoadTutorial()
+    {
+        GameObject obj = GameObject.FindWithTag(Globals.TUTORIAL_PANEL_TAG);
+
+        if (!obj)
+        {
+            LogError($"Could not find {Globals.TUTORIAL_PANEL_TAG} tag");
+            return;
+        }
+
+        TextMeshProUGUI gui = obj.GetComponentInChildren<TextMeshProUGUI>();
+
+        if (!gui)
+        {
+            LogError($"Could not find TextMeshProUGUI for {obj.name}");
+            return;
+        }
+
+        StartTutorial(gui);
     }
 }
