@@ -30,17 +30,17 @@ MonoBehaviour:
     ConfigToolMode:
       valueInternal: 2
     OpenedClipIndex:
-      valueInternal: 5
+      valueInternal: 2
     SelectedFrame:
-      valueInternal: 0
+      valueInternal: 30
     TimelineViewMode:
       valueInternal: 0
     FramesScrollPosition:
       valueInternal: -40
     FramesZoom:
-      valueInternal: 0.16863468
+      valueInternal: 0.8850069
     PropertiesScrollPosition:
-      valueInternal: 242
+      valueInternal: 621
     PropertiesZoom:
       valueInternal: 1
     CurveYScrollPosition:
@@ -8833,7 +8833,7 @@ MonoBehaviour:
     - valueInternal: 0
     LocalRotationChannelList:
     - CurrentValue:
-        valueInternal: 0.00000026077032
+        valueInternal: 0.0000000782311
       ReferencePoseValue:
         valueInternal: 0.00000011920929
       PoseValueList: []
@@ -8867,7 +8867,7 @@ MonoBehaviour:
             valueInternal: 0.00000011920929
           newKeyListSerialized: 00000000
     - CurrentValue:
-        valueInternal: -0.00000006979896
+        valueInternal: -0.000000034118848
       ReferencePoseValue:
         valueInternal: -7.9607787e-10
       PoseValueList: []
@@ -8901,7 +8901,7 @@ MonoBehaviour:
             valueInternal: -7.9607787e-10
           newKeyListSerialized: 00000000
     - CurrentValue:
-        valueInternal: 0.000000011254251
+        valueInternal: -0.000000012956025
       ReferencePoseValue:
         valueInternal: 7.4129447e-10
       PoseValueList: []
@@ -8969,7 +8969,7 @@ MonoBehaviour:
             valueInternal: 1
           newKeyListSerialized: 00000000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 45.000046
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -10097,7 +10097,7 @@ MonoBehaviour:
             valueInternal: 0.5042571
           newKeyListSerialized: 02000000000000000000fe16013f0000000000000000abaaaa3eabaaaa3e4401000000b400000000fe16013f0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 24.378258
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -11089,7 +11089,7 @@ MonoBehaviour:
     - valueInternal: 0
     LocalRotationChannelList:
     - CurrentValue:
-        valueInternal: -0.3629239
+        valueInternal: -0.04149121
       ReferencePoseValue:
         valueInternal: -0.023734076
       PoseValueList: []
@@ -11123,7 +11123,7 @@ MonoBehaviour:
             valueInternal: -0.04149121
           newKeyListSerialized: 02000000000000000000b0f229bd0000000000000000abaaaa3eabaaaa3e4401000000b400000000b0f229bd0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: -0.77092606
+        valueInternal: -0.3607483
       ReferencePoseValue:
         valueInternal: -0.23963377
       PoseValueList: []
@@ -11157,7 +11157,7 @@ MonoBehaviour:
             valueInternal: -0.3607483
           newKeyListSerialized: 0200000000000000000000b4b8be0000000000000000abaaaa3eabaaaa3e4401000000b40000000000b4b8be0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: -0.4321237
+        valueInternal: -0.13587952
       ReferencePoseValue:
         valueInternal: -0.14007673
       PoseValueList: []
@@ -11191,7 +11191,7 @@ MonoBehaviour:
             valueInternal: -0.13587952
           newKeyListSerialized: 0200000000000000000000240bbe0000000000000000abaaaa3eabaaaa3e4401000000b40000000000240bbe0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.29534617
+        valueInternal: 0.92177856
       ReferencePoseValue:
         valueInternal: 0.96041185
       PoseValueList: []
@@ -11225,7 +11225,7 @@ MonoBehaviour:
             valueInternal: 0.92177856
           newKeyListSerialized: 02000000000000000000aef96b3f0000000000000000abaaaa3eabaaaa3e4401000000b400000000aef96b3f0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 115.650604
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -11789,7 +11789,7 @@ MonoBehaviour:
             valueInternal: 0.99741834
           newKeyListSerialized: 02000000000000000000cf567f3f0000000000000000abaaaa3eabaaaa3e4401000000b400000000cf567f3f0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 23.781199
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -12353,7 +12353,7 @@ MonoBehaviour:
             valueInternal: 0.94930136
           newKeyListSerialized: 040000000000000000007cab7b3f94ca64ba94ca64baabaaaa3eabaaaa3e44010000003c000000006a05733f6efc1aba891d8bbaabaaaa3eabaaaa3e4401000000780000000030f1613f0cfdd3ba3545a73aabaaaa3eabaaaa3e4401000000b4000000007cab7b3fde0aa23ade0aa23aabaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 115.84755
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -12917,7 +12917,7 @@ MonoBehaviour:
             valueInternal: 0.9413126
           newKeyListSerialized: 0400000000000000000058a47a3f72b27fba72b27fbaabaaaa3eabaaaa3e44010000003c00000000ddf9703fb9362dba383488baabaaaa3eabaaaa3e440100000078000000002a41603fa98ccfba588fab3aabaaaa3eabaaaa3e4401000000b40000000058a47a3fd932a63ad932a63aabaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 103.58481
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -13481,7 +13481,7 @@ MonoBehaviour:
             valueInternal: 0.9398535
           newKeyListSerialized: 04000000000000000000ba167a3fc5f27abac5f27abaabaaaa3eabaaaa3e44010000003c000000003d9a703f19ff29ba738586baabaaaa3eabaaaa3e440100000078000000006016603fcafcccbad60ca93aabaaaa3eabaaaa3e4401000000b400000000ba167a3f16c4a33a16c4a33aabaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 103.58455
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -14045,7 +14045,7 @@ MonoBehaviour:
             valueInternal: 0.9637474
           newKeyListSerialized: 04000000000000000000f4f07e3f946c39ba946c39baabaaaa3eabaaaa3e44010000003c0000000026b8763f1786e6b9c85e85baabaaaa3eabaaaa3e44010000007800000000e67c6a3f658fb9ba45d4723aabaaaa3eabaaaa3e4401000000b400000000f4f07e3ff7628c3af7628c3aabaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 105.80871
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -14609,7 +14609,7 @@ MonoBehaviour:
             valueInternal: 0.95344853
           newKeyListSerialized: 04000000000000000000f44b7e3ffd5866bafd5866baabaaaa3eabaaaa3e44010000003c000000003415743f29300fbae65f84baabaaaa3eabaaaa3e440100000078000000004cf1673f922cb8bae1b2843aabaaaa3eabaaaa3e4401000000b400000000f44b7e3fee6e993aee6e993aabaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 95.09413
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -15173,7 +15173,7 @@ MonoBehaviour:
             valueInternal: 0.96365577
           newKeyListSerialized: 04000000000000000000827f7e3f53f52fba53f52fbaabaaaa3eabaaaa3e44010000003c0000000025b2763f39c2dab9cc1768baabaaaa3eabaaaa3e44010000007800000000940d6c3fc274a1bae5fc5a3aabaaaa3eabaaaa3e4401000000b400000000827f7e3f72347d3a72347d3aabaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 95.09416
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -15737,7 +15737,7 @@ MonoBehaviour:
             valueInternal: 0.94820726
           newKeyListSerialized: 04000000000000000000aeb27b3fd2c77ebad2c77ebaabaaaa3eabaaaa3e44010000003c00000000b6bd723f525832ba728e96baabaaaa3eabaaaa3e44010000007800000000b6935e3fae97ecbab13fc33aabaaaa3eabaaaa3e4401000000b400000000aeb27b3f567fb13a567fb13aabaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 91.24043
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -16301,7 +16301,7 @@ MonoBehaviour:
             valueInternal: 0.9348377
           newKeyListSerialized: 04000000000000000000070c793f875d8aba875d8abaabaaaa3eabaaaa3e44010000003c0000000086516f3f0ab541ba4feb91baabaaaa3eabaaaa3e440100000078000000008ec65b3f9a4ee5ba6841c43aabaaaa3eabaaaa3e4401000000b400000000070c793fef69b23aef69b23aabaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 81.50903
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -16865,7 +16865,7 @@ MonoBehaviour:
             valueInternal: 0.9604295
           newKeyListSerialized: 04000000000000000000eca27c3f497940ba497940baabaaaa3eabaaaa3e44010000003c00000000b5de753fe4ba06ba66b06bbaabaaaa3eabaaaa3e440100000078000000004616663f1b30b9ba1230973aabaaaa3eabaaaa3e4401000000b400000000eca27c3f3e71893a3e71893aabaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 81.50864
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -17429,7 +17429,7 @@ MonoBehaviour:
             valueInternal: 0.9935662
           newKeyListSerialized: 04000000000000000000591c7e3f9348043893480438abaaaa3eabaaaa3e44010000003c000000005b5a7e3f8948043812ff7bb8abaaaa3eabaaaa3e44010000007800000000bd28763f93e507ba90c30b3aabaaaa3eabaaaa3e4401000000b400000000591c7e3f7395813873958138abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 89.46077
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -17993,7 +17993,7 @@ MonoBehaviour:
             valueInternal: 0.988021
           newKeyListSerialized: 0400000000000000000025fd7a3f996c7339996c7339abaaaa3eabaaaa3e44010000003c00000000f2ee7c3f33bf84397894b1b9abaaaa3eabaaaa3e440100000078000000006164733f6da10cbab4f6193aabaaaa3eabaaaa3e4401000000b40000000025fd7a3f4e41b2394e41b239abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 76.414474
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -18557,7 +18557,7 @@ MonoBehaviour:
             valueInternal: 0.9873608
           newKeyListSerialized: 04000000000000000000f5de7a3f5efe6c395efe6c39abaaaa3eabaaaa3e44010000003c00000000adc37c3f22428139d71caeb9abaaaa3eabaaaa3e440100000078000000004569733f9bdb09babd2f173aabaaaa3eabaaaa3e4401000000b400000000f5de7a3f950caf39950caf39abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 76.41495
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -19121,7 +19121,7 @@ MonoBehaviour:
             valueInternal: 0.885434
           newKeyListSerialized: 04000000000000000000592c5c3f759b0e3a759b0e3aabaaaa3eabaaaa3e44010000003c00000000cdab623ff140ae39aa40a039abaaaa3eabaaaa3e44010000007800000000cb15663fdc93da3974a5e6b9abaaaa3eabaaaa3e4401000000b400000000592c5c3feb630abaeb630abaabaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 16.88363
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -19685,7 +19685,7 @@ MonoBehaviour:
             valueInternal: 0.94127804
           newKeyListSerialized: 04000000000000000000a2e3783f90d42dba90d42dbaabaaaa3eabaaaa3e44010000003c0000000099f7703f3f75d4b9da5008baabaaaa3eabaaaa3e440100000078000000008d286b3f5fe239ba80c61f3aabaaaa3eabaaaa3e4401000000b400000000a2e3783f8dbb3f3a8dbb3f3aabaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 33.222153
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -20249,7 +20249,7 @@ MonoBehaviour:
             valueInternal: 0.936245
           newKeyListSerialized: 04000000000000000000b1fb773f093b36ba093b36baabaaaa3eabaaaa3e44010000003c00000000c1ad6f3f81b3deb9f64f0dbaabaaaa3eabaaaa3e440100000078000000005ca8693f35b640ba65af263aabaaaa3eabaaaa3e4401000000b400000000b1fb773ff907483af907483aabaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 33.220955
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -21941,7 +21941,7 @@ MonoBehaviour:
             valueInternal: 0.51754606
           newKeyListSerialized: 02000000000000000000e67d043f0000000000000000abaaaa3eabaaaa3e4401000000b400000000e67d043f0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 24.55747
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -22381,7 +22381,7 @@ MonoBehaviour:
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: -0.046389416
-          newKeyListSerialized: 04000000000000000000d4023ebd0000000000000000abaaaa3eabaaaa3e44010000000500000000adae70be2d8b9abdb3f3c73dabaaaa3eabaaaa3e44010000000a000000000b71133fe60d923da7b793bdabaaaa3eabaaaa3e44010000001900000000d4023ebd0000000000000000abaaaa3eabaaaa3e44010000
+          newKeyListSerialized: 05000000000000000000d4023ebd510908bd510908bdabaaaa3eabaaaa3e44010000000500000000adae70beaafb5bbd63b8a03dabaaaa3eabaaaa3e44010000000600000000c02f23bd97e81f3e476b083eabaaaa3eabaaaa3e44010000000a000000000b71133f3847823db8c188bdabaaaa3eabaaaa3e44010000001900000000d4023ebdd00232bdd00232bdabaaaa3eabaaaa3e44010000
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: -0.046389416
@@ -22397,7 +22397,7 @@ MonoBehaviour:
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: -0.046389416
-          newKeyListSerialized: 02000000000000000000d4023ebd039d2a3d039d2a3dabaaaa3eabaaaa3e440100000007000000000f127b3e039d2a3d039d2a3dabaaaa3eabaaaa3e44010000
+          newKeyListSerialized: 04000000000000000000d4023ebdae8bb83cae8bb83cabaaaa3eabaaaa3e440100000007000000009a56123ea3de123df502b53dabaaaa3eabaaaa3e44010000000a00000000e2650f3f5cf29d3ddc4118bdabaaaa3eabaaaa3e44010000000f000000002a81ed3ebd40dbbcbd40dbbcabaaaa3eabaaaa3e44010000
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: -0.030687392
@@ -22415,7 +22415,7 @@ MonoBehaviour:
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.33197466
-          newKeyListSerialized: 0400000000000000000095f8a93e0000000000000000abaaaa3eabaaaa3e440100000005000000007a17883ee0d3d8bc6538233dabaaaa3eabaaaa3e44010000000a0000000052c8183f9272ee3c5b71fbbcabaaaa3eabaaaa3e4401000000190000000095f8a93e0000000000000000abaaaa3eabaaaa3e44010000
+          newKeyListSerialized: 0500000000000000000095f8a93e93dc3ebc93dc3ebcabaaaa3eabaaaa3e440100000005000000007a17883ef7519abc3278223dabaaaa3eabaaaa3e44010000000600000000659bba3e23a6a13d3ae34d3dabaaaa3eabaaaa3e44010000000a0000000052c8183fa19ec43c22c9e8bcabaaaa3eabaaaa3e4401000000190000000095f8a93e0d8197bc0d8197bcabaaaa3eabaaaa3e44010000
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.33197466
@@ -22431,7 +22431,7 @@ MonoBehaviour:
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.33197466
-          newKeyListSerialized: 0200000000000000000095f8a93ee347d13ce347d13cabaaaa3eabaaaa3e4401000000070000000004c4023fe347d13ce347d13cabaaaa3eabaaaa3e44010000
+          newKeyListSerialized: 0400000000000000000095f8a93e5ec2073d5ec2073dabaaaa3eabaaaa3e44010000000700000000c0481c3f2a16583d0545cbbdabaaaa3eabaaaa3e44010000000a000000009058113e5c5eb1bd269ae63dabaaaa3eabaaaa3e44010000000f0000000070fbdd3e0f09a63d0f09a63dabaaaa3eabaaaa3e44010000
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.33220357
@@ -22449,7 +22449,7 @@ MonoBehaviour:
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.016512964
-          newKeyListSerialized: 040000000000000000003246873c0000000000000000abaaaa3eabaaaa3e44010000000500000000c5978d3e6a05d53d04d05fbdabaaaa3eabaaaa3e44010000000a00000000899635beb37b23bd730bb83cabaaaa3eabaaaa3e440100000019000000003246873c0000000000000000abaaaa3eabaaaa3e44010000
+          newKeyListSerialized: 050000000000000000003246873cce823b3dce823b3dabaaaa3eabaaaa3e44010000000500000000c5978d3e6c9c973d75540cbdabaaaa3eabaaaa3e4401000000060000000026ec433e069f8bbd4d58a3bdabaaaa3eabaaaa3e44010000000a00000000899635bef4fd1bbd7963aa3cabaaaa3eabaaaa3e440100000019000000003246873cccc95d3cccc95d3cabaaaa3eabaaaa3e44010000
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.016512964
@@ -22465,7 +22465,7 @@ MonoBehaviour:
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.016512964
-          newKeyListSerialized: 020000000000000000003246873c63d56d3d63d56d3dabaaaa3eabaaaa3e44010000000700000000198fd83e63d56d3d63d56d3dabaaaa3eabaaaa3e44010000
+          newKeyListSerialized: 040000000000000000003246873ca201953da201953dabaaaa3eabaaaa3e4401000000070000000032bd203f022ced3d825b8abdabaaaa3eabaaaa3e44010000000a00000000e1309e3e927471bd2a8e793dabaaaa3eabaaaa3e44010000000f000000003dfbee3e8dae333d8dae333dabaaaa3eabaaaa3e44010000
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.010979296
@@ -22483,7 +22483,7 @@ MonoBehaviour:
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.94200265
-          newKeyListSerialized: 040000000000000000001627713f0000000000000000abaaaa3eabaaaa3e4401000000050000000019a2643fda3fa0bc0e2833bdabaaaa3eabaaaa3e44010000000a000000008a9f073f43dd02bd18b1433dabaaaa3eabaaaa3e440100000019000000001627713f0000000000000000abaaaa3eabaaaa3e44010000
+          newKeyListSerialized: 050000000000000000001627713f120f0dbc120f0dbcabaaaa3eabaaaa3e4401000000050000000019a2643fd71a64bccef1e43babaaaa3eabaaaa3e440100000006000000000a15693fccc9633c92ada8bdabaaaa3eabaaaa3e44010000000a000000008a9f073fc41521bde12b353dabaaaa3eabaaaa3e440100000019000000001627713fe9d2eb3ce9d2eb3cabaaaa3eabaaaa3e44010000
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.94200265
@@ -22499,13 +22499,13 @@ MonoBehaviour:
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.94200265
-          newKeyListSerialized: 020000000000000000001627713ffc6b09bdfc6b09bdabaaaa3eabaaaa3e44010000000700000000d807353ffc6b09bdfc6b09bdabaaaa3eabaaaa3e44010000
+          newKeyListSerialized: 040000000000000000001627713f28666abd28666abdabaaaa3eabaaaa3e440100000007000000008c19ec3e978bbabdc5527f3dabaaaa3eabaaaa3e44010000000a00000000c961413f1eca5e3d12125dbdabaaaa3eabaaaa3e44010000000f00000000f8981d3f2f2c1fbd2f2c1fbdabaaaa3eabaaaa3e44010000
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.9426444
           newKeyListSerialized: 040000000000000000001627713f3c9c26373c9c2637abaaaa3eabaaaa3e44010000003c000000002551713f355080373c9396b7abaaaa3eabaaaa3e4401000000780000000056f5703f9c0a8fb75d43a837abaaaa3eabaaaa3e4401000000b4000000001627713fa4fd6537a4fd6537abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 222.09286
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -22516,8 +22516,8 @@ MonoBehaviour:
           newKeyListSerialized: 02000000000000000000000000000000000000000000abaaaa3eabaaaa3e0000000000b400000000000000000000000000000000abaaaa3eabaaaa3e00000000
       - LayerList:
         - CurrentOriginalValue:
-            valueInternal: 261.27484
-          newKeyListSerialized: 04000000000000000000000000004614d7404614d740abaaaa3eabaaaa3e0000000000050000000065b618420857744108577441abaaaa3eabaaaa3e00000000000a0000000049072543367a3241367a3241abaaaa3eabaaaa3e000000000019000000002ea382434614d7404614d740abaaaa3eabaaaa3e00000000
+            valueInternal: 261.42874
+          newKeyListSerialized: 05000000000000000000000000004814d7404814d740abaaaa3eabaaaa3e0000000000050000000065b61842b5e62d41b5e62d41abaaaa3eabaaaa3e00000000000600000000086d8242de05ad41de05ad41abaaaa3eabaaaa3e00000000000a00000000ae2e2543fe3b2541fe3b2541abaaaa3eabaaaa3e00000000001900000000e1b682434814d7404814d740abaaaa3eabaaaa3e00000000
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 222.09286
@@ -22533,7 +22533,7 @@ MonoBehaviour:
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0
-          newKeyListSerialized: 0200000000000000000000000000ed5a1a41ed5a1a41abaaaa3eabaaaa3e000000000007000000008f0f8742ed5a1a41ed5a1a41abaaaa3eabaaaa3e00000000
+          newKeyListSerialized: 040000000000000000000000000017fa3e4117fa3e41abaaaa3eabaaaa3e00000000000700000000a698c842edfc9741edfc9741abaaaa3eabaaaa3e00000000000a0000000028fc3d43139f8441139f8441abaaaa3eabaaaa3e00000000000f0000000066eb684317fa3e4117fa3e41abaaaa3eabaaaa3e00000000
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 1.9065307
@@ -22945,7 +22945,7 @@ MonoBehaviour:
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.16247708
-          newKeyListSerialized: 060000000000000000006460263e806481bc806481bcabaaaa3eabaaaa3e44010000000500000000bc2e8bbd0c2691bd17ae913dabaaaa3eabaaaa3e44010000000600000000fb9d023e9d8acd3d174ac53dabaaaa3eabaaaa3e440100000008000000007b616a3e6957803d36ac81bdabaaaa3eabaaaa3e44010000000a0000000032c09f3d9e9661bcce14653cabaaaa3eabaaaa3e440100000019000000006460263e85ca7f3c85ca7f3cabaaaa3eabaaaa3e44010000
+          newKeyListSerialized: 070000000000000000006460263e806481bc806481bcabaaaa3eabaaaa3e44010000000500000000bc2e8bbda6cce0bdc5a19f3dabaaaa3eabaaaa3e44010000000600000000e6bd713e6362c03da84700beabaaaa3eabaaaa3e44010000000700000000129a313e8b7adebd2a7b0ebdabaaaa3eabaaaa3e44010000000800000000a9ccfd3d9a5612bde710e9bcabaaaa3eabaaaa3e44010000000a0000000032c09f3d8b4b80bb8c49833cabaaaa3eabaaaa3e440100000019000000006460263e85ca7f3c85ca7f3cabaaaa3eabaaaa3e44010000
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.16247708
@@ -22961,7 +22961,7 @@ MonoBehaviour:
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.16247708
-          newKeyListSerialized: 030000000000000000006460263ea0d1923da0d1923dabaaaa3eabaaaa3e440100000007000000003b2c023fa0d1923d0ae080bdabaaaa3eabaaaa3e44010000000f000000006ddc06be0ae080bd0ae080bdabaaaa3eabaaaa3e44010000
+          newKeyListSerialized: 040000000000000000006460263e62a7c73d62a7c73dabaaaa3eabaaaa3e44010000000700000000cf621a3f9eb7813dfec541bdabaaaa3eabaaaa3e44010000000a000000008cc9e03e1b7493bd95c193bdabaaaa3eabaaaa3e44010000000f000000006ddc06becc6d95bdcc6d95bdabaaaa3eabaaaa3e44010000
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.0685093
@@ -22979,7 +22979,7 @@ MonoBehaviour:
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.3007787
-          newKeyListSerialized: 06000000000000000000aaff993e47d88d3c47d88d3cabaaaa3eabaaaa3e4401000000050000000020ab0d3fff1d9f3de03c9cbdabaaaa3eabaaaa3e440100000006000000005bfaaf3e0070dcbd1a57fcbdabaaaa3eabaaaa3e440100000008000000000b3d5b3e3f27a4bdea36a13dabaaaa3eabaaaa3e44010000000a00000000bba9cd3efd3a8c3ca3d288bcabaaaa3eabaaaa3e44010000001900000000aaff993e95c698bc95c698bcabaaaa3eabaaaa3e44010000
+          newKeyListSerialized: 07000000000000000000aaff993e47d88d3c47d88d3cabaaaa3eabaaaa3e4401000000050000000020ab0d3fea6ef63d73b91ebeabaaaa3eabaaaa3e4401000000060000000049cf51bd664a3fbe8cc4fc3dabaaaa3eabaaaa3e440100000007000000000dd52b3cbb30db3dd570803dabaaaa3eabaaaa3e44010000000800000000664dcc3df7ea833d798b3f3eabaaaa3eabaaaa3e44010000000a00000000bba9cd3ecae0d23cc7d39cbcabaaaa3eabaaaa3e44010000001900000000aaff993e95c698bc95c698bcabaaaa3eabaaaa3e44010000
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.3007787
@@ -22995,7 +22995,7 @@ MonoBehaviour:
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.3007787
-          newKeyListSerialized: 03000000000000000000aaff993ed188563dd188563dabaaaa3eabaaaa3e440100000007000000003ab70d3fd188563de90336bdabaaaa3eabaaaa3e44010000000f0000000059ddcf3de90336bde90336bdabaaaa3eabaaaa3e44010000
+          newKeyListSerialized: 04000000000000000000aaff993ea34a8c3da34a8c3dabaaaa3eabaaaa3e4401000000070000000057411c3f414c363d497b833dabaaaa3eabaaaa3e44010000000a00000000d73d553fa51ac83da55ebdbdabaaaa3eabaaaa3e44010000000f0000000059ddcf3d7583bfbd7583bfbdabaaaa3eabaaaa3e44010000
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.3349225
@@ -23013,7 +23013,7 @@ MonoBehaviour:
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.58574843
-          newKeyListSerialized: 060000000000000000009cf3153f5576a43a5576a43aabaaaa3eabaaaa3e440100000005000000004da31a3f1a7db83bc3d567bbabaaaa3eabaaaa3e440100000006000000001426183f978ca3bb0806f3bcabaaaa3eabaaaa3e440100000008000000000029103fb4179ebcfa85883cabaaaa3eabaaaa3e44010000000a00000000b0531a3f9a816d3be86439bbabaaaa3eabaaaa3e440100000019000000009cf3153fa1024fbba1024fbbabaaaa3eabaaaa3e44010000
+          newKeyListSerialized: 070000000000000000009cf3153f5576a43a5576a43aabaaaa3eabaaaa3e440100000005000000004da31a3f1ddd0e3cd822283dabaaaa3eabaaaa3e44010000000600000000b5a0433f23a24a3da096ca3dabaaaa3eabaaaa3e440100000007000000001f4a503f40adaf3d2653ecbdabaaaa3eabaaaa3e44010000000800000000c43d263ff5b8f2bd3834ecbcabaaaa3eabaaaa3e44010000000a00000000b0531a3fbd0582bb078054bbabaaaa3eabaaaa3e440100000019000000009cf3153fa1024fbba1024fbbabaaaa3eabaaaa3e44010000
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.58574843
@@ -23029,7 +23029,7 @@ MonoBehaviour:
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.58574843
-          newKeyListSerialized: 030000000000000000009cf3153fa68342bda68342bdabaaaa3eabaaaa3e440100000007000000008b8cb63ea68342bdd3e363bdabaaaa3eabaaaa3e44010000000f00000000298256bed3e363bdd3e363bdabaaaa3eabaaaa3e44010000
+          newKeyListSerialized: 040000000000000000009cf3153f3a7f99bd3a7f99bdabaaaa3eabaaaa3e440100000007000000001ff17c3e117547bd3b6059bdabaaaa3eabaaaa3e44010000000a00000000ba06813d006aa5bd6c150dbdabaaaa3eabaaaa3e44010000000f00000000298256be4cae0ebd4cae0ebdabaaaa3eabaaaa3e44010000
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.34809104
@@ -23047,7 +23047,7 @@ MonoBehaviour:
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.73486894
-          newKeyListSerialized: 060000000000000000005f203c3fbfc839bcbfc839bcabaaaa3eabaaaa3e440100000005000000008ec6113f2f6850bdfa1b5a3dabaaaa3eabaaaa3e440100000006000000007e3e373fc6dd993d37283e3dabaaaa3eabaaaa3e44010000000800000000e4be433f4467f73c11f808bdabaaaa3eabaaaa3e44010000000a0000000086582f3f1448eebb6163073cabaaaa3eabaaaa3e440100000019000000005f203c3f812c173c812c173cabaaaa3eabaaaa3e44010000
+          newKeyListSerialized: 070000000000000000005f203c3fbfc839bcbfc839bcabaaaa3eabaaaa3e440100000005000000008ec6113faf62a1bd688af03babaaaa3eabaaaa3e44010000000600000000141b193f5df2103c4031b1bdabaaaa3eabaaaa3e4401000000070000000000080e3f82a799bde6d7073eabaaaa3eabaaaa3e440100000008000000000e5f3e3f56850b3e02f114bdabaaaa3eabaaaa3e44010000000a0000000086582f3f7ff9a3bbd42e1b3cabaaaa3eabaaaa3e440100000019000000005f203c3f812c173c812c173cabaaaa3eabaaaa3e44010000
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.73486894
@@ -23063,13 +23063,13 @@ MonoBehaviour:
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.73486894
-          newKeyListSerialized: 030000000000000000005f203c3fd5c218bdd5c218bdabaaaa3eabaaaa3e440100000007000000006b0b0e3fd5c218bdc98d243dabaaaa3eabaaaa3e44010000000f00000000b1ac763fc98d243dc98d243dabaaaa3eabaaaa3e44010000
+          newKeyListSerialized: 040000000000000000005f203c3fcaf780bdcaf780bdabaaaa3eabaaaa3e440100000007000000000f89e63e6e9527bddc1f0dbdabaaaa3eabaaaa3e44010000000a00000000a35ea93e9cc756bdead0a33dabaaaa3eabaaaa3e44010000000f00000000b1ac763facaba53dacaba53dabaaaa3eabaaaa3e44010000
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.87290645
           newKeyListSerialized: 02000000000000000000cc765f3f0000000000000000abaaaa3eabaaaa3e4401000000b400000000cc765f3f0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 285.74216
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -23080,8 +23080,8 @@ MonoBehaviour:
           newKeyListSerialized: 0600000000000000000000000000441d0c40441d0c40abaaaa3eabaaaa3e000000000024000000001e6f9842037f233f037f233fabaaaa3eabaaaa3e00000000004800000000fa6caf428018773e8018773eabaaaa3eabaaaa3e00000000006c00000000902ebb42bd6ca43ebd6ca43eabaaaa3eabaaaa3e00000000009100000000fc4fde4238d1793f38d1793fabaaaa3eabaaaa3e0000000000b400000000e6603e43441d0c40441d0c40abaaaa3eabaaaa3e00000000
       - LayerList:
         - CurrentOriginalValue:
-            valueInternal: 146.67679
-          newKeyListSerialized: 06000000000000000000000000002a5640402a564040abaaaa3eabaaaa3e00000000000500000000c9602f42dcc15741dcc15741abaaaa3eabaaaa3e0000000000060000000065d1a1420235984102359841abaaaa3eabaaaa3e0000000000080000000026d8c9425207464152074641abaaaa3eabaaaa3e00000000000a00000000876a0243b1402c40b1402c40abaaaa3eabaaaa3e0000000000190000000042ad12432a5640402a564040abaaaa3eabaaaa3e00000000
+            valueInternal: 221.40465
+          newKeyListSerialized: 07000000000000000000000000002a5640402a564040abaaaa3eabaaaa3e00000000000500000000c9602f42d013a741d013a741abaaaa3eabaaaa3e00000000000600000000b89dfa42805bc941805bc941abaaaa3eabaaaa3e0000000000070000000094e40943fc9bae41fc9bae41abaaaa3eabaaaa3e00000000000800000000dbf528431556b3411556b341abaaaa3eabaaaa3e00000000000a00000000dc244d43f16f4540f16f4540abaaaa3eabaaaa3e0000000000190000000097675d432a5640402a564040abaaaa3eabaaaa3e00000000
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 285.74216
@@ -23097,7 +23097,7 @@ MonoBehaviour:
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0
-          newKeyListSerialized: 03000000000000000000000000008222474182224741abaaaa3eabaaaa3e00000000000700000000a34870428222474182224741abaaaa3eabaaaa3e00000000000f000000005ab03a438222474182224741abaaaa3eabaaaa3e00000000
+          newKeyListSerialized: 0400000000000000000000000000af819441af819441abaaaa3eabaaaa3e00000000000700000000ba25a3423e9343413e934341abaaaa3eabaaaa3e00000000000a000000000e78f442a8a4a241a8a4a241abaaaa3eabaaaa3e00000000000f00000000d8b58343af819441af819441abaaaa3eabaaaa3e00000000
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0
@@ -23497,7 +23497,7 @@ MonoBehaviour:
     - valueInternal: 0
     LocalRotationChannelList:
     - CurrentValue:
-        valueInternal: 0.04829742
+        valueInternal: 0.03201106
       ReferencePoseValue:
         valueInternal: 0.057362214
       PoseValueList: []
@@ -23509,7 +23509,7 @@ MonoBehaviour:
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.045942567
-          newKeyListSerialized: 05000000000000000000462e3c3d7d92be3a7d92be3aabaaaa3eabaaaa3e440100000005000000003284803df0b5a93bd16d91bdabaaaa3eabaaaa3e44010000000600000000750608bebbc9d3bde9c3313babaaaa3eabaaaa3e4401000000080000000025f204be7998e93914146b3cabaaaa3eabaaaa3e44010000001900000000462e3c3d07f1893c07f1893cabaaaa3eabaaaa3e44010000
+          newKeyListSerialized: 05000000000000000000462e3c3d7d92be3a7d92be3aabaaaa3eabaaaa3e440100000005000000003284803d3c1dad3b60ac86bdabaaaa3eabaaaa3e44010000000600000000aecd1abef626b3bd4346b53dabaaaa3eabaaaa3e4401000000080000000025f204be431d683c6470553cabaaaa3eabaaaa3e44010000001900000000462e3c3d07f1893c07f1893cabaaaa3eabaaaa3e44010000
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.03201106
@@ -23531,7 +23531,7 @@ MonoBehaviour:
             valueInternal: 0.051895563
           newKeyListSerialized: 020000000000000000007190543d0000000000000000abaaaa3eabaaaa3e4401000000b4000000007190543d0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.041381914
+        valueInternal: 0.054958127
       ReferencePoseValue:
         valueInternal: 0.027471643
       PoseValueList: []
@@ -23543,7 +23543,7 @@ MonoBehaviour:
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.043981854
-          newKeyListSerialized: 050000000000000000005126343d3f993ebb3f993ebbabaaaa3eabaaaa3e44010000000500000000ceb4293cf5bb29bcc14e68bdabaaaa3eabaaaa3e44010000000600000000fc5b15be9727a9bd884b83beabaaaa3eabaaaa3e440100000008000000002a3ddcbed4872cbd0d871e3dabaaaa3eabaaaa3e440100000019000000005126343d670b3a3d670b3a3dabaaaa3eabaaaa3e44010000
+          newKeyListSerialized: 050000000000000000005126343d3f993ebb3f993ebbabaaaa3eabaaaa3e44010000000500000000ceb4293c60232dbc8c28fbbdabaaaa3eabaaaa3e4401000000060000000035f7c6bef40d27bebf6d30beabaaaa3eabaaaa3e440100000008000000002a3ddcbed5e8e1bc4fef0f3dabaaaa3eabaaaa3e440100000019000000005126343d670b3a3d670b3a3dabaaaa3eabaaaa3e44010000
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.054958127
@@ -23565,7 +23565,7 @@ MonoBehaviour:
             valueInternal: 0.03676895
           newKeyListSerialized: 020000000000000000000a9b163d0000000000000000abaaaa3eabaaaa3e4401000000b4000000000a9b163d0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: -0.18944722
+        valueInternal: -0.5009961
       ReferencePoseValue:
         valueInternal: 0.07060652
       PoseValueList: []
@@ -23577,7 +23577,7 @@ MonoBehaviour:
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: -0.24317883
-          newKeyListSerialized: 05000000000000000000df0379be58ac503d58ac503dabaaaa3eabaaaa3e44010000000500000000360fb13e89d4393ef7d121beabaaaa3eabaaaa3e44010000000600000000fa30b7bd94a86bbe7f12223babaaaa3eabaaaa3e440100000008000000008993b1bd52f9d439f24351bcabaaaa3eabaaaa3e44010000001900000000df0379bee49675bce49675bcabaaaa3eabaaaa3e44010000
+          newKeyListSerialized: 05000000000000000000df0379be58ac503d58ac503dabaaaa3eabaaaa3e44010000000500000000360fb13e978e3d3ee5f8fabdabaaaa3eabaaaa3e44010000000600000000187758bd42ee26be49c60fbeabaaaa3eabaaaa3e440100000008000000008993b1bde518b8bc8d003ebcabaaaa3eabaaaa3e44010000001900000000df0379bee49675bce49675bcabaaaa3eabaaaa3e44010000
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: -0.5009961
@@ -23599,7 +23599,7 @@ MonoBehaviour:
             valueInternal: -0.09861258
           newKeyListSerialized: 0200000000000000000064f5c9bd0000000000000000abaaaa3eabaaaa3e4401000000b40000000064f5c9bd0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0.9798289
+        valueInternal: 0.8631098
       ReferencePoseValue:
         valueInternal: 0.9954746
       PoseValueList: []
@@ -23611,7 +23611,7 @@ MonoBehaviour:
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.96789443
-          newKeyListSerialized: 05000000000000000000eec7773f44fc33bb44fc33bbabaaaa3eabaaaa3e4401000000050000000010a76f3f654820bc969d6e3cabaaaa3eabaaaa3e4401000000060000000004ec793f6ebfad3c28e8a0bdabaaaa3eabaaaa3e44010000000800000000989f633f487153bc829dd23babaaaa3eabaaaa3e44010000001900000000eec7773f702cf73b702cf73babaaaa3eabaaaa3e44010000
+          newKeyListSerialized: 05000000000000000000eec7773f44fc33bb44fc33bbabaaaa3eabaaaa3e4401000000050000000010a76f3f4a7f23bc00da10bcabaaaa3eabaaaa3e440100000006000000001f4a683f27b140bcfdca9abdabaaaa3eabaaaa3e44010000000800000000989f633faf3446bc4e3abf3babaaaa3eabaaaa3e44010000001900000000eec7773f702cf73b702cf73babaaaa3eabaaaa3e44010000
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.8631098
@@ -23633,7 +23633,7 @@ MonoBehaviour:
             valueInternal: 0.9930918
           newKeyListSerialized: 02000000000000000000443b7e3f0000000000000000abaaaa3eabaaaa3e4401000000b400000000443b7e3f0000000000000000abaaaa3eabaaaa3e44010000
     - CurrentValue:
-        valueInternal: 0
+        valueInternal: 119.761154
       ReferencePoseValue:
         valueInternal: 0
       PoseValueList: []
@@ -23644,8 +23644,8 @@ MonoBehaviour:
           newKeyListSerialized: 00000000
       - LayerList:
         - CurrentOriginalValue:
-            valueInternal: 223.38759
-          newKeyListSerialized: 05000000000000000000000000007a4ebe407a4ebe40abaaaa3eabaaaa3e00000000000500000000178389425f79a9415f79a941abaaaa3eabaaaa3e000000000006000000000e36fe420fcef6410fcef641abaaaa3eabaaaa3e00000000000800000000d14e2143c028a240c028a240abaaaa3eabaaaa3e0000000000190000000039635f437a4ebe407a4ebe40abaaaa3eabaaaa3e00000000
+            valueInternal: 208.06735
+          newKeyListSerialized: 05000000000000000000000000007a4ebe407a4ebe40abaaaa3eabaaaa3e00000000000500000000178389424068b9414068b941abaaaa3eabaaaa3e00000000000600000000300e0b432ce313412ce31341abaaaa3eabaaaa3e00000000000800000000d6fc11431bceba3f1bceba3fabaaaa3eabaaaa3e000000000019000000003e1150437a4ebe407a4ebe40abaaaa3eabaaaa3e00000000
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 119.761154
@@ -36742,6 +36742,2262 @@ MonoBehaviour:
       - LayerList:
         - CurrentOriginalValue:
             valueInternal: 0.177792
+          newKeyListSerialized: 00000000
+    IkEnable:
+      valueInternal: 0
+    IkTarget:
+      valueInternal:
+        Address: 
+        Length: 0
+    IkPoleTarget:
+      valueInternal:
+        Address: 
+        Length: 0
+    IkChainLength:
+      valueInternal: 2
+    IkChainMask:
+      valueInternal: 2147483647
+    IkReferenceMode:
+      valueInternal: 0
+    IkTargetRotationMode:
+      valueInternal: 0
+    IkPlaneAngleOffset:
+      valueInternal: 0
+    IkLegacyMode:
+      valueInternal: 1
+    IkFkBlendSelected:
+      valueInternal: 0
+    IkFkBlendChannel:
+      CurrentValue:
+        valueInternal: 0
+      ReferencePoseValue:
+        valueInternal: 0
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    IkPoleRotationSelected:
+      valueInternal: 0
+    IkPoleRotationChannel:
+      CurrentValue:
+        valueInternal: 0
+      ReferencePoseValue:
+        valueInternal: 0
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    ChildOfEnable:
+      valueInternal: 0
+    ChildOfIKPinning:
+      valueInternal: 0
+    ChildOfParentSelected:
+      valueInternal: 0
+    ChildOfParentChannel:
+      CurrentValue:
+        valueInternal:
+          Address: 
+          Length: 0
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal:
+              Address: 
+              Length: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal:
+              Address: 
+              Length: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal:
+              Address: 
+              Length: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal:
+              Address: 
+              Length: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal:
+              Address: 
+              Length: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal:
+              Address: 
+              Length: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal:
+              Address: 
+              Length: 0
+          newKeyListSerialized: 00000000
+    CustomPropertyList: []
+  - TransformPath:
+      valueInternal: Root_Player/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandTransform
+    Type:
+      valueInternal: 0
+    IsHumanBone:
+      valueInternal: 0
+    HumanBodyBone:
+      valueInternal: 0
+    Visibility:
+      valueInternal: 2
+    ParentLinkStyle:
+      valueInternal: 0
+    VisualizationTransformShape:
+      valueInternal: 0
+    VisualizationSize:
+      valueInternal: 1
+    SiblingOnOtherSide:
+      valueInternal:
+        Address: 
+        Length: 0
+    TransformPropsEnabledMask:
+      valueInternal: -1
+    LocalPositionSelected:
+      valueInternal: 0
+    LocalPositionChannelList:
+    - CurrentValue:
+        valueInternal: 0
+      ReferencePoseValue:
+        valueInternal: 0
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    - CurrentValue:
+        valueInternal: 0
+      ReferencePoseValue:
+        valueInternal: 0
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    - CurrentValue:
+        valueInternal: -0.091
+      ReferencePoseValue:
+        valueInternal: -0.091
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: -0.091
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: -0.091
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: -0.091
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    LocalRotationSelected:
+      valueInternal: 0
+    RotationModePerClip:
+    - valueInternal: 0
+    - valueInternal: 0
+    - valueInternal: 0
+    - valueInternal: 0
+    - valueInternal: 0
+    - valueInternal: 0
+    - valueInternal: 0
+    LocalRotationChannelList:
+    - CurrentValue:
+        valueInternal: 0
+      ReferencePoseValue:
+        valueInternal: 0
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    - CurrentValue:
+        valueInternal: 0
+      ReferencePoseValue:
+        valueInternal: 0
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    - CurrentValue:
+        valueInternal: 0
+      ReferencePoseValue:
+        valueInternal: 0
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    - CurrentValue:
+        valueInternal: 1
+      ReferencePoseValue:
+        valueInternal: 1
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    - CurrentValue:
+        valueInternal: 0
+      ReferencePoseValue:
+        valueInternal: 0
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    LocalScaleSelected:
+      valueInternal: 0
+    LocalScaleChannelList:
+    - CurrentValue:
+        valueInternal: 1
+      ReferencePoseValue:
+        valueInternal: 1
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    - CurrentValue:
+        valueInternal: 1
+      ReferencePoseValue:
+        valueInternal: 1
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    - CurrentValue:
+        valueInternal: 1
+      ReferencePoseValue:
+        valueInternal: 1
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    IkEnable:
+      valueInternal: 0
+    IkTarget:
+      valueInternal:
+        Address: 
+        Length: 0
+    IkPoleTarget:
+      valueInternal:
+        Address: 
+        Length: 0
+    IkChainLength:
+      valueInternal: 2
+    IkChainMask:
+      valueInternal: 2147483647
+    IkReferenceMode:
+      valueInternal: 0
+    IkTargetRotationMode:
+      valueInternal: 0
+    IkPlaneAngleOffset:
+      valueInternal: 0
+    IkLegacyMode:
+      valueInternal: 1
+    IkFkBlendSelected:
+      valueInternal: 0
+    IkFkBlendChannel:
+      CurrentValue:
+        valueInternal: 0
+      ReferencePoseValue:
+        valueInternal: 0
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    IkPoleRotationSelected:
+      valueInternal: 0
+    IkPoleRotationChannel:
+      CurrentValue:
+        valueInternal: 0
+      ReferencePoseValue:
+        valueInternal: 0
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    ChildOfEnable:
+      valueInternal: 0
+    ChildOfIKPinning:
+      valueInternal: 0
+    ChildOfParentSelected:
+      valueInternal: 0
+    ChildOfParentChannel:
+      CurrentValue:
+        valueInternal:
+          Address: 
+          Length: 0
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal:
+              Address: 
+              Length: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal:
+              Address: 
+              Length: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal:
+              Address: 
+              Length: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal:
+              Address: 
+              Length: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal:
+              Address: 
+              Length: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal:
+              Address: 
+              Length: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal:
+              Address: 
+              Length: 0
+          newKeyListSerialized: 00000000
+    CustomPropertyList: []
+  - TransformPath:
+      valueInternal: Root_Player/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandTransform/BlockObjectTransform
+    Type:
+      valueInternal: 0
+    IsHumanBone:
+      valueInternal: 0
+    HumanBodyBone:
+      valueInternal: 0
+    Visibility:
+      valueInternal: 2
+    ParentLinkStyle:
+      valueInternal: 0
+    VisualizationTransformShape:
+      valueInternal: 0
+    VisualizationSize:
+      valueInternal: 1
+    SiblingOnOtherSide:
+      valueInternal:
+        Address: 
+        Length: 0
+    TransformPropsEnabledMask:
+      valueInternal: -1
+    LocalPositionSelected:
+      valueInternal: 0
+    LocalPositionChannelList:
+    - CurrentValue:
+        valueInternal: 0
+      ReferencePoseValue:
+        valueInternal: 0
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    - CurrentValue:
+        valueInternal: 0
+      ReferencePoseValue:
+        valueInternal: 0
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    - CurrentValue:
+        valueInternal: 0
+      ReferencePoseValue:
+        valueInternal: 0
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    LocalRotationSelected:
+      valueInternal: 0
+    RotationModePerClip:
+    - valueInternal: 0
+    - valueInternal: 0
+    - valueInternal: 0
+    - valueInternal: 0
+    - valueInternal: 0
+    - valueInternal: 0
+    - valueInternal: 0
+    LocalRotationChannelList:
+    - CurrentValue:
+        valueInternal: 0
+      ReferencePoseValue:
+        valueInternal: 0
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    - CurrentValue:
+        valueInternal: 0
+      ReferencePoseValue:
+        valueInternal: 0
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    - CurrentValue:
+        valueInternal: 0
+      ReferencePoseValue:
+        valueInternal: 0
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    - CurrentValue:
+        valueInternal: 1
+      ReferencePoseValue:
+        valueInternal: 1
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    - CurrentValue:
+        valueInternal: 0
+      ReferencePoseValue:
+        valueInternal: 0
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    LocalScaleSelected:
+      valueInternal: 0
+    LocalScaleChannelList:
+    - CurrentValue:
+        valueInternal: 1
+      ReferencePoseValue:
+        valueInternal: 1
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    - CurrentValue:
+        valueInternal: 1
+      ReferencePoseValue:
+        valueInternal: 1
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    - CurrentValue:
+        valueInternal: 1
+      ReferencePoseValue:
+        valueInternal: 1
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    IkEnable:
+      valueInternal: 0
+    IkTarget:
+      valueInternal:
+        Address: 
+        Length: 0
+    IkPoleTarget:
+      valueInternal:
+        Address: 
+        Length: 0
+    IkChainLength:
+      valueInternal: 2
+    IkChainMask:
+      valueInternal: 2147483647
+    IkReferenceMode:
+      valueInternal: 0
+    IkTargetRotationMode:
+      valueInternal: 0
+    IkPlaneAngleOffset:
+      valueInternal: 0
+    IkLegacyMode:
+      valueInternal: 1
+    IkFkBlendSelected:
+      valueInternal: 0
+    IkFkBlendChannel:
+      CurrentValue:
+        valueInternal: 0
+      ReferencePoseValue:
+        valueInternal: 0
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    IkPoleRotationSelected:
+      valueInternal: 0
+    IkPoleRotationChannel:
+      CurrentValue:
+        valueInternal: 0
+      ReferencePoseValue:
+        valueInternal: 0
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    ChildOfEnable:
+      valueInternal: 0
+    ChildOfIKPinning:
+      valueInternal: 0
+    ChildOfParentSelected:
+      valueInternal: 0
+    ChildOfParentChannel:
+      CurrentValue:
+        valueInternal:
+          Address: 
+          Length: 0
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal:
+              Address: 
+              Length: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal:
+              Address: 
+              Length: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal:
+              Address: 
+              Length: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal:
+              Address: 
+              Length: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal:
+              Address: 
+              Length: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal:
+              Address: 
+              Length: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal:
+              Address: 
+              Length: 0
+          newKeyListSerialized: 00000000
+    CustomPropertyList: []
+  - TransformPath:
+      valueInternal: Root_Player/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandTransform/BlockObjectTransform/BoxBlockVisual
+    Type:
+      valueInternal: 0
+    IsHumanBone:
+      valueInternal: 0
+    HumanBodyBone:
+      valueInternal: 0
+    Visibility:
+      valueInternal: 2
+    ParentLinkStyle:
+      valueInternal: 0
+    VisualizationTransformShape:
+      valueInternal: 0
+    VisualizationSize:
+      valueInternal: 1
+    SiblingOnOtherSide:
+      valueInternal:
+        Address: 
+        Length: 0
+    TransformPropsEnabledMask:
+      valueInternal: -1
+    LocalPositionSelected:
+      valueInternal: 0
+    LocalPositionChannelList:
+    - CurrentValue:
+        valueInternal: -0.016
+      ReferencePoseValue:
+        valueInternal: -0.016
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: -0.016
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: -0.016
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: -0.016
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    - CurrentValue:
+        valueInternal: 0.107
+      ReferencePoseValue:
+        valueInternal: 0.107
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0.107
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0.107
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0.107
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    - CurrentValue:
+        valueInternal: -0.109
+      ReferencePoseValue:
+        valueInternal: -0.109
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: -0.109
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: -0.109
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: -0.109
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    LocalRotationSelected:
+      valueInternal: 0
+    RotationModePerClip:
+    - valueInternal: 0
+    - valueInternal: 0
+    - valueInternal: 0
+    - valueInternal: 0
+    - valueInternal: 0
+    - valueInternal: 0
+    - valueInternal: 0
+    LocalRotationChannelList:
+    - CurrentValue:
+        valueInternal: 0
+      ReferencePoseValue:
+        valueInternal: 0
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    - CurrentValue:
+        valueInternal: 0
+      ReferencePoseValue:
+        valueInternal: 0
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    - CurrentValue:
+        valueInternal: 0
+      ReferencePoseValue:
+        valueInternal: 0
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    - CurrentValue:
+        valueInternal: 1
+      ReferencePoseValue:
+        valueInternal: 1
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    - CurrentValue:
+        valueInternal: 0
+      ReferencePoseValue:
+        valueInternal: 0
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    LocalScaleSelected:
+      valueInternal: 0
+    LocalScaleChannelList:
+    - CurrentValue:
+        valueInternal: 1
+      ReferencePoseValue:
+        valueInternal: 1
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    - CurrentValue:
+        valueInternal: 1
+      ReferencePoseValue:
+        valueInternal: 1
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    - CurrentValue:
+        valueInternal: 1
+      ReferencePoseValue:
+        valueInternal: 1
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    IkEnable:
+      valueInternal: 0
+    IkTarget:
+      valueInternal:
+        Address: 
+        Length: 0
+    IkPoleTarget:
+      valueInternal:
+        Address: 
+        Length: 0
+    IkChainLength:
+      valueInternal: 2
+    IkChainMask:
+      valueInternal: 2147483647
+    IkReferenceMode:
+      valueInternal: 0
+    IkTargetRotationMode:
+      valueInternal: 0
+    IkPlaneAngleOffset:
+      valueInternal: 0
+    IkLegacyMode:
+      valueInternal: 1
+    IkFkBlendSelected:
+      valueInternal: 0
+    IkFkBlendChannel:
+      CurrentValue:
+        valueInternal: 0
+      ReferencePoseValue:
+        valueInternal: 0
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    IkPoleRotationSelected:
+      valueInternal: 0
+    IkPoleRotationChannel:
+      CurrentValue:
+        valueInternal: 0
+      ReferencePoseValue:
+        valueInternal: 0
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    ChildOfEnable:
+      valueInternal: 0
+    ChildOfIKPinning:
+      valueInternal: 0
+    ChildOfParentSelected:
+      valueInternal: 0
+    ChildOfParentChannel:
+      CurrentValue:
+        valueInternal:
+          Address: 
+          Length: 0
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal:
+              Address: 
+              Length: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal:
+              Address: 
+              Length: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal:
+              Address: 
+              Length: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal:
+              Address: 
+              Length: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal:
+              Address: 
+              Length: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal:
+              Address: 
+              Length: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal:
+              Address: 
+              Length: 0
+          newKeyListSerialized: 00000000
+    CustomPropertyList: []
+  - TransformPath:
+      valueInternal: Root_Player/Hips/Spine/Spine1/Spine2/LeftShoulder/LeftArm/LeftForeArm/LeftHand/LeftHandTransform/BlockObjectTransform/BoxBlockVisual/Box_1
+    Type:
+      valueInternal: 0
+    IsHumanBone:
+      valueInternal: 0
+    HumanBodyBone:
+      valueInternal: 0
+    Visibility:
+      valueInternal: 2
+    ParentLinkStyle:
+      valueInternal: 0
+    VisualizationTransformShape:
+      valueInternal: 0
+    VisualizationSize:
+      valueInternal: 1
+    SiblingOnOtherSide:
+      valueInternal:
+        Address: 
+        Length: 0
+    TransformPropsEnabledMask:
+      valueInternal: -1
+    LocalPositionSelected:
+      valueInternal: 0
+    LocalPositionChannelList:
+    - CurrentValue:
+        valueInternal: 0
+      ReferencePoseValue:
+        valueInternal: 0
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    - CurrentValue:
+        valueInternal: 0
+      ReferencePoseValue:
+        valueInternal: 0
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    - CurrentValue:
+        valueInternal: 0
+      ReferencePoseValue:
+        valueInternal: 0
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    LocalRotationSelected:
+      valueInternal: 0
+    RotationModePerClip:
+    - valueInternal: 0
+    - valueInternal: 0
+    - valueInternal: 0
+    - valueInternal: 0
+    - valueInternal: 0
+    - valueInternal: 0
+    - valueInternal: 0
+    LocalRotationChannelList:
+    - CurrentValue:
+        valueInternal: 0.00000024028122
+      ReferencePoseValue:
+        valueInternal: 0.00000024028122
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0.00000024028122
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0.00000024028122
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0.00000024028122
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    - CurrentValue:
+        valueInternal: 0.000000044354238
+      ReferencePoseValue:
+        valueInternal: 0.000000044354238
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0.000000044354238
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0.000000044354238
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0.000000044354238
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    - CurrentValue:
+        valueInternal: -1
+      ReferencePoseValue:
+        valueInternal: -1
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: -1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: -1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: -1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    - CurrentValue:
+        valueInternal: 0.000000658154
+      ReferencePoseValue:
+        valueInternal: 0.000000658154
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0.000000658154
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0.000000658154
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0.000000658154
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    - CurrentValue:
+        valueInternal: 0
+      ReferencePoseValue:
+        valueInternal: 0
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    LocalScaleSelected:
+      valueInternal: 0
+    LocalScaleChannelList:
+    - CurrentValue:
+        valueInternal: 1
+      ReferencePoseValue:
+        valueInternal: 1
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    - CurrentValue:
+        valueInternal: 1
+      ReferencePoseValue:
+        valueInternal: 1
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+    - CurrentValue:
+        valueInternal: 1
+      ReferencePoseValue:
+        valueInternal: 1
+      PoseValueList: []
+      ChannelPerClipList:
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 1
+          newKeyListSerialized: 00000000
+      - LayerList:
+        - CurrentOriginalValue:
+            valueInternal: 0
           newKeyListSerialized: 00000000
     IkEnable:
       valueInternal: 0
