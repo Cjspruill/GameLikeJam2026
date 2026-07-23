@@ -9,7 +9,6 @@ public class Block : MonoBehaviour
 {
 #pragma warning disable IDE0044
 	[Header("Block Settings")]
-	[SerializeField] private string destroyer = "BoxKnife"; // * LOL: DD 6675 (BK in decimal concatenation)
 	[SerializeField] private float maxNumberOfScrapsToThrow = 3f;
 	[SerializeField] private float destroyScrapsAfterSeconds = 60f;
 	//private const string BOX_ORIGIN = "LeftHand";
@@ -21,16 +20,18 @@ public class Block : MonoBehaviour
 #pragma warning disable IDE0051
 	private void OnTriggerEnter(Collider obj)
 	{
-		if (obj.CompareTag(Globals.SCRAP_BLOCK_TAG) || obj.CompareTag("Untagged"))
+		Log($"gameObject={gameObject.name}, Collider={obj.name}");
+
+		if (obj.IsScrap() || obj.IsUntagged())
 		{
 			return;
 		}
 
-		if (!gameObject.CompareTag(Globals.LOOT_BLOCK_TAG) && obj.gameObject.CompareTag(destroyer))
+		if (!gameObject.IsLoot() && (obj.IsBoxKnife() || obj.IsPunch()))
 		{
-			HandleDestroyer();
+			HandleDestroy();
 		}
-		else if (gameObject.CompareTag(Globals.LOOT_BLOCK_TAG) && obj.gameObject.CompareTag(Globals.PLAYER_TAG))
+		else if (gameObject.IsLoot() && obj.IsPlayer())
 		{
 			HandleInventory();
 		}
@@ -41,14 +42,14 @@ public class Block : MonoBehaviour
 	{
 		if (Globals.DEBUG)
 		{
-			LogVerbose($"{gameObject.name} {(gameObject.CompareTag(Globals.LOOT_BLOCK_TAG) && gameObject.name.StartsWith("Scrap_") ? "cleaned up" : "destroyed")}");
+			LogVerbose($"{gameObject.name} {(gameObject.IsLoot() && gameObject.name.StartsWith("Scrap_") ? "cleaned up" : "destroyed")}");
 		}
 	}
 
 	/// <summary>
 	/// Handle destroying object
 	/// </summary>
-	private void HandleDestroyer()
+	private void HandleDestroy()
 	{
 		Destroy(gameObject);
 

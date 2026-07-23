@@ -18,7 +18,7 @@ public static class Globals
     public static LogLevel LOG_LEVEL = LogLevel.None;
 
     /// <summary>
-    /// Player tag name
+    /// Player tag
     /// </summary>
     public static string PLAYER_TAG = "Player";
 
@@ -31,6 +31,21 @@ public static class Globals
     /// Scrap block tag
     /// </summary>
     public static string SCRAP_BLOCK_TAG = "ScrapBlock";
+
+    /// <summary>
+    /// Untagged block tag
+    /// </summary>
+    public static string NO_TAG = "Untagged";
+
+    /// <summary>
+    /// Box Knife tag
+    /// </summary>
+    public static string BOX_KNIFE_TAG = "BoxKnife";
+
+    /// <summary>
+    /// Punch tag
+    /// </summary>
+    public static string PUNCH_TAG = "Punch";
 
     // * NOTE: not using constructor so that Environment is loaded first
 
