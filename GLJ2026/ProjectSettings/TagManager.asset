@@ -9,6 +9,8 @@ TagManager:
   - LeftHand
   - BlockObject
   - ScrapBlock
+  - Punch
+  - TutorialPanel
   layers:
   - Default
   - TransparentFX
