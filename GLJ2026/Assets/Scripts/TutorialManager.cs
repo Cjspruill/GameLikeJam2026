@@ -5,7 +5,10 @@ public enum TutorialStep
     None,
     Welcome,
     MovePlayer,
+    CollectBoxKnife,
+    DestroyBox,
     OpenInventory,
+    PlaceBox,
     Complete
 }
 
