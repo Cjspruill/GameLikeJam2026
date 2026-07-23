@@ -50,4 +50,25 @@ public static class Extensions
     /// <param name="obj">The Collider</param>
     /// <returns>True or false</returns>
     public static bool IsUntagged(this Collider obj) => obj.CompareTag(Globals.NO_TAG);
+
+    /// <summary>
+    /// Can this object be destroyed with BoxKnife only?
+    /// </summary>
+    /// <param name="obj">The Block</param>
+    /// <returns>True or false</returns>
+    public static bool CanBoxKnifeDestroy(this Block obj) => obj.blockDestructionType == Globals.BlockDestructionType.BoxKnife;
+
+    /// <summary>
+    /// Can this object be destroyed with Punch only?
+    /// </summary>
+    /// <param name="obj">The Block</param>
+    /// <returns>True or false</returns>
+    public static bool CanPunchDestroy(this Block obj) => obj.blockDestructionType == Globals.BlockDestructionType.Punch;
+
+    /// <summary>
+    /// Can this object be destroyed with Punch and BoxKnife?
+    /// </summary>
+    /// <param name="obj">The Block</param>
+    /// <returns>True or false</returns>
+    public static bool CanPunchAndBoxKnifeDestroy(this Block obj) => obj.blockDestructionType == Globals.BlockDestructionType.PunchAndBoxKnife;
 }

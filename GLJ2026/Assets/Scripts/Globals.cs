@@ -57,6 +57,16 @@ public static class Globals
     /// </summary>
     public static string BLOCK_OBJECT_TAG = "BlockObject";
 
+    /// <summary>
+    /// Block destruction type
+    /// </summary>
+    public enum BlockDestructionType
+    {
+        BoxKnife,
+        Punch,
+        PunchAndBoxKnife
+    }
+
     // * NOTE: not using constructor so that Environment is loaded first
 
     /// <summary>

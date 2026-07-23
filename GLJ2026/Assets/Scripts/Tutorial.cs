@@ -12,11 +12,11 @@ public static class Tutorial
 
     private static Dictionary<int, string> Steps { get; } = new()
     {
-        {++StepNumber, "Walk forward and punch your way through the boxes."},
-        {++StepNumber, "Pick up the Box Knife."},
-        {++StepNumber, "Destroy the box."},
-        {++StepNumber, "Pick up the Loot item."},
-        {++StepNumber, "Place Loot item."}
+        {++StepNumber, "Walk forward and punch your way through the boxes"},
+        {++StepNumber, "Pick up the Box Knife"},
+        {++StepNumber, "Destroy the box"},
+        {++StepNumber, "Pick up the Loot item"},
+        {++StepNumber, "Place Loot item"}
     };
 
     private static int CurrentStep = 1;
@@ -39,11 +39,11 @@ public static class Tutorial
     {
         string message = Steps[CurrentStep];
 
-        GUI.text = message.ToString();
+        GUI.text = message;
 
         if (Globals.DEBUG)
         {
-            LogInfo($"Tutorial: {message} ({CurrentStep}/{Steps.Count})");
+            LogInfo($"Tutorial Step: {message} ({CurrentStep}/{Steps.Count})");
         }
 
         CurrentStep++; // Steps.Count+1 when finished
