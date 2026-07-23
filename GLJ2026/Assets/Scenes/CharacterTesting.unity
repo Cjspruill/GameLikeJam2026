@@ -2759,7 +2759,6 @@ GameObject:
   m_Component:
   - component: {fileID: 385342090}
   - component: {fileID: 385342089}
-  - component: {fileID: 385342091}
   - component: {fileID: 385342092}
   m_Layer: 0
   m_Name: GameManagers
@@ -2801,22 +2800,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &385342091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 385342088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c17cbd8d5b5a6a94c833a592fd696ca6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TutorialManager
-  currentStep: 0
-  onStepChanged:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &385342092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19533,7 +19516,7 @@ PrefabInstance:
       objectReference: {fileID: 1624393361}
     - target: {fileID: 3302602811845824344, guid: 6c433a1c7e0b6244a994ded0421421a7, type: 3}
       propertyPath: m_VersionIndex
-      value: 9297
+      value: 9318
       objectReference: {fileID: 0}
     - target: {fileID: 6317636871494485029, guid: 6c433a1c7e0b6244a994ded0421421a7, type: 3}
       propertyPath: m_Mesh
@@ -19541,7 +19524,7 @@ PrefabInstance:
       objectReference: {fileID: 637736631}
     - target: {fileID: 6317636871494485029, guid: 6c433a1c7e0b6244a994ded0421421a7, type: 3}
       propertyPath: m_VersionIndex
-      value: 9297
+      value: 9318
       objectReference: {fileID: 0}
     - target: {fileID: 7867032734459325716, guid: 6c433a1c7e0b6244a994ded0421421a7, type: 3}
       propertyPath: m_Mesh

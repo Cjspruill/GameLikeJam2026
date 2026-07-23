@@ -10,6 +10,7 @@ TagManager:
   - BlockObject
   - ScrapBlock
   - Punch
+  - TutorialPanel
   layers:
   - Default
   - TransparentFX
