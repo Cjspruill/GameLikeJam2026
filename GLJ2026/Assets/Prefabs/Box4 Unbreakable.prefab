@@ -137,3 +137,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Block
   maxNumberOfScrapsToThrow: 3
   destroyScrapsAfterSeconds: 60
+  blockDestructionType: 0

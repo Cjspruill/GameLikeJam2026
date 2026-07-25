@@ -1,7 +1,14 @@
 fileFormatVersion: 2
 guid: ae1196909a1b068498cd905e3ff34fd5
+AssetOrigin:
+  serializedVersion: 1
+  productId: 371506
+  packageName: Stylized Player Character (Free)
+  packageVersion: 1.0
+  assetPath: Assets/StylizedCore/StylizedWoodMonsters/URP/AnimationGallery/Animations/AnimationsClips/Player/Running.fbx
+  uploadId: 893850
 ModelImporter:
-  serializedVersion: 24200
+  serializedVersion: 24300
   internalIDToNameTable: []
   externalObjects: {}
   materials:
@@ -9,6 +16,7 @@ ModelImporter:
     materialName: 0
     materialSearch: 1
     materialLocation: 1
+    searchTexturesGlobally: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -54,7 +62,21 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.29999998
+        functionName: PlayFootStep
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.75
+        functionName: PlayFootStep
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
@@ -562,8 +584,7 @@ ModelImporter:
     - name: Spine2
       parentName: Spine1
       position: {x: -2.8370216e-11, y: -0.0000000074477025, z: -0.14623608}
-      rotation: {x: -0.00000008940697, y: 0.0000000019062938, z: -0.0000000017751086,
-        w: 1}
+      rotation: {x: -0.00000008940697, y: 0.0000000019062938, z: -0.0000000017751086, w: 1}
       scale: {x: 1, y: 1.0000002, z: 1.0000001}
     - name: Neck
       parentName: Spine2
@@ -788,8 +809,7 @@ ModelImporter:
     - name: LeftToe_End
       parentName: LeftToeBase
       position: {x: 0.000000004598405, y: -0.0000000013969839, z: -0.077611014}
-      rotation: {x: -0.00000020861623, y: -0.00000050291413, z: -0.0000012954696,
-        w: 1}
+      rotation: {x: -0.00000020861623, y: -0.00000050291413, z: -0.0000012954696, w: 1}
       scale: {x: 1.0000004, y: 1, z: 1.0000004}
     - name: RightUpLeg
       parentName: Hips
@@ -828,8 +848,7 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 9d96fe4fcd35cd94bb044fc76f910622,
-    type: 3}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 9d96fe4fcd35cd94bb044fc76f910622, type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
@@ -841,10 +860,3 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 371506
-  packageName: Stylized Player Character (Free)
-  packageVersion: 1.0
-  assetPath: Assets/StylizedCore/StylizedWoodMonsters/URP/AnimationGallery/Animations/AnimationsClips/Player/Running.fbx
-  uploadId: 893850
