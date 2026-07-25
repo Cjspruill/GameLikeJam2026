@@ -35,7 +35,7 @@ public static class Tutorial
     /// <summary>
     /// Increment tutorial step
     /// </summary>
-    private static void IncrementStep()
+    public static void IncrementStep()
     {
         string message = Steps[CurrentStep];
 
