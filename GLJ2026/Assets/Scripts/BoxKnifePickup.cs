@@ -23,6 +23,7 @@ public class BoxKnifePickup : MonoBehaviour
             FirstPersonController firstPersonController = other.GetComponent<FirstPersonController>();
             animator.SetBool("BoxKnifeEquipped", true);
             firstPersonController.ActivateBoxKnife(true);
+            Tutorial.IncrementStep();
 
             Destroy(gameObject);
         }  
