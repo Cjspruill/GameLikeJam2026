@@ -17,6 +17,9 @@ public static class Tutorial
     /// </summary>
     private static int StepNumber { get; } = 0;
 
+    /// <summary>
+    /// Tutorial steps
+    /// </summary>
     private static Dictionary<int, string> Steps { get; } = new()
     {
         {++StepNumber, "Walk forward and punch your way through the boxes"},
@@ -26,6 +29,9 @@ public static class Tutorial
         {++StepNumber, "Place a box"}
     };
 
+    /// <summary>
+    /// Current step number
+    /// </summary>
     private static int CurrentStep = 1;
 
     /// <summary>
@@ -44,9 +50,28 @@ public static class Tutorial
     /// </summary>
     public static void IncrementStep()
     {
+        if (GUI == null) // already finished
+        {
+            return;
+        }
+
+        if (CurrentStep > Steps.Count) // just finished
+        {
+            GUI.enabled = false;
+
+            GUI = null;
+
+            if (DEBUG)
+            {
+                LogInfo("Tutorial finished");
+            }
+
+            return;
+        }
+
         string message = Steps[CurrentStep];
 
-        GUI.text = message;
+        GUI.text = $" {message} ";
 
         if (DEBUG)
         {

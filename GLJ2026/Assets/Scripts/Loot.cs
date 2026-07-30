@@ -1,14 +1,14 @@
 using System.Collections.Generic;
 using System.Linq;
 
-using Humanizer;
-
 using UnityEngine;
 
-using Resources = UnityEngine.Resources; // conflicts with Humanizer
+using Humanizer;
 
 using static Globals;
 using static Logger;
+
+using Resources = UnityEngine.Resources; // conflicts with Humanizer
 
 public static class Loot
 {
@@ -37,4 +37,11 @@ public static class Loot
     /// <param name="isLoot">Should get Loot or scrap?</param>
     /// <returns>Random GameObject</returns>
     public static GameObject GetLoot(bool isLoot) => isLoot ? LootItems[Random.Range(0, LootItems.Count)] : ScrapItems[Random.Range(0, ScrapItems.Count)]; // 0-(Count-1)
+
+    /// <summary>
+    /// Find LootItem by name
+    /// </summary>
+    /// <param name="name">The object name</param>
+    /// <returns>The found GameObject</returns>
+    public static GameObject Find(string name) => LootItems.FirstOrDefault(item => item.name == name);
 }

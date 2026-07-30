@@ -5,7 +5,9 @@ using Humanizer;
 using static Globals;
 using static InventoryItem;
 using static Logger;
+using static Loot;
 using static PlayerInit;
+using static Tutorial;
 
 public class Block : MonoBehaviour
 {
@@ -43,14 +45,9 @@ public class Block : MonoBehaviour
 		}
 		else if (gameObject.IsLoot() && obj.IsPlayer())
 		{
-			if (!HasInventory())
-			{
-				HandleInventory();
-			}
-			else if (DEBUG)
-			{
-				LogVerbose("Already have item");
-			}
+			HandleInventory();
+
+			IncrementStep();
 		}
 	}
 
@@ -90,19 +87,39 @@ public class Block : MonoBehaviour
 	/// </summary>
 	private void HandleInventory()
 	{
-		GameObject clone = Instantiate(gameObject);
+		string name = gameObject.name.Split("_")[1].Replace("(Clone)", string.Empty);
+
+		GameObject obj = Find(name);
+
+		if (obj == null)
+		{
+			LogError($"Could not find {name} for Inventory");
+
+			return;
+		}
+
+		GameObject clone = Instantiate(obj);
+
+		if (clone == null)
+		{
+			LogError($"Could not clone {obj.name}");
+
+			return;
+		}
 
 		clone.SetActive(false);
 
-		SetInventory(clone);
+		AddInventory(clone);
 
 		Destroy(gameObject);
 
-		ToggleBlockObject();
+		ToggleBlockObject(Inventory.Count > 0);
 
 		if (DEBUG)
 		{
 			LogInfo($"Picked up {gameObject.name}");
+
+			ShowInventoryCount();
 		}
 	}
 
@@ -110,7 +127,7 @@ public class Block : MonoBehaviour
 	/// Add BoxCollider to GameObject
 	/// </summary>
 	/// <param name="obj">The GameObject</param>
-	private void AddCollider(GameObject obj, bool isLoot = false)
+	public static void AddCollider(GameObject obj, bool isLoot = false)
 	{
 		BoxCollider collider = obj.AddComponent<BoxCollider>();
 

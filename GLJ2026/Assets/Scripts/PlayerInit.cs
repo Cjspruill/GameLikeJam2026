@@ -1,12 +1,15 @@
-using TMPro;
+using System.Linq;
 
 using UnityEngine;
 using UnityEngine.InputSystem;
+
+using TMPro;
 
 using static Block;
 using static Globals;
 using static InventoryItem;
 using static Logger;
+using static Loot;
 using static Tutorial;
 
 public class PlayerInit : MonoBehaviour
@@ -21,6 +24,9 @@ public class PlayerInit : MonoBehaviour
     /// </summary>
     private bool IsPlacing { get; set; }
 
+    /// <summary>
+    /// Clone of Inventory object
+    /// </summary>
     private GameObject InventoryObj { get; set; }
 
 #pragma warning disable IDE0051
@@ -60,15 +66,16 @@ public class PlayerInit : MonoBehaviour
             return;
         }
 
-        ToggleBlockObject();
+        ToggleBlockObject(false);
     }
 
     /// <summary>
     /// Show/hide box in hand
     /// </summary>
-    public static void ToggleBlockObject()
+    /// <param name="show">Show object?</param>
+    public static void ToggleBlockObject(bool show)
     {
-        Box.SetActive(!Box.activeSelf);
+        Box.SetActive(show);
 
         if (DEBUG)
         {
@@ -134,14 +141,32 @@ public class PlayerInit : MonoBehaviour
 
         IsPlacing = true;
 
-        InventoryObj = Instantiate(Inventory);
+        string name = Inventory.First().name.Replace("(Clone)", string.Empty);
+
+        GameObject item = Find(name);
+
+        if (item == null)
+        {
+            LogError($"Could not find {name} for InventoryObj");
+
+            return;
+        }
+
+        InventoryObj = Instantiate(item);
+
         InventoryObj.SetActive(false); // hide until positioned
 
-        InventoryObj.GetComponentInChildren<Collider>().enabled = false;
+        InventoryObj.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+
+        InventoryObj.tag = BOX_KNIFE_TAG;
+
+        AddCollider(InventoryObj); // ?
+
+        Destroy(InventoryObj.GetComponentInChildren<Rigidbody>()); // ?
 
         if (DEBUG)
         {
-            LogInfo($"Placing {Inventory.name}...");
+            LogInfo($"Placing {InventoryObj.name}...");
         }
     }
 
@@ -152,11 +177,27 @@ public class PlayerInit : MonoBehaviour
     private RaycastHit? GetHit()
     {
         Vector2 mousePosition2D = Mouse.current.position.ReadValue();
+        Vector3 vecPosition = new(mousePosition2D.x, mousePosition2D.y, 0f);
 
-        return Physics.Raycast(
-            Camera.main.ScreenPointToRay(new Vector3(mousePosition2D.x, mousePosition2D.y, 0f)),
-            out RaycastHit hit,
-            _maxPlacementDistance) ? hit : null;
+        if (Physics.Raycast(
+                Camera.main.ScreenPointToRay(vecPosition),
+                out RaycastHit hit,
+                _maxPlacementDistance
+            )
+        )
+        {
+            // ! TODO: This is causing the zoom bounce.
+            // !   Need to filter on something.
+            // !   Terrain is only valid for a split second before the box itself gets hit, making it hard to place due to timing.
+            /*if (hit.collider.name != "Terrain")
+            {
+                return null;
+            }*/
+
+            return hit;
+        }
+
+        return null;
     }
 
     /// <summary>
@@ -168,7 +209,10 @@ public class PlayerInit : MonoBehaviour
         {
             InventoryObj.transform.position = hit.point;
 
-            InventoryObj.SetActive(true);
+            if (!InventoryObj.activeSelf)
+            {
+                InventoryObj.SetActive(true);
+            }
         }
     }
 
@@ -179,22 +223,36 @@ public class PlayerInit : MonoBehaviour
     {
         if (GetHit() is RaycastHit)
         {
-            Instantiate(InventoryObj, InventoryObj.transform.position, InventoryObj.transform.rotation);
+            GameObject item = Instantiate(InventoryObj, InventoryObj.transform.position, InventoryObj.transform.rotation);
+
+            if (DEBUG)
+            {
+                LogInfo($"Placed {item.name}");
+            }
+
+            RemoveItem();
 
             Destroy(InventoryObj);
 
             InventoryObj = null;
 
-            if (DEBUG)
-            {
-                LogInfo($"Placed {Inventory.name}");
-            }
-
-            ClearInventory();
-
-            ToggleBlockObject();
+            ToggleBlockObject(Inventory.Count > 0);
 
             IsPlacing = false;
+
+            IncrementStep();
+        }
+    }
+
+    private void RemoveItem()
+    {
+        RemoveInventory(InventoryObj.name);
+
+        if (DEBUG)
+        {
+            LogInfo($"Removed {InventoryObj.name} from inventory");
+
+            ShowInventoryCount();
         }
     }
 }
