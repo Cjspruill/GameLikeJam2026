@@ -20,12 +20,12 @@ public static class InventoryItem
     public static void AddInventory(GameObject item) => Inventory.Add(item);
 
     /// <summary>
-    /// Does Inventory contain item?
+    /// Does Inventory contain any items?
     /// </summary>
     /// <returns>
     /// True or false
     /// </returns>
-    public static bool HasInventory() => Inventory != null;
+    public static bool HasInventory() => Inventory.Count > 0;
 
     /// <summary>
     /// Clear Inventory item

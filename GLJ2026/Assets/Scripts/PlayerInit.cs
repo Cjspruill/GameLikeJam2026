@@ -160,9 +160,7 @@ public class PlayerInit : MonoBehaviour
 
         InventoryObj.tag = BOX_KNIFE_TAG;
 
-        AddCollider(InventoryObj); // ?
-
-        Destroy(InventoryObj.GetComponentInChildren<Rigidbody>()); // ?
+        Destroy(InventoryObj.GetComponentInChildren<Rigidbody>());
 
         if (DEBUG)
         {
@@ -186,13 +184,10 @@ public class PlayerInit : MonoBehaviour
             )
         )
         {
-            // ! TODO: This is causing the zoom bounce.
-            // !   Need to filter on something.
-            // !   Terrain is only valid for a split second before the box itself gets hit, making it hard to place due to timing.
-            /*if (hit.collider.name != "Terrain")
+            if (hit.collider.name == InventoryObj.name)
             {
                 return null;
-            }*/
+            }
 
             return hit;
         }
@@ -223,7 +218,7 @@ public class PlayerInit : MonoBehaviour
     {
         if (GetHit() is RaycastHit)
         {
-            GameObject item = Instantiate(InventoryObj, InventoryObj.transform.position, InventoryObj.transform.rotation);
+            GameObject item = Instantiate(InventoryObj, InventoryObj.transform.position, Quaternion.identity);
 
             if (DEBUG)
             {
@@ -236,7 +231,7 @@ public class PlayerInit : MonoBehaviour
 
             InventoryObj = null;
 
-            ToggleBlockObject(Inventory.Count > 0);
+            ToggleBlockObject(HasInventory());
 
             IsPlacing = false;
 

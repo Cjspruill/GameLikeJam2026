@@ -113,7 +113,7 @@ public class Block : MonoBehaviour
 
 		Destroy(gameObject);
 
-		ToggleBlockObject(Inventory.Count > 0);
+		ToggleBlockObject(HasInventory());
 
 		if (DEBUG)
 		{
