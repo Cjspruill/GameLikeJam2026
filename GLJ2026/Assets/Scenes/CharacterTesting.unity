@@ -5427,6 +5427,7 @@ MonoBehaviour:
   maxNumberOfScrapsToThrow: 3
   destroyScrapsAfterSeconds: 60
   blockDestructionType: 2
+  maxPlacementDistance: 10
 --- !u!114 &3234983543249686816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5442,6 +5443,7 @@ MonoBehaviour:
   maxNumberOfScrapsToThrow: 3
   destroyScrapsAfterSeconds: 60
   blockDestructionType: 2
+  maxPlacementDistance: 10
 --- !u!114 &3234983543760397414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5457,6 +5459,7 @@ MonoBehaviour:
   maxNumberOfScrapsToThrow: 3
   destroyScrapsAfterSeconds: 60
   blockDestructionType: 2
+  maxPlacementDistance: 10
 --- !u!114 &3234983544303224199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5472,6 +5475,7 @@ MonoBehaviour:
   maxNumberOfScrapsToThrow: 3
   destroyScrapsAfterSeconds: 60
   blockDestructionType: 2
+  maxPlacementDistance: 10
 --- !u!114 &3234983544320129136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5487,6 +5491,7 @@ MonoBehaviour:
   maxNumberOfScrapsToThrow: 3
   destroyScrapsAfterSeconds: 60
   blockDestructionType: 2
+  maxPlacementDistance: 10
 --- !u!114 &3234983544488182938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5502,6 +5507,7 @@ MonoBehaviour:
   maxNumberOfScrapsToThrow: 3
   destroyScrapsAfterSeconds: 60
   blockDestructionType: 2
+  maxPlacementDistance: 10
 --- !u!114 &3234983544523719306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5517,6 +5523,7 @@ MonoBehaviour:
   maxNumberOfScrapsToThrow: 3
   destroyScrapsAfterSeconds: 60
   blockDestructionType: 2
+  maxPlacementDistance: 10
 --- !u!114 &3234983544670429453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5532,6 +5539,7 @@ MonoBehaviour:
   maxNumberOfScrapsToThrow: 3
   destroyScrapsAfterSeconds: 60
   blockDestructionType: 2
+  maxPlacementDistance: 10
 --- !u!4 &3302261418591270711
 Transform:
   m_ObjectHideFlags: 0
@@ -5675,6 +5683,7 @@ MonoBehaviour:
   maxNumberOfScrapsToThrow: 3
   destroyScrapsAfterSeconds: 60
   blockDestructionType: 2
+  maxPlacementDistance: 10
 --- !u!114 &3482826654634098534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5690,6 +5699,7 @@ MonoBehaviour:
   maxNumberOfScrapsToThrow: 3
   destroyScrapsAfterSeconds: 60
   blockDestructionType: 2
+  maxPlacementDistance: 10
 --- !u!114 &3482826655033791297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5705,6 +5715,7 @@ MonoBehaviour:
   maxNumberOfScrapsToThrow: 3
   destroyScrapsAfterSeconds: 60
   blockDestructionType: 2
+  maxPlacementDistance: 10
 --- !u!114 &3482826655198030842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5720,6 +5731,7 @@ MonoBehaviour:
   maxNumberOfScrapsToThrow: 3
   destroyScrapsAfterSeconds: 60
   blockDestructionType: 2
+  maxPlacementDistance: 10
 --- !u!23 &3488394571026403419
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6735,6 +6747,7 @@ MonoBehaviour:
   maxNumberOfScrapsToThrow: 3
   destroyScrapsAfterSeconds: 60
   blockDestructionType: 2
+  maxPlacementDistance: 10
 --- !u!114 &6038457909535384442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6783,6 +6796,7 @@ MonoBehaviour:
   maxNumberOfScrapsToThrow: 3
   destroyScrapsAfterSeconds: 60
   blockDestructionType: 2
+  maxPlacementDistance: 10
 --- !u!114 &6038457909975541004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6831,6 +6845,7 @@ MonoBehaviour:
   maxNumberOfScrapsToThrow: 3
   destroyScrapsAfterSeconds: 60
   blockDestructionType: 2
+  maxPlacementDistance: 10
 --- !u!114 &6038457910055436688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6879,6 +6894,7 @@ MonoBehaviour:
   maxNumberOfScrapsToThrow: 3
   destroyScrapsAfterSeconds: 60
   blockDestructionType: 2
+  maxPlacementDistance: 10
 --- !u!114 &6038457910116100501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7431,6 +7447,7 @@ MonoBehaviour:
   maxNumberOfScrapsToThrow: 3
   destroyScrapsAfterSeconds: 60
   blockDestructionType: 2
+  maxPlacementDistance: 10
 --- !u!114 &7546954148712075514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7446,6 +7463,7 @@ MonoBehaviour:
   maxNumberOfScrapsToThrow: 3
   destroyScrapsAfterSeconds: 60
   blockDestructionType: 2
+  maxPlacementDistance: 10
 --- !u!114 &7546954149679270881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7461,6 +7479,7 @@ MonoBehaviour:
   maxNumberOfScrapsToThrow: 3
   destroyScrapsAfterSeconds: 60
   blockDestructionType: 2
+  maxPlacementDistance: 10
 --- !u!114 &7546954150316596084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7476,6 +7495,7 @@ MonoBehaviour:
   maxNumberOfScrapsToThrow: 3
   destroyScrapsAfterSeconds: 60
   blockDestructionType: 2
+  maxPlacementDistance: 10
 --- !u!23 &8403588897786029935
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7924,9 +7944,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 604191924773139626, guid: 6c433a1c7e0b6244a994ded0421421a7, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 52.084
+      objectReference: {fileID: 0}
+    - target: {fileID: 604191924773139626, guid: 6c433a1c7e0b6244a994ded0421421a7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.0000038146973
+      objectReference: {fileID: 0}
     - target: {fileID: 865394999826933726, guid: 6c433a1c7e0b6244a994ded0421421a7, type: 3}
       propertyPath: m_Name
       value: PlayerController
+      objectReference: {fileID: 0}
+    - target: {fileID: 1453085451217209371, guid: 6c433a1c7e0b6244a994ded0421421a7, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -992.018
+      objectReference: {fileID: 0}
+    - target: {fileID: 1453085451217209371, guid: 6c433a1c7e0b6244a994ded0421421a7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1453085451217209371, guid: 6c433a1c7e0b6244a994ded0421421a7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 468.9999
       objectReference: {fileID: 0}
     - target: {fileID: 1805921792688935717, guid: 6c433a1c7e0b6244a994ded0421421a7, type: 3}
       propertyPath: playerInputHandler
@@ -7956,6 +7996,26 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1845572461}
+    - target: {fileID: 8919031727440349615, guid: 6c433a1c7e0b6244a994ded0421421a7, type: 3}
+      propertyPath: m_text
+      value: Tutorial Panel
+      objectReference: {fileID: 0}
+    - target: {fileID: 8919031727440349615, guid: 6c433a1c7e0b6244a994ded0421421a7, type: 3}
+      propertyPath: m_fontSize
+      value: 46.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8919031727440349615, guid: 6c433a1c7e0b6244a994ded0421421a7, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8919031727440349615, guid: 6c433a1c7e0b6244a994ded0421421a7, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 8919031727440349615, guid: 6c433a1c7e0b6244a994ded0421421a7, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
