@@ -65,6 +65,8 @@ public class Block : MonoBehaviour
 	/// </summary>
 	private void HandleDestroy()
 	{
+		//HandlePlacement(); // ! TODO: cancel placement
+
 		Destroy(gameObject);
 
 		int scrapNum = Random.Range(1, (int)maxNumberOfScrapsToThrow + 1); // 1-maxNumberOfScrapsToThrow
