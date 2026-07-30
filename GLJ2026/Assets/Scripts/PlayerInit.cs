@@ -202,7 +202,7 @@ public class PlayerInit : MonoBehaviour
     {
         if (GetHit() is RaycastHit hit)
         {
-            InventoryObj.transform.position = hit.point;
+            InventoryObj.transform.position = new Vector3(hit.point.x, 0.5f, hit.point.z); // ! TODO: trying to keep it out of the ground, now it sits just above it
 
             if (!InventoryObj.activeSelf)
             {

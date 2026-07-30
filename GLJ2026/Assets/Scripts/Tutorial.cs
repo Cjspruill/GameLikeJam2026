@@ -57,7 +57,7 @@ public static class Tutorial
 
         if (CurrentStep > Steps.Count) // just finished
         {
-            GUI.enabled = false;
+            GUI.gameObject.SetActive(false); // ! TODO: not hiding element, only text
 
             GUI = null;
 
