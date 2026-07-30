@@ -7,26 +7,27 @@ using UnityEngine;
 
 using Resources = UnityEngine.Resources; // conflicts with Humanizer
 
+using static Globals;
 using static Logger;
 
 public static class Loot
 {
     // * NOTE: Instantiating Lists so that Count won't error
-    private static List<GameObject> loot = new();
-    private static List<GameObject> scraps = new();
+    private static List<GameObject> LootItems { get; set; } = new();
+    private static List<GameObject> ScrapItems { get; set; } = new();
 
     /// <summary>
     /// Load GameObjects from Resources directory
     /// </summary>
     public static void Load()
     {
-        loot = Resources.LoadAll<GameObject>("Loot").ToList();
+        LootItems = Resources.LoadAll<GameObject>("Loot").ToList();
 
-        scraps = Resources.LoadAll<GameObject>("Scraps").ToList();
+        ScrapItems = Resources.LoadAll<GameObject>("Scraps").ToList();
 
-        if (Globals.DEBUG)
+        if (DEBUG)
         {
-            LogInfo($"Loaded {"Loot block".ToQuantity(loot.Count)} and {"Scrap block".ToQuantity(scraps.Count)}");
+            LogInfo($"Loaded {"Loot block".ToQuantity(LootItems.Count)} and {"Scrap block".ToQuantity(ScrapItems.Count)}");
         }
     }
 
@@ -35,5 +36,5 @@ public static class Loot
     /// </summary>
     /// <param name="isLoot">Should get Loot or scrap?</param>
     /// <returns>Random GameObject</returns>
-    public static GameObject GetLoot(bool isLoot) => isLoot ? loot[Random.Range(0, loot.Count)] : scraps[Random.Range(0, scraps.Count)]; // 0-(Count-1)
+    public static GameObject GetLoot(bool isLoot) => isLoot ? LootItems[Random.Range(0, LootItems.Count)] : ScrapItems[Random.Range(0, ScrapItems.Count)]; // 0-(Count-1)
 }

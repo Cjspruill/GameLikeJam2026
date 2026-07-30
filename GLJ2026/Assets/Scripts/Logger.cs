@@ -1,5 +1,7 @@
 using UnityEngine;
 
+using static Globals;
+
 /// <summary>
 /// Log levels
 /// </summary>
@@ -18,7 +20,7 @@ public static class Logger
     /// <param name="message">The verbose message to log</param>
     public static void LogVerbose(string message)
     {
-        if (Globals.LOG_LEVEL == LogLevel.Verbose)
+        if (LOG_LEVEL == LogLevel.Verbose)
         {
             Debug.Log($"<color=cyan>{message}</color>");
         }
@@ -30,7 +32,7 @@ public static class Logger
     /// <param name="message">The informational message to log</param>
     public static void LogInfo(string message)
     {
-        if (Globals.LOG_LEVEL <= LogLevel.Info)
+        if (LOG_LEVEL <= LogLevel.Info)
         {
             Debug.Log($"<color=green>{message}</color>");
         }

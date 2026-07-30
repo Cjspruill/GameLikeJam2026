@@ -10,7 +10,7 @@ public static class Globals
     /// <summary>
     /// Is using debug mode?
     /// </summary>
-    public static bool DEBUG = false;
+    public static bool DEBUG { get; private set; } = false;
 
     /// <summary>
     /// Selected LogLevel

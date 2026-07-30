@@ -2,21 +2,28 @@ using System.Collections.Generic;
 
 using TMPro;
 
+using static Globals;
 using static Logger;
 
 public static class Tutorial
 {
+    /// <summary>
+    /// GUI object reference
+    /// </summary>
     private static TextMeshProUGUI GUI { get; set; }
 
-    private static readonly int StepNumber = 0;
+    /// <summary>
+    /// Steps key
+    /// </summary>
+    private static int StepNumber { get; } = 0;
 
     private static Dictionary<int, string> Steps { get; } = new()
     {
         {++StepNumber, "Walk forward and punch your way through the boxes"},
         {++StepNumber, "Pick up the Box Knife"},
-        {++StepNumber, "Destroy the box"},
-        {++StepNumber, "Pick up the Loot item"},
-        {++StepNumber, "Place Loot item"}
+        {++StepNumber, "Destroy the boxes with the Box Knife"},
+        {++StepNumber, "Pick up a box"},
+        {++StepNumber, "Place a box"}
     };
 
     private static int CurrentStep = 1;
@@ -41,7 +48,7 @@ public static class Tutorial
 
         GUI.text = message;
 
-        if (Globals.DEBUG)
+        if (DEBUG)
         {
             LogInfo($"Tutorial Step: {message} ({CurrentStep}/{Steps.Count})");
         }

@@ -1,25 +1,29 @@
-using System.Collections.Generic;
+using UnityEngine;
 
-/// <summary>
-/// Inventory item
-/// </summary>
-public class InventoryItem
+public static class InventoryItem
 {
     /// <summary>
-    /// Name of inventory item
+    /// Inventory item
     /// </summary>
-    public string Name { get; }
+    public static GameObject Inventory { get; private set; }
 
-    public InventoryItem(string name)
-    {
-        Name = name;
-    }
-}
-
-public static class InventoryItems
-{
     /// <summary>
-    /// Inventory items
+    /// Set Inventory item
     /// </summary>
-    public static List<InventoryItem> Inventory { get; } = new();
+    /// <param name="item">The GameObject</param>
+    public static void SetInventory(GameObject item) => Inventory = item;
+
+    /// <summary>
+    /// Does Inventory contain item?
+    /// </summary>
+    /// <returns>
+    /// True or false
+    /// </returns>
+    public static bool HasInventory() => Inventory != null;
+
+    /// <summary>
+    /// Clear Inventory item
+    /// </summary>
+    public static void ClearInventory() => Inventory = null;
+
 }

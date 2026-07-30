@@ -2,8 +2,10 @@ using UnityEngine;
 
 using Humanizer;
 
-using static InventoryItems;
+using static Globals;
+using static InventoryItem;
 using static Logger;
+using static PlayerInit;
 
 public class Block : MonoBehaviour
 {
@@ -11,8 +13,15 @@ public class Block : MonoBehaviour
 	[Header("Block Settings")]
 	[SerializeField] private float maxNumberOfScrapsToThrow = 3f;
 	[SerializeField] private float destroyScrapsAfterSeconds = 60f;
-	[SerializeField] internal Globals.BlockDestructionType blockDestructionType = Globals.BlockDestructionType.PunchAndBoxKnife;
+	[SerializeField] internal BlockDestructionType blockDestructionType = BlockDestructionType.PunchAndBoxKnife;
+	internal static float _maxPlacementDistance;
+	[SerializeField] private float maxPlacementDistance = 10f;
 #pragma warning restore IDE0044
+
+	public Block()
+	{
+		_maxPlacementDistance = maxPlacementDistance;
+	}
 
 #pragma warning disable IDE0051
 	private void Start() => AddCollider(gameObject);
@@ -34,14 +43,21 @@ public class Block : MonoBehaviour
 		}
 		else if (gameObject.IsLoot() && obj.IsPlayer())
 		{
-			HandleInventory();
+			if (!HasInventory())
+			{
+				HandleInventory();
+			}
+			else if (DEBUG)
+			{
+				LogVerbose("Already have item");
+			}
 		}
 	}
 
 #pragma warning disable IDE0051
 	private void OnDestroy()
 	{
-		if (Globals.DEBUG)
+		if (DEBUG)
 		{
 			LogVerbose($"{gameObject.name} {(gameObject.IsScrap() ? "cleaned up" : "destroyed")}");
 		}
@@ -56,9 +72,9 @@ public class Block : MonoBehaviour
 
 		int scrapNum = Random.Range(1, (int)maxNumberOfScrapsToThrow + 1); // 1-maxNumberOfScrapsToThrow
 
-		if (Globals.DEBUG)
+		if (DEBUG)
 		{
-			LogInfo($"Throwing Loot and {"Scrap block".ToQuantity(scrapNum)}");
+			LogVerbose($"Throwing Loot and {"Scrap block".ToQuantity(scrapNum)}");
 		}
 
 		int lootNum = Random.Range(0, (int)maxNumberOfScrapsToThrow + 1); // 0-maxNumberOfScrapsToThrow
@@ -74,11 +90,17 @@ public class Block : MonoBehaviour
 	/// </summary>
 	private void HandleInventory()
 	{
+		GameObject clone = Instantiate(gameObject);
+
+		clone.SetActive(false);
+
+		SetInventory(clone);
+
 		Destroy(gameObject);
 
-		Inventory.Add(new InventoryItem(gameObject.name)); // ? TODO: Stacks?
+		ToggleBlockObject();
 
-		if (Globals.DEBUG)
+		if (DEBUG)
 		{
 			LogInfo($"Picked up {gameObject.name}");
 		}
@@ -97,6 +119,7 @@ public class Block : MonoBehaviour
 		if (!mesh)
 		{
 			LogError($"Could not find MeshFilter for {obj.name}");
+
 			return;
 		}
 
@@ -109,7 +132,7 @@ public class Block : MonoBehaviour
 			collider.isTrigger = true;
 		}
 
-		if (Globals.DEBUG)
+		if (DEBUG)
 		{
 			LogVerbose($"Added BoxCollider to {obj.name}");
 		}
@@ -127,7 +150,7 @@ public class Block : MonoBehaviour
 		// clone and spawn slightly above
 		GameObject loot = Instantiate(Loot.GetLoot(isLoot), transform.position + new Vector3(0, 1f, 0), transform.rotation);
 
-		loot.tag = isLoot ? Globals.LOOT_BLOCK_TAG : Globals.SCRAP_BLOCK_TAG;
+		loot.tag = isLoot ? LOOT_BLOCK_TAG : SCRAP_BLOCK_TAG;
 
 		loot.name = $"{(isLoot ? "Loot" : "Scrap")}_{loot.name}";
 
@@ -140,7 +163,7 @@ public class Block : MonoBehaviour
 
 		Rigidbody rigidBody = loot.AddComponent<Rigidbody>();
 
-		if (Globals.DEBUG)
+		if (DEBUG)
 		{
 			LogVerbose($"Added Rigidbody to {loot.name}");
 		}
@@ -156,9 +179,9 @@ public class Block : MonoBehaviour
 			Destroy(loot, destroyScrapsAfterSeconds);
 		}
 
-		if (Globals.DEBUG)
+		if (DEBUG)
 		{
-			LogInfo($"Spawned {loot.name}");
+			LogVerbose($"Spawned {loot.name}");
 		}
 	}
 }
