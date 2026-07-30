@@ -15,6 +15,11 @@ using static Tutorial;
 public class PlayerInit : MonoBehaviour
 {
     /// <summary>
+    /// Generated Input System actions
+    /// </summary>
+    private InputSystem_Actions InputActions { get; set; }
+
+    /// <summary>
     /// Box in hand
     /// </summary>
     private static GameObject Box { get; set; }
@@ -30,26 +35,52 @@ public class PlayerInit : MonoBehaviour
     private GameObject InventoryObj { get; set; }
 
 #pragma warning disable IDE0051
-    private void Awake() => SetBox();
+    private void Awake()
+    {
+        InputActions = new InputSystem_Actions();
+
+        SetBox();
+    }
 
 #pragma warning disable IDE0051
-    private void Start() => LoadTutorial();
+    private void OnEnable()
+    {
+        InputActions?.UI.Enable();
+    }
+
+#pragma warning disable IDE0051
+    private void Start()
+    {
+        LoadTutorial();
+    }
 
 #pragma warning disable IDE0051
     private void Update()
     {
-        if (Mouse.current.rightButton.wasPressedThisFrame)
-        {
-            HandlePlacement();
-        }
-        else if (IsPlacing && Mouse.current.leftButton.wasPressedThisFrame)
+        if (IsPlacing && InputActions.UI.Click.WasPressedThisFrame())
         {
             PlaceItem();
+        }
+        else if (InputActions.UI.RightClick.WasPressedThisFrame())
+        {
+            HandlePlacement();
         }
         else if (IsPlacing && InventoryObj != null)
         {
             HandlePosition();
         }
+    }
+
+#pragma warning disable IDE0051
+    private void OnDisable()
+    {
+        InputActions?.UI.Disable();
+    }
+
+#pragma warning disable IDE0051
+    private void OnDestroy()
+    {
+        InputActions?.Dispose();
     }
 
     /// <summary>
@@ -62,7 +93,6 @@ public class PlayerInit : MonoBehaviour
         if (!Box)
         {
             LogError($"Could not find {BLOCK_OBJECT_TAG} tag");
-
             return;
         }
 
@@ -75,11 +105,20 @@ public class PlayerInit : MonoBehaviour
     /// <param name="show">Show object?</param>
     public static void ToggleBlockObject(bool show)
     {
+        if (!Box)
+        {
+            LogError($"Cannot toggle {BLOCK_OBJECT_TAG}: object reference is missing");
+            return;
+        }
+
         Box.SetActive(show);
 
         if (DEBUG)
         {
-            LogVerbose($"{BLOCK_OBJECT_TAG} is {(Box.activeSelf ? "Active" : "Inactive")}");
+            LogVerbose(
+                $"{BLOCK_OBJECT_TAG} is " +
+                $"{(Box.activeSelf ? "Active" : "Inactive")}"
+            );
         }
     }
 
@@ -96,16 +135,16 @@ public class PlayerInit : MonoBehaviour
             return;
         }
 
-        TextMeshProUGUI gui = obj.GetComponentInChildren<TextMeshProUGUI>();
+        TextMeshProUGUI gui =
+            obj.GetComponentInChildren<TextMeshProUGUI>();
 
         if (!gui)
         {
             LogError($"Could not find TextMeshProUGUI for {obj.name}");
-
             return;
         }
 
-        StartTutorial(gui);
+        StartTutorial(gui, obj);
     }
 
     /// <summary>
@@ -113,6 +152,12 @@ public class PlayerInit : MonoBehaviour
     /// </summary>
     private void HandlePlacement()
     {
+        if (IsPlacing)
+        {
+            CancelPlacement();
+            return;
+        }
+
         if (!HasInventory())
         {
             if (DEBUG)
@@ -123,44 +168,36 @@ public class PlayerInit : MonoBehaviour
             return;
         }
 
-        if (IsPlacing)
-        {
-            Destroy(InventoryObj);
+        string itemName =
+            Inventory.First().name.Replace("(Clone)", string.Empty);
 
-            InventoryObj = null;
-
-            IsPlacing = false;
-
-            if (DEBUG)
-            {
-                LogInfo("Placement canceled");
-            }
-
-            return;
-        }
-
-        IsPlacing = true;
-
-        string name = Inventory.First().name.Replace("(Clone)", string.Empty);
-
-        GameObject item = Find(name);
+        GameObject item = Find(itemName);
 
         if (item == null)
         {
-            LogError($"Could not find {name} for InventoryObj");
-
+            LogError($"Could not find {itemName} for InventoryObj");
             return;
         }
 
         InventoryObj = Instantiate(item);
 
-        InventoryObj.SetActive(false); // hide until positioned
+        // Hide until the placement ray finds a valid surface.
+        InventoryObj.SetActive(false);
 
-        InventoryObj.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+        InventoryObj.transform.localScale =
+            new Vector3(3f, 3f, 3f);
 
         InventoryObj.tag = BOX_KNIFE_TAG;
 
-        Destroy(InventoryObj.GetComponentInChildren<Rigidbody>());
+        Rigidbody rigidbody =
+            InventoryObj.GetComponentInChildren<Rigidbody>();
+
+        if (rigidbody)
+        {
+            Destroy(rigidbody);
+        }
+
+        IsPlacing = true;
 
         if (DEBUG)
         {
@@ -169,24 +206,67 @@ public class PlayerInit : MonoBehaviour
     }
 
     /// <summary>
-    /// Get RaycastHit object
+    /// Cancel the current placement
     /// </summary>
-    /// <returns>The RaycastHit object, or null</returns>
+    private void CancelPlacement()
+    {
+        if (InventoryObj)
+        {
+            Destroy(InventoryObj);
+        }
+
+        InventoryObj = null;
+        IsPlacing = false;
+
+        if (DEBUG)
+        {
+            LogInfo("Placement canceled");
+        }
+    }
+
+    /// <summary>
+    /// Get a raycast hit using the UI Point action.
+    /// </summary>
+    /// <returns>The RaycastHit object, or null.</returns>
     private RaycastHit? GetHit()
     {
-        Vector2 mousePosition2D = Mouse.current.position.ReadValue();
-        Vector3 vecPosition = new(mousePosition2D.x, mousePosition2D.y, 0f);
+        Camera mainCamera = Camera.main;
 
-        if (Physics.Raycast(
-                Camera.main.ScreenPointToRay(vecPosition),
-                out RaycastHit hit,
-                _maxPlacementDistance
-            )
-        )
+        if (!mainCamera)
         {
-            if (hit.collider.name == InventoryObj.name)
+            LogError("Could not find the Main Camera");
+            return null;
+        }
+
+        Vector2 pointerPosition =
+            InputActions.UI.Point.ReadValue<Vector2>();
+
+        Ray ray = mainCamera.ScreenPointToRay(pointerPosition);
+
+        RaycastHit[] hits = Physics.RaycastAll(
+            ray,
+            _maxPlacementDistance,
+            Physics.DefaultRaycastLayers,
+            QueryTriggerInteraction.Ignore
+        );
+
+        if (hits.Length == 0)
+        {
+            return null;
+        }
+
+        foreach (RaycastHit hit in hits.OrderBy(result => result.distance))
+        {
+            if (!hit.collider)
             {
-                return null;
+                continue;
+            }
+
+            // Ignore every collider belonging to the preview object.
+            if (InventoryObj &&
+                hit.collider.transform.IsChildOf(InventoryObj.transform))
+            {
+                continue;
             }
 
             return hit;
@@ -200,14 +280,25 @@ public class PlayerInit : MonoBehaviour
     /// </summary>
     private void HandlePosition()
     {
-        if (GetHit() is RaycastHit hit)
+        if (!InventoryObj)
         {
-            InventoryObj.transform.position = new Vector3(hit.point.x, 0.5f, hit.point.z); // ! TODO: trying to keep it out of the ground, now it sits just above it
+            return;
+        }
 
-            if (!InventoryObj.activeSelf)
-            {
-                InventoryObj.SetActive(true);
-            }
+        if (GetHit() is not RaycastHit hit)
+        {
+            return;
+        }
+
+        InventoryObj.transform.position = new Vector3(
+            hit.point.x,
+            0.5f,
+            hit.point.z
+        );
+
+        if (!InventoryObj.activeSelf)
+        {
+            InventoryObj.SetActive(true);
         }
     }
 
@@ -216,31 +307,52 @@ public class PlayerInit : MonoBehaviour
     /// </summary>
     private void PlaceItem()
     {
-        if (GetHit() is RaycastHit)
+        if (!InventoryObj || !InventoryObj.activeSelf)
         {
-            GameObject item = Instantiate(InventoryObj, InventoryObj.transform.position, Quaternion.identity);
-
-            if (DEBUG)
-            {
-                LogInfo($"Placed {item.name}");
-            }
-
-            RemoveItem();
-
-            Destroy(InventoryObj);
-
-            InventoryObj = null;
-
-            ToggleBlockObject(HasInventory());
-
-            IsPlacing = false;
-
-            IncrementStep();
+            return;
         }
+
+        if (GetHit() is not RaycastHit)
+        {
+            return;
+        }
+
+        GameObject item = Instantiate(
+            InventoryObj,
+            InventoryObj.transform.position,
+            InventoryObj.transform.rotation
+        );
+
+        item.SetActive(true);
+
+        if (DEBUG)
+        {
+            LogInfo($"Placed {item.name}");
+        }
+
+        RemoveItem();
+
+        Destroy(InventoryObj);
+
+        InventoryObj = null;
+        IsPlacing = false;
+
+        ToggleBlockObject(HasInventory());
+
+        IncrementStep();
     }
 
+    /// <summary>
+    /// Remove the placed item from inventory
+    /// </summary>
     private void RemoveItem()
     {
+        if (!InventoryObj)
+        {
+            LogError("Cannot remove inventory item: InventoryObj is missing");
+            return;
+        }
+
         RemoveInventory(InventoryObj.name);
 
         if (DEBUG)

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 
 using TMPro;
-
+using UnityEngine;
 using static Globals;
 using static Logger;
 
@@ -11,6 +11,7 @@ public static class Tutorial
     /// GUI object reference
     /// </summary>
     private static TextMeshProUGUI GUI { get; set; }
+    private static GameObject tutorialPanel;
 
     /// <summary>
     /// Steps key
@@ -26,7 +27,8 @@ public static class Tutorial
         {++StepNumber, "Pick up the Box Knife"},
         {++StepNumber, "Destroy the boxes with the Box Knife"},
         {++StepNumber, "Pick up a box"},
-        {++StepNumber, "Place a box"}
+        {++StepNumber, "Place a box"},
+        {++StepNumber, "Exit through the dark boxes"}
     };
 
     /// <summary>
@@ -38,9 +40,10 @@ public static class Tutorial
     /// Start tutorial
     /// </summary>
     /// <param name="gui">The tutorial panel GUI object</param>
-    public static void StartTutorial(TextMeshProUGUI gui)
+    public static void StartTutorial(TextMeshProUGUI gui, GameObject panel)
     {
         GUI = gui;
+        tutorialPanel = panel;
 
         IncrementStep();
     }
@@ -58,7 +61,7 @@ public static class Tutorial
         if (CurrentStep > Steps.Count) // just finished
         {
             GUI.gameObject.SetActive(false); // ! TODO: not hiding element, only text
-
+            tutorialPanel.SetActive(false);
             GUI = null;
 
             if (DEBUG)
