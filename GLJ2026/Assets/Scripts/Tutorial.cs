@@ -23,13 +23,14 @@ public static class Tutorial
     /// </summary>
     private static Dictionary<int, string> Steps { get; } = new()
     {
-        {++StepNumber, "Walk forward and punch your way through the boxes"},
-        {++StepNumber, "Pick up the Box Knife"},
-        {++StepNumber, "Destroy the boxes with the Box Knife"},
-        {++StepNumber, "Pick up a box"},
-        {++StepNumber, "Place a box"},
-        {++StepNumber, "Exit through the dark boxes"}
+        {++StepNumber, "Walk forward and punch your way through the boxes with left mouse button"},
+        {++StepNumber, "Pick up the Box Knife by walking over it"},
+        {++StepNumber, "Destroy the boxes with the Box Knife with 'left mouse button'"},
+        {++StepNumber, "Pick up a box by walking over it"},
+        {++StepNumber, "Place a box with box placement mode using 'right mouse button', rotate left and right with 'q' and 'e', select a box with 'mouse scrollwheel', then 'left mouse button' to place"},
+        {++StepNumber, "Exit through the darker boxes and have fun"}
     };
+    public static int CurrentStepHolder { get => CurrentStep; set => CurrentStep = value; }
 
     /// <summary>
     /// Current step number

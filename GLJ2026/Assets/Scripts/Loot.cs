@@ -36,7 +36,7 @@ public static class Loot
     /// </summary>
     /// <param name="isLoot">Should get Loot or scrap?</param>
     /// <returns>Random GameObject</returns>
-    public static GameObject GetLoot(bool isLoot) => isLoot ? LootItems[Random.Range(0, LootItems.Count)] : ScrapItems[Random.Range(0, ScrapItems.Count)]; // 0-(Count-1)
+    public static GameObject GetLoot(bool isLoot) => isLoot ? LootItems[Random.Range(1, LootItems.Count)] : ScrapItems[Random.Range(0, ScrapItems.Count)]; // 0-(Count-1)
 
     /// <summary>
     /// Find LootItem by name

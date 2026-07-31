@@ -47,6 +47,7 @@ public class Block : MonoBehaviour
 		{
 			HandleInventory();
 
+			if(Tutorial.CurrentStepHolder == 5)
 			IncrementStep();
 		}
 	}
@@ -115,9 +116,16 @@ public class Block : MonoBehaviour
 
 		Destroy(gameObject);
 
-		ToggleBlockObject(HasInventory());
+        if (
+      PlayerInit.Instance != null &&
+      !PlayerInit.Instance.HasBoxInHand()
+  )
+        {
+            PlayerInit.Instance.currentBoxSelection = 0;
+            PlayerInit.Instance.SetBox(1);
+        }
 
-		if (DEBUG)
+        if (DEBUG)
 		{
 			LogInfo($"Picked up {gameObject.name}");
 
