@@ -142,9 +142,12 @@ public class Block : MonoBehaviour
 			return;
 		}
 
-		(collider.center, collider.size) = (mesh.sharedMesh.bounds.center, mesh.sharedMesh.bounds.size);
+		if(obj.name.ToLower().Contains("1"))
+		(collider.center, collider.size) = (mesh.sharedMesh.bounds.center + Vector3.up * .1f, mesh.sharedMesh.bounds.size);
+		else
+            (collider.center, collider.size) = (mesh.sharedMesh.bounds.center + Vector3.up * .14f, mesh.sharedMesh.bounds.size);
 
-		if (isLoot)
+        if (isLoot)
 		{
 			collider.size *= 1.25f; // increase by 25%
 
