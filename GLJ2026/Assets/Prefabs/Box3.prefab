@@ -138,3 +138,4 @@ MonoBehaviour:
   maxNumberOfScrapsToThrow: 3
   destroyScrapsAfterSeconds: 60
   blockDestructionType: 2
+  maxPlacementDistance: 10

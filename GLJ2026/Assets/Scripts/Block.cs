@@ -47,6 +47,7 @@ public class Block : MonoBehaviour
 		{
 			HandleInventory();
 
+			if(Tutorial.CurrentStepHolder == 5)
 			IncrementStep();
 		}
 	}
@@ -115,9 +116,16 @@ public class Block : MonoBehaviour
 
 		Destroy(gameObject);
 
-		ToggleBlockObject(HasInventory());
+        if (
+      PlayerInit.Instance != null &&
+      !PlayerInit.Instance.HasBoxInHand()
+  )
+        {
+            PlayerInit.Instance.currentBoxSelection = 0;
+            PlayerInit.Instance.SetBox(1);
+        }
 
-		if (DEBUG)
+        if (DEBUG)
 		{
 			LogInfo($"Picked up {gameObject.name}");
 
@@ -142,9 +150,12 @@ public class Block : MonoBehaviour
 			return;
 		}
 
-		(collider.center, collider.size) = (mesh.sharedMesh.bounds.center, mesh.sharedMesh.bounds.size);
+		if(obj.name.ToLower().Contains("1"))
+		(collider.center, collider.size) = (mesh.sharedMesh.bounds.center + Vector3.up * .1f, mesh.sharedMesh.bounds.size);
+		else
+            (collider.center, collider.size) = (mesh.sharedMesh.bounds.center + Vector3.up * .14f, mesh.sharedMesh.bounds.size);
 
-		if (isLoot)
+        if (isLoot)
 		{
 			collider.size *= 1.25f; // increase by 25%
 

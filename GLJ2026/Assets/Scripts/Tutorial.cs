@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 
 using TMPro;
-
+using UnityEngine;
 using static Globals;
 using static Logger;
 
@@ -11,6 +11,7 @@ public static class Tutorial
     /// GUI object reference
     /// </summary>
     private static TextMeshProUGUI GUI { get; set; }
+    private static GameObject tutorialPanel;
 
     /// <summary>
     /// Steps key
@@ -22,12 +23,14 @@ public static class Tutorial
     /// </summary>
     private static Dictionary<int, string> Steps { get; } = new()
     {
-        {++StepNumber, "Walk forward and punch your way through the boxes"},
-        {++StepNumber, "Pick up the Box Knife"},
-        {++StepNumber, "Destroy the boxes with the Box Knife"},
-        {++StepNumber, "Pick up a box"},
-        {++StepNumber, "Place a box"}
+        {++StepNumber, "Walk forward and punch your way through the boxes with left mouse button"},
+        {++StepNumber, "Pick up the Box Knife by walking over it"},
+        {++StepNumber, "Destroy the boxes with the Box Knife with 'left mouse button'"},
+        {++StepNumber, "Pick up a box by walking over it"},
+        {++StepNumber, "Place a box with box placement mode using 'right mouse button', rotate left and right with 'q' and 'e', select a box with 'mouse scrollwheel', then 'left mouse button' to place"},
+        {++StepNumber, "Exit through the darker boxes and have fun"}
     };
+    public static int CurrentStepHolder { get => CurrentStep; set => CurrentStep = value; }
 
     /// <summary>
     /// Current step number
@@ -38,9 +41,10 @@ public static class Tutorial
     /// Start tutorial
     /// </summary>
     /// <param name="gui">The tutorial panel GUI object</param>
-    public static void StartTutorial(TextMeshProUGUI gui)
+    public static void StartTutorial(TextMeshProUGUI gui, GameObject panel)
     {
         GUI = gui;
+        tutorialPanel = panel;
 
         IncrementStep();
     }
@@ -58,7 +62,7 @@ public static class Tutorial
         if (CurrentStep > Steps.Count) // just finished
         {
             GUI.gameObject.SetActive(false); // ! TODO: not hiding element, only text
-
+            tutorialPanel.SetActive(false);
             GUI = null;
 
             if (DEBUG)
